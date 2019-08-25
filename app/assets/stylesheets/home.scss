@@ -3,10 +3,19 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .section{
-  width: 1280px;
+  width: 1200px;
   height: 100%;
   display: flex;
   margin: 0 auto;
+}
+
+.left-section{
+  width: 45%;
+}
+
+.right-section{
+  width: 55%;
+  float: right;
 }
 
 .homepage-title-font{
@@ -79,8 +88,8 @@
 }
 
 .illustration{
-  height: 444px;
-  width: 709px;
+  height: 430px;
+  width: 700px;
 }
 
 @media screen and (max-width: 767px){
