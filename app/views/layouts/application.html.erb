@@ -13,7 +13,9 @@
     <!-- top-nav -->
     <div class="header">
       <div class="header-content">
-        <div id="logo"></div>
+        <%= link_to root_path do %>
+          <div id="logo"><%= render('home/logo')%></div>
+        <% end %>
         <div id="navToggle">
           <div>
             <span></span>
@@ -33,9 +35,8 @@
     </div>
     <%= yield %>
     <!-- footer -->
-<br><br><br><br><br>
     <div class="footer">
-      <%= Time.current.year %> © Designed And Developed By Hungyi
+      <%= Time.current.year %> © Designed & developed by Hungyi
     </div>
   </body>
 </html>

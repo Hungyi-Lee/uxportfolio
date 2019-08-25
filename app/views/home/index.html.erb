@@ -1,15 +1,23 @@
-<div class="section m-t-200 p-l-80 p-r-80">
-  <h2 class="homepage-title-font">Hello!</h2>
-  <div class="pink-line m-t-40 m-b-40"></div>
-  <p class="homepage-subtitle m-b-40">
-     I’m Hungyi, currently live in Seattle.<br/>
-     I’m a UI/UX designer and embrace <br/>
-     challenges, uncertainty and<br/>
-     problem solving process.
-  </p>
-  <div>
-    <span>
-      <i class="icon fab fa-behance"></i>
-    </span>
+<div class="section m-t-200 m-b-80">
+  <div class="left-section">
+    <h2 class="homepage-title-font">Hello!</h2>
+    <div class="pink-line m-t-40 m-b-40"></div>
+    <p class="homepage-subtitle m-b-40">
+       I’m Hungyi, currently live in Seattle.<br/>
+       I’m a UI/UX designer and embrace <br/>
+       challenges, uncertainty and<br/>
+       problem solving process.
+    </p>
+    <div class="social-media-icons m-b-40">
+      <%= render 'home/social_media_icon' %>
+    </div>
+      <div class="hello-button">
+        <%= mail_to "horngyi6527@gmail.com" do %>
+          SAY HELLO
+        <% end %>
+      </div>
+  </div>
+  <div class="right-section">
+    <%= render 'home/illustration' %>
   </div>
 </div>
