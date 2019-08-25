@@ -15,7 +15,7 @@ class WorksController < ApplicationController
   end
 
   def edit
-    @work = Wrok.find(params[:id])
+    @work = Work.find(params[:id])
   end
 
   def update

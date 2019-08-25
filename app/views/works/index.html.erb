@@ -58,15 +58,15 @@
     <!-- experiences -->
     <h4 class="about-title-font">EXPERIENCES</h4>
     <div class="pink-line"></div>
-    <div class="experiences m-t-20">
-      <h5 class="company-name">Metro Engines</h5>
-      <h5 class="position">Web Developer & Project Management</h5>
-      <p class="date-location m-b-9">Apr 2018 - Dec 2018 in Tokyo, Japan</p>
-        <p>- Worked on Metro Review Project</p>
-        <p>- Coded with Ruby on Rails and React JS</p>
-        <p>- Control project flow</p>
-        <p>- Work with 5 senior engineers</p>
+    <% @works.each do |w| %>
+    <div class="experiences m-t-20 m-b-40">
+        <h5 class="company-name"><%= w.company %></h5>
+        <h5 class="position"><%= w.position %></h5>
+          <p class="date-location m-b-9"><%= w.timeline %> in <%= w.location %></p>
+          <%= raw(w.description) %>
     </div>
+    <% end %>
+
     <!-- education -->
     <h4 class="about-title-font m-t-200">EDUCATION</h4>
     <div class="pink-line"></div>
