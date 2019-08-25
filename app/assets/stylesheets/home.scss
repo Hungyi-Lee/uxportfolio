@@ -21,8 +21,10 @@
 }
 
 .homepage-subtitle{
+  width: 473px;
   font-size: 25px;
   letter-spacing: 2px;
+  overflow-wrap: break-word;
 }
 
 .social-media-icons {
@@ -94,8 +96,11 @@
   }
 
   .homepage-subtitle{
+    width: 95%;
     font-size: 20px;
     letter-spacing: 2px;
+    overflow-wrap: break-word;
+    line-height: 32px;
   }
 
   .illustration{
