@@ -42,3 +42,17 @@ $(document).on('turbolinks:load', function() {
         $('.header-content').toggleClass('openNav');
     });
 });
+
+// $(document).ready(function(){
+//   $(".project-title").hover(function(){
+//     $(".project-hover-effect").css("visibility", "visible");
+//     }, function(){
+//     $(".project-hover-effect").css("visibility", "hidden");
+//   });
+// });
+
+$(document).ready(function(){
+  $(".project-title").hover(function(){
+    $(".project-hover-effect").toggle("slide");
+  });
+});

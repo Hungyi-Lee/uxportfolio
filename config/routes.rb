@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   root "home#index"
   resources :works
   get 'about' => 'works#index', :as => :about
+  get 'project' => 'projects#index', :as => :project
 
 end

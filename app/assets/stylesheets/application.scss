@@ -17,6 +17,7 @@
 
 @import "bootstrap/scss/bootstrap";
 
+.m-t-10{ margin-top: 0.625rem; }
 .m-t-200{ margin-top: 12%; }
 .m-t-100{ margin-top: 8%; }
 .m-t-40{ margin-top: 40px; }
@@ -25,8 +26,10 @@
 .m-b-40{ margin-bottom: 40px; }
 .m-b-80{ margin-bottom: 8%; }
 .m-b-9 { margin-bottom: 0.5rem; }
+.m-b-20 { margin-bottom: 1.2rem; }
 
 .m-r-40{ margin-right: 40px; }
+.m-r-9 { margin-right: 0.5rem; }
 
 .m-l-80{ margin-left: 8%; }
 .m-l-100{ margin-left: 10%; }
@@ -128,7 +131,7 @@ a, a:hover{
   padding: 20px;
 }
 
-#navToggle {
+#navToggle{
     display:none;
     position:absolute;
     right:8px;
@@ -140,11 +143,11 @@ a, a:hover{
     padding: 10px 7px;
 }
 
-#navToggle div {
+#navToggle div{
 	position:relative
 }
 
-#navToggle span {
+#navToggle span{
     display:block;
     position:absolute;
     width:100%;
@@ -154,15 +157,15 @@ a, a:hover{
     -moz-transition: .35s ease-in-out;
     transition: .35s ease-in-out}
 
-#navToggle span:nth-child(1) {
+#navToggle span:nth-child(1){
 	top:2px;
 }
 
-#navToggle span:nth-child(2) {
+#navToggle span:nth-child(2){
 	top:10px;
 }
 
-#navToggle span:nth-child(3) {
+#navToggle span:nth-child(3){
 	top:18px;
 }
 
@@ -209,7 +212,7 @@ a, a:hover{
   	position: absolute;
   }
 
-  nav {
+  nav{
       position: absolute;
       right:0;
       top: -300px;
@@ -227,47 +230,47 @@ a, a:hover{
     width: 360px;
   }
 
-  .header-content ul {
+  .header-content ul{
   	margin:0
   }
 
-  .header-content ul li {
+  .header-content ul li{
       display:block;
       margin:0;
       border-bottom:dotted 1px #fff;
       line-height:3;
   }
 
-  .header-content ul li a {
+  .header-content ul li a{
   	display:block;
   }
 
-  .header-content ul li::after {
+  .header-content ul li::after{
   	content:'';
   }
-  .header-content ul li:last-child {
+  .header-content ul li:last-child{
   	border-bottom:none;
   }
 
-  #navToggle {
+  #navToggle{
   	display:block
   }
 
-  .openNav #navToggle span:nth-child(1) {
+  .openNav #navToggle span:nth-child(1){
       top: 11px;
       -webkit-transform:rotate(-45deg);
       -moz-transform:rotate(-45deg);
       transform:rotate(-45deg)}
 
   .openNav #navToggle span:nth-child(2),
-  .openNav #navToggle span:nth-child(3) {
+  .openNav #navToggle span:nth-child(3){
       top: 11px;
       -webkit-transform:rotate(45deg);
       -moz-transform:rotate(45deg);
       transform:rotate(45deg)
   }
 
-  .openNav nav {
+  .openNav nav{
       -moz-transform: translateY(351px);
       -webkit-transform: translateY(351px);
       transform: translateY(351px);

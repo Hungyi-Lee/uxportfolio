@@ -1,0 +1,49 @@
+// Place all the styles related to the projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.project-section{
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  margin: 80px 0 0 auto;
+}
+.project-category{
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.project-title{
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.project-title > a{
+  color: var(--navy);
+}
+
+.project-title > a:hover{
+  text-decoration: none;
+  color: var(--navy);
+}
+
+.project-item{
+  width: 100%;
+  vertical-align: middle;
+  display: flex;
+}
+
+.project-hover-effect{
+  width: 30px;
+  height: 5px;
+  background-color: var(--pink);
+  display: none;
+}
+
+.project-cover-image{
+  width: 55%;
+  height: 40.625rem;
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/d0c26f82734951.5d363f6a70b4d.png");;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
