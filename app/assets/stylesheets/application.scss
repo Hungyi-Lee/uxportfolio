@@ -166,6 +166,33 @@ a{
 	top:18px;
 }
 
+.bottom-menu{
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  outline: none;
+  background-color: var(--navy);
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  width:60px;
+  height:60px;
+  border-radius: 60%;
+  text-align: center;
+}
+
+.up-arrow{
+  border: solid #fff;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
 @media screen and (max-width: 767px){
   .m-r-40{ margin-right: 20px; }
 
