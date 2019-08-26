@@ -1,19 +1,23 @@
 <div class="project-section">
   <!-- left section -->
-  <div class="left-section m-t-40">
+  <div class="left-section m-l-80 m-t-40">
     <div class="project-list">
+      <% @projects.each do |p|%>
         <div class="project-item m-t-40 m-b-20">
           <div class="project-hover-effect m-r-9 m-t-10"></div>
           <div class="project-title">
-            <%= link_to project_path(@project) do %>
-              Redesign Duolinguo Mobile App <span class="project-category">- UI/UX Design</span>
+            <%= link_to project_path(p) do %>
+              <%= p.title %> <span class="project-category">- <%= p.category%></span>
             <% end %>
           </div>
         </div>
+      <% end %>
     </div>
   </div>
 
   <!-- right section -->
-  <div class="right-section project-cover-image">
+  <% @projects.each do |p|%>
+  <div class="right-section project-cover-image" style="background-image: url(<%= p.coverimage %>);">
   </div>
+  <% end%>
 </div>

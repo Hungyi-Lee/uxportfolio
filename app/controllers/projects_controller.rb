@@ -32,7 +32,7 @@ class ProjectsController < ApplicationController
   end
 
   def index
-    @project = Project.all
+    @projects = Project.all
   end
 
   def destroy
