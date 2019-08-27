@@ -21,7 +21,7 @@ import 'bootstrap'
 import './src/application.scss'
 
 window.onscroll = function() {scrollFunction()};
-window.onclick = function(){topFunction()};
+window.onclick = function() {topFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
@@ -36,23 +36,29 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-
 $(document).on('turbolinks:load', function() {
     $('#navToggle').click(function(){
         $('.header-content').toggleClass('openNav');
     });
 });
 
-// $(document).ready(function(){
-//   $(".project-title").hover(function(){
-//     $(".project-hover-effect").css("visibility", "visible");
-//     }, function(){
-//     $(".project-hover-effect").css("visibility", "hidden");
-//   });
+
+//
+// $(function() {
+//     $(".project-item").children("li").each(function() {
+//         $(this).mouseover(function() {
+//             $(this).css ("background-Color", "#c0c0c0");
+//         });
+//         $(this).mouseout(function () {
+//             $(this).css("background-Color", "#FFF");
+//         });
+//     });
 // });
 
-$(document).ready(function(){
-  $(".project-title").hover(function(){
-    $(".project-hover-effect").toggle("slide");
-  });
-});
+//$(document).ready(function(){
+  //$(".project-title").hover(function(){
+//     $(".project-hover-effect").toggle("slide");
+//     $(".project-cover-image").hide();
+    //$(".project-image").hide();
+  //});
+//});

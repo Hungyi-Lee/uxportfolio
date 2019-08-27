@@ -1,23 +1,37 @@
 <div class="project-section">
-  <!-- left section -->
-  <div class="left-section m-l-80 m-t-40">
-    <div class="project-list">
+  <div class="menu">
       <% @projects.each do |p|%>
-        <div class="project-item m-t-40 m-b-20">
-          <div class="project-hover-effect m-r-9 m-t-10"></div>
-          <div class="project-title">
+        <div class="project-item">
+          <div class="project-hover-effect m-r-9 m-t-10 m-l-100"></div>
+          <div class="project-title" id="project-<%=p.id%>" onmouseover="test(id)">
             <%= link_to project_path(p) do %>
               <%= p.title %> <span class="project-category">- <%= p.category%></span>
             <% end %>
           </div>
         </div>
       <% end %>
+  </div>
+  <% @projects.each_with_index do |p, index|%>
+    <div class="project-image">
+      <div class="cover-image" id="cover-<%= index+1 %>" />
+          <%= p.coverimage %>
+      </div>
     </div>
-  </div>
-
-  <!-- right section -->
-  <% @projects.each do |p|%>
-  <div class="right-section project-cover-image" style="background-image: url(<%= p.coverimage %>);">
-  </div>
-  <% end%>
+  <% end %>
 </div>
+
+<script language="javascript" type="text/javascript">
+function app(id){
+  alert(id);
+}
+
+function test(project_id)
+{
+  var res = project_id.split("-");
+  var coverId = "cover-" + res[1];
+  // alert(id);
+  var element = document.getElementById(coverId).innerHTML = coverId;
+  // alert(element);
+}
+
+</script>
