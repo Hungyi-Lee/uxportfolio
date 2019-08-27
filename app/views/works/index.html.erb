@@ -62,7 +62,13 @@
     <div class="experiences m-t-20 m-b-40">
         <h5 class="company-name"><%= w.company %></h5>
         <h5 class="position"><%= w.position %></h5>
-          <p class="date-location m-b-9"><%= w.timeline %> in <%= w.location %></p>
+          <p class="date-location m-b-9"><%= w.timeline %>
+            <%if w.location.empty? %>
+              
+            <% else %>
+              in <%= w.location  %>
+            <% end %>
+          </p>
           <%= raw(w.description) %>
     </div>
     <% end %>
