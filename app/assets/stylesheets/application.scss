@@ -100,13 +100,23 @@ a, a:hover{
 	display:table-cell;
 }
 
-.nav-list-item{
+.active, .nav-list-item{
 	color: var(--navy);
 	list-style: none;
 	display: inline-block;
 	margin: 0 30px;
 	font-size: 20px;
 	text-align: center;
+}
+
+.active{
+  border-bottom: var(--pink-line);
+  padding: 6px 0;
+}
+
+.active > a:hover{
+  text-decoration: none;
+  color: var(--navy);
 }
 
 .nav-list-item > a:hover{
@@ -116,7 +126,7 @@ a, a:hover{
   padding: 6px 0;
 }
 
-.nav-list-item > a{
+.active > a, .nav-list-item > a{
 	color: var(--navy);
 }
 
