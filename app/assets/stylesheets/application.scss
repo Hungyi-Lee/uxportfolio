@@ -235,9 +235,9 @@ a, a:hover{
       text-align: center;
   }
 
-  .nav-list-item > a{
+  .active > a, .nav-list-item > a{
     color: white;
-    width: 360px;
+    width: 100%;
   }
 
   .header-content ul{
