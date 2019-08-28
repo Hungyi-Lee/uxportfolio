@@ -4,7 +4,7 @@
         <div class="project-item m-t-20">
           <div class="project-hover-effect m-r-9 m-t-10 m-l-100"></div>
           <div class="project-title" id="project-<%=p.id%>" onmouseover="showimage(id)" onmouseout="normal(id)">
-            <%= link_to project_path(p) do %>
+            <%= link_to project_path(p.title) do %>
               <%= p.title %> <span class="project-category">- <%= p.category%></span>
             <% end %>
           </div>
