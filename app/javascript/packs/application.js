@@ -41,24 +41,3 @@ $(document).on('turbolinks:load', function() {
         $('.header-content').toggleClass('openNav');
     });
 });
-
-
-//
-// $(function() {
-//     $(".project-item").children("li").each(function() {
-//         $(this).mouseover(function() {
-//             $(this).css ("background-Color", "#c0c0c0");
-//         });
-//         $(this).mouseout(function () {
-//             $(this).css("background-Color", "#FFF");
-//         });
-//     });
-// });
-
-//$(document).ready(function(){
-  //$(".project-title").hover(function(){
-//     $(".project-hover-effect").toggle("slide");
-//     $(".project-cover-image").hide();
-    //$(".project-image").hide();
-  //});
-//});

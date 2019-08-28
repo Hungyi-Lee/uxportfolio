@@ -49,31 +49,30 @@
   transition: transform 0.4s;
 }
 
-// .project-cover-image{
-//   width: 55%;
-//   height: 40rem;
-//   background-color: red;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   position: absolute;
-//   right: 0;
-// }
+.project-cover-image{
+  width: 50%;
+  height: 40.6rem;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  display: none;
+  z-index: 999;
+  position: absolute;
+  right: 0;
+  top: 5rem;
+  padding-left: 30px;
+}
 
 
 .menu {
-  width: 45%;
+  width: 50%;
   float: left;
   padding: 15px;
-  border: 1px solid red;
 }
 
-.project-image {
-  width: 55%;
-  float: right;
-  padding: 15px;
-  border: 1px solid red;
-}
-
-.project-item:hover .title{
-  color: red;
+.first-cover{
+  width: 50%;
+  height: 40.6rem;
+  z-index: 1;
+  position: relative;
+  padding-left: 30px;
 }

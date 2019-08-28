@@ -1,9 +1,9 @@
 <div class="project-section">
-  <div class="menu">
+  <div class="menu m-t-40">
       <% @projects.each do |p|%>
-        <div class="project-item">
+        <div class="project-item m-t-20">
           <div class="project-hover-effect m-r-9 m-t-10 m-l-100"></div>
-          <div class="project-title" id="project-<%=p.id%>" onmouseover="test(id)">
+          <div class="project-title" id="project-<%=p.id%>" onmouseover="showimage(id)" onmouseout="normal(id)">
             <%= link_to project_path(p) do %>
               <%= p.title %> <span class="project-category">- <%= p.category%></span>
             <% end %>
@@ -11,27 +11,31 @@
         </div>
       <% end %>
   </div>
+  <img class="first-cover" src="<%= @projects.first.coverimage %>">
   <% @projects.each_with_index do |p, index|%>
-    <div class="project-image">
-      <div class="cover-image" id="cover-<%= index+1 %>" />
-          <%= p.coverimage %>
-      </div>
-    </div>
+    <!-- <div class="project-image"> -->
+      <!-- <div class="cover-image"/> -->
+      <img id="cover-<%= index+1 %>" class="project-cover-image" src="<%= p.coverimage %>">
+      <!-- </div> -->
+    <!-- </div> -->
   <% end %>
 </div>
 
 <script language="javascript" type="text/javascript">
-function app(id){
-  alert(id);
-}
-
-function test(project_id)
+function showimage(project_id)
 {
   var res = project_id.split("-");
   var coverId = "cover-" + res[1];
   // alert(id);
-  var element = document.getElementById(coverId).innerHTML = coverId;
-  // alert(element);
+  // var element = document.getElementById(coverId).innerHTML = coverId;
+  var element = document.getElementById(coverId).style.display = 'block';
 }
 
+function normal(project_id)
+{
+  var res = project_id.split("-");
+  var coverId = "cover-" + res[1];
+
+  document.getElementById(coverId).style.display = 'none';
+}
 </script>

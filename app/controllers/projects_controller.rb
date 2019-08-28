@@ -8,7 +8,7 @@ class ProjectsController < ApplicationController
     @project = Project.new(project_params)
     @project.user_id = current_user.id
     if @project.save
-     redirect_to projects_path
+     redirect_to al_projects_path
    else
      render :new
    end
@@ -21,7 +21,7 @@ class ProjectsController < ApplicationController
   def update
     @project = Project.find(params[:id])
     if @project.update(project_params)
-      redirect_to projects_path
+      redirect_to all_projects_path
     else
       render :template => "projects/edit"
     end
