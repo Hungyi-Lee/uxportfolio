@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   get 'about' => 'works#index', :as => :about
   get 'allprojects' => 'projects#index', :as => :all_projects
 
-  resources :projects, only:[:show], param: :title
+  # resources :projects, only:[:show], param: :title
+  get '/projects/:title', to: "projects#show"
 end

@@ -18,11 +18,11 @@
   font-size: 18px;
 }
 
-.project-title > a{
+p > a, .project-title > a{
   color: var(--navy);
 }
 
-.project-title > a:hover{
+p > a:hover, .project-title > a:hover{
   text-decoration: none;
   color: var(--navy);
 }
@@ -51,17 +51,16 @@
 
 .project-cover-image{
   width: 50%;
-  height: 40.6rem;
+  height: 42rem;
   // background-size: cover;
   // background-repeat: no-repeat;
   display: none;
-  z-index: 999;
+  z-index: 10;
   position: absolute;
   right: 0;
   top: 5rem;
   padding-left: 30px;
 }
-
 
 .menu {
   width: 50%;
@@ -75,4 +74,27 @@
   z-index: 1;
   position: relative;
   padding-left: 30px;
+}
+
+// project content
+.content-section{
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 0 80px;
+  margin: 0 auto;
+}
+.content-list{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.content-list-column1, .content-list-column2, .content-list-column3 {
+  width: 33%;
+  display: block;
+}
+
+.list-item > a:hover {
+  opacity: 0.6;
 }

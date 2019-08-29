@@ -1,2 +1,90 @@
-<h1>Projects#show</h1>
-<p>Find me in app/views/projects/show.html.erb</p>
+<%#= raw(@project.description) %>
+<div class="content-top-cover"
+     style="width: 100%;
+            height: 550px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url('<%= @project.heroimage %>');"
+>
+</div>
+<div class="m-t-40">
+  <div class="content-section">
+    <h3><%= @project.title %></h3>
+    <p><%= @project.category %></p>
+    <h4>Duration</h4>
+    <p><%= @project.projectdate %></p>
+    <h4>My Role</h4>
+    <p><%= @project.role %></p>
+    <h4>Tools</h4>
+    <p><%= @project.tools %></p>
+  </div>
+</div>
+
+<!-- description start -->
+<div class="m-t-40 m-b-80">
+  <div class="content-section">
+    <h4>List</h4>
+    <div class="content-list">
+      <div class="content-list-column1">
+        <p class="list-item"><a href="#overview">Overview</a></p>
+        <p class="list-item"><a href="#problem">Problem Statement</a></p>
+        <p class="list-item"><a href="#interview">Interview Summary</a></p>
+        <p class="list-item"><a href="#survey">Survey Findings</a></p>
+        <p class="list-item"><a href="#competitive">Competitive Analysis</a></p>
+      </div>
+      <div class="content-list-column2">
+        <p class="list-item"><a href="#personas">Personas & Empathy Maps</a></p>
+        <p class="list-item"><a href="#userstory">Users Stories & MVP</a></p>
+        <p class="list-item"><a href="#contentstra">Content Strategy</a></p>
+        <p class="list-item"><a href="#sitemaps">Site Maps & User flows</a></p>
+        <p class="list-item"><a href="#wireframe">Wireframe Sketches</a></p>
+      </div>
+      <div class="content-list-column3">
+        <p class="list-item"><a href="#prototype">Prototype & Usability Testing</a></p>
+        <p class="list-item"><a href="#visualdesign">Visual Design System</a></p>
+        <p class="list-item"><a href="#conclusion">Conclusion</a></p>
+      </div>
+    </div>
+    <hr/>
+  </div>
+  <!-- Each item -->
+  <div class="content-section m-t-40">
+    <h4 id="overview">Overview</h4>
+  </div>
+  <div class="content-section m-t-40">
+    <h4 id="problem">Problem Statement</h4>
+  </div>
+  <div class="content-section m-t-40">
+    <h4 id="interview">Interview Summary</h4>
+  </div>
+  <div class="content-section m-t-40">
+    <h4 id="survey">Survey Findings</h4>
+  </div>
+  <div class="content-section m-t-40">
+    <h4 id="competitive">Competitive Analysis</h4>
+  </div>
+  <div class="content-section m-t-40">
+    <h4 id="personas">Personas & Empathy Maps</h4>
+  </div>
+  <div class="content-section m-t-40">
+    <h4 id="userstory">Users Stories & MVP</h4>
+  </div>
+  <div class="content-section m-t-40">
+    <h4 id="contentstra">Content Strategy</h4>
+  </div>
+  <div class="content-section m-t-40">
+    <h4 id="sitemaps">Site Maps & User flows</h4>
+  </div>
+  <div class="content-section m-t-40">
+    <h4 id="wireframe">Wireframe Sketches</h4>
+  </div>
+  <div class="content-section m-t-40">
+    <h4 id="prototype">Prototype & Usability Testing</h4>
+  </div>
+  <div class="content-section m-t-40">
+    <h4 id="visualdesign">Visual Design System</h4>
+  </div>
+  <div class="content-section m-t-40">
+    <h4 id="conclusion">Conclusion</h4>
+  </div>
+</div>

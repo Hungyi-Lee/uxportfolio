@@ -8,7 +8,7 @@ class ProjectsController < ApplicationController
     @project = Project.new(project_params)
     @project.user_id = current_user.id
     if @project.save
-     redirect_to al_projects_path
+     redirect_to all_projects_path
    else
      render :new
    end
@@ -20,6 +20,7 @@ class ProjectsController < ApplicationController
 
   def update
     @project = Project.find(params[:id])
+    # @project = Project.find_by(title: params[:title])
     if @project.update(project_params)
       redirect_to all_projects_path
     else
@@ -45,6 +46,6 @@ class ProjectsController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:title, :user_id, :coverimage, :description, :category, :projectdate)
+    params.require(:project).permit(:title, :user_id, :coverimage, :description, :category, :projectdate, :role, :tools, :heroimage)
   end
 end
