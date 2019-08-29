@@ -20,6 +20,7 @@
 .m-t-10{ margin-top: 0.625rem; }
 .m-t-200{ margin-top: 12%; }
 .m-t-100{ margin-top: 8%; }
+.m-t-90{ margin-top: 7.2%; }
 .m-t-40{ margin-top: 40px; }
 .m-t-20{ margin-top: 20px; }
 
@@ -223,16 +224,16 @@ a, a:hover{
   }
 
   nav{
-      position: absolute;
-      right:0;
-      top: -300px;
-      background-color: var(--navy);
-      width:100%;
-      padding:0 18px;
-      -webkit-transition:.5s ease-in-out; /*transitionで動きを*/
-      -moz-transition:.5s ease-in-out;
-      transition:.5s ease-in-out;
-      text-align: center;
+    position: absolute;
+    right:0;
+    top: -300px;
+    background-color: var(--navy);
+    width:100%;
+    padding:0 18px;
+    -webkit-transition:.5s ease-in-out; /*transitionで動きを*/
+    -moz-transition:.5s ease-in-out;
+    transition:.5s ease-in-out;
+    text-align: center;
   }
 
   .active > a, .nav-list-item > a{
@@ -258,6 +259,7 @@ a, a:hover{
   .header-content ul li::after{
     content:'';
   }
+
   .header-content ul li:last-child{
     border-bottom:none;
   }
@@ -267,23 +269,23 @@ a, a:hover{
   }
 
   .openNav #navToggle span:nth-child(1){
-      top: 11px;
-      -webkit-transform:rotate(-45deg);
-      -moz-transform:rotate(-45deg);
-      transform:rotate(-45deg)}
+    top: 11px;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    transform:rotate(-45deg)}
 
   .openNav #navToggle span:nth-child(2),
   .openNav #navToggle span:nth-child(3){
-      top: 11px;
-      -webkit-transform:rotate(45deg);
-      -moz-transform:rotate(45deg);
-      transform:rotate(45deg)
+    top: 11px;
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    transform:rotate(45deg)
   }
 
   .openNav nav{
-      -moz-transform: translateY(351px);
-      -webkit-transform: translateY(351px);
-      transform: translateY(351px);
+    -moz-transform: translateY(351px);
+    -webkit-transform: translateY(351px);
+    transform: translateY(351px);
   }
 
   .nav-list{
@@ -308,7 +310,7 @@ a, a:hover{
   }
 
   .footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width:100%;
     height:60px;
@@ -421,6 +423,8 @@ a, a:hover{
   }
 
   .footer{
+    position: fixed;
+    bottom: 0;
   	width: 100%;
   	height: 60px;
   	background-color: var(--navy);
