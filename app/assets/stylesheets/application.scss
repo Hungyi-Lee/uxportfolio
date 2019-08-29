@@ -207,6 +207,118 @@ a, a:hover{
   -webkit-transform: rotate(-135deg);
 }
 
+//Tablet
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header{
+    width: 100%;
+    height: 60px;
+    background-color: var(--navy);
+  }
+
+  .header-content{
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    position: absolute;
+  }
+
+  nav{
+      position: absolute;
+      right:0;
+      top: -300px;
+      background-color: var(--navy);
+      width:100%;
+      padding:0 18px;
+      -webkit-transition:.5s ease-in-out; /*transitionで動きを*/
+      -moz-transition:.5s ease-in-out;
+      transition:.5s ease-in-out;
+      text-align: center;
+  }
+
+  .active > a, .nav-list-item > a{
+    color: white;
+    width: 100%;
+  }
+
+  .header-content ul{
+    margin:0
+  }
+
+  .header-content ul li{
+      display:block;
+      margin:0;
+      border-bottom:dotted 1px #fff;
+      line-height:3;
+  }
+
+  .header-content ul li a{
+    display:block;
+  }
+
+  .header-content ul li::after{
+    content:'';
+  }
+  .header-content ul li:last-child{
+    border-bottom:none;
+  }
+
+  #navToggle{
+    display:block
+  }
+
+  .openNav #navToggle span:nth-child(1){
+      top: 11px;
+      -webkit-transform:rotate(-45deg);
+      -moz-transform:rotate(-45deg);
+      transform:rotate(-45deg)}
+
+  .openNav #navToggle span:nth-child(2),
+  .openNav #navToggle span:nth-child(3){
+      top: 11px;
+      -webkit-transform:rotate(45deg);
+      -moz-transform:rotate(45deg);
+      transform:rotate(45deg)
+  }
+
+  .openNav nav{
+      -moz-transform: translateY(351px);
+      -webkit-transform: translateY(351px);
+      transform: translateY(351px);
+  }
+
+  .nav-list{
+    width:100%;
+    position:relative;
+    right: 0;
+    text-align: center;
+  }
+
+  #logo, .logo{
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    position:relative;
+    background-size: cover;
+    background-position: center;
+    float: left;
+  }
+
+  .logoletter, #Oval{
+    fill: white;
+  }
+
+  .footer{
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    height:60px;
+    background-color: var(--navy);
+    text-align: center;
+    color: #FAFAFA;
+    font-size: 18px;
+  }
+}
+// Mobile
 @media screen and (max-width: 600px){
   .m-r-40{ margin-right: 20px; }
 
@@ -308,13 +420,12 @@ a, a:hover{
     fill: white;
   }
 
-  footer{
-  	position: absolute;
-  	width:100%;
-  	height:60px;
+  .footer{
+  	width: 100%;
+  	height: 60px;
   	background-color: var(--navy);
   	text-align: center;
     color: #FAFAFA;
-  	font-size: 2em;
+  	font-size: 14px;
   }
 }

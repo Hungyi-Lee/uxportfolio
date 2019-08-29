@@ -91,9 +91,11 @@
   width: 700px;
 }
 
-@media screen and (max-width: 767px){
+// Tablet
+@media (min-width: 768px) and (max-width: 1300px) {
   .section{
     width: 100%;
+    height: 100%;
     display:block;
   }
 
@@ -118,6 +120,41 @@
 
   .homepage-title-font{
     margin-top: 90px;
+  }
+
+  .right-section, .illustration{
+    display: none;
+  }
+}
+// Mobile
+@media screen and (max-width: 767px){
+  .section{
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .left-section{
+    width: 100%;
+    height: 100%;
+    padding: 45px;
+  }
+
+  .homepage-subtitle{
+    width: 95%;
+    font-size: 20px;
+    letter-spacing: 2px;
+    overflow-wrap: break-word;
+    line-height: 32px;
+  }
+
+  .illustration{
+    height: 444px;
+    width: 340px;
+  }
+
+  .homepage-title-font{
+    margin-top: 60px;
   }
 
   .right-section, .illustration{
