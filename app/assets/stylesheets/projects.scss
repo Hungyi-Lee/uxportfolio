@@ -52,10 +52,10 @@ p > a:hover, .project-title > a:hover{
 .project-cover-image{
   width: 50%;
   height: 42rem;
-  // background-size: cover;
-  // background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
   display: none;
-  z-index: 10;
   position: absolute;
   right: 0;
   top: 5rem;
@@ -70,10 +70,16 @@ p > a:hover, .project-title > a:hover{
 
 .first-cover{
   width: 50%;
-  height: 40.6rem;
+  height: 42rem;
   z-index: 1;
-  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // position: relative;
   padding-left: 30px;
+  // float: right;
+  position: absolute;
+  right: 0;
+  top: 5rem;
 }
 
 // project content
@@ -97,4 +103,47 @@ p > a:hover, .project-title > a:hover{
 
 .list-item > a:hover {
   opacity: 0.6;
+}
+
+.tablet-projects{
+  display: none;
+}
+
+// tablet
+@media (min-width: 768px) and (max-width: 1300px) {
+  .desktop-projects{
+    display: none;
+  }
+
+  .tablet-projects{
+    display: block;
+  }
+
+  .tablet-cover-image{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+// mobile
+@media screen and (max-width: 600px){
+  .desktop-projects{
+    display: none;
+  }
+
+  .tablet-projects{
+    display: block;
+  }
+
+  .tablet-cover-image{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .tablet-title{
+    margin-bottom: 100px;
+  }
 }
