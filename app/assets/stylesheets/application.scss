@@ -81,16 +81,18 @@ a, a:hover{
 	padding-top: 12px;
 }
 
-#logo, .logo{
-	width: 150px;
+#logo{
+	width: 200px;
 	height: 50px;
 	background-size: cover;
 	background-position: center;
 	float: left;
 	display:table-cell;
-}
-#Oval, #Letters, .logoletter{
-  fill: var(--navy);
+  color: var(--navy);
+  padding-top: 15px;
+  padding-left: 40px;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .nav-list{
@@ -295,14 +297,19 @@ a, a:hover{
     text-align: center;
   }
 
-  #logo, .logo{
-    width: 100px;
+  #logo{
+    width: 200px;
     height: 40px;
     margin-left: 10px;
+    padding-top: 5px;
+    padding-left: 8px;
     position:relative;
     background-size: cover;
     background-position: center;
     float: left;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
   }
 
   .logoletter, #Oval{
@@ -408,14 +415,18 @@ a, a:hover{
   	text-align: center;
   }
 
-  #logo, .logo{
-  	width: 100px;
+  #logo{
+  	width: 150px;
   	height: 40px;
   	margin-left: 10px;
   	position:relative;
   	background-size: cover;
   	background-position: center;
   	float: left;
+    color: white;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-left: 8px;
   }
 
   .logoletter, #Oval{
