@@ -1,25 +1,31 @@
-<div class="about-top-section m-t-100">
-  <h4 class="about-title-font">Hi, I am Hungyi Lee.</h4>
-  <div class="pink-line m-t-40 m-b-40"></div>
-  <p class="about-subtitle m-b-40">
-     I am a designer, a developer, a blogger, a giver and a receiver.
-     I am originally from Kaohsiung, Taiwan, and studied and worked about 5 years in Tokyo, Japan and currently live in Seattle, US.
-     I am willing to lump my design skills and progamming skills together to work  efficiently.
-     I hope you enjoy my portfolio.
-  </p>
-  <div class="social-media-icons m-b-40">
-    <%= render 'home/social_media_icon' %>
+<div class="section">
+  <div class="left-section m-t-100 about-top-section">
+      <h4 class="about-title-font">Hi, I am Hungyi.</h4>
+      <div class="pink-line m-t-40 m-b-40"></div>
+      <p class="about-subtitle m-b-40">
+         I am a designer, a developer, a blogger, a giver and a receiver.
+         I am originally from Kaohsiung, Taiwan, and studied and worked about 5 years in Tokyo, Japan and currently live in Seattle, US.
+         I am willing to lump my design skills and progamming skills together to work  efficiently.
+         I hope you enjoy my portfolio.
+      </p>
+      <div class="resume-button m-b-40">
+        <%= link_to "https://drive.google.com/file/d/1L6XrO1ZbdMT8DRtHIW7ewkKQbxAsp6v0/view?usp=sharing", target: "_blank" do %>
+          View My Résumé
+        <% end %>
+      </div>
+      <div class="social-media-icons">
+        <%= render 'home/social_media_icon' %>
+      </div>
   </div>
-  <div class="resume-button">
-    <%= link_to "https://drive.google.com/file/d/1L6XrO1ZbdMT8DRtHIW7ewkKQbxAsp6v0/view?usp=sharing", target: "_blank" do %>
-      View My Résumé
-    <% end %>
+  <div class="right-section m-t-100 m-b-80">
+      <div class="myfoto"></div>
   </div>
 </div>
 
+
 <div class="section m-b-80">
   <!-- left section -->
-  <div class="left-section work-tablet-left-section">
+  <div class="left-section work-tablet-left-section work-desktop-left-section">
     <!-- skills -->
     <h4 class="about-title-font">SKILLS</h4>
     <div class="pink-line"></div>
@@ -58,6 +64,7 @@
       <p class="language m-b-9">Japanese (Fluent)</p>
     </div>
   </div>
+
 <!-- right section -->
   <div class="right-section work-tablet-right-section">
     <!-- experiences -->

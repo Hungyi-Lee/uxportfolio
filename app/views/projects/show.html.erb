@@ -32,5 +32,20 @@
   <h4 id="conclusion">Conclusion</h4>
 </div>
 <div class="content-section m-t-40 m-b-20">
-  Go to next Project:
+  <div class="content-bottom-section">
+    <% if @project.previous.present? %>
+      <div class="previous">
+        <%= link_to @project.previous do %>
+          PREVIOUS PROJECT
+        <% end %>
+      </div>
+    <% end %>
+    <% if @project.next.present? %>
+      <div class="next">
+        <%= link_to @project.next do %>
+          NEXT PROJECT
+        <% end %>
+      </div>
+    <% end %>
+  </div>
 </div>

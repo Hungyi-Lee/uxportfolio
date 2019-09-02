@@ -3,8 +3,18 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .about-top-section{
-  width: 1200px;
-  margin: 0 auto;
+  width: 50%;
+}
+
+.myfoto{
+  width: 500px;
+  height: 500px;
+  background-image: url('https://previews.123rf.com/images/captblack76/captblack761210/captblack76121000063/15975743-vertical-view-of-eiffel-tower-and-cityscape-paris-france.jpg');
+  background-size: cover;
+}
+
+.work-desktop-left-section{
+  width: 50%;
 }
 
 .about-title-font{
@@ -12,33 +22,28 @@
 }
 
 .about-subtitle{
-  width: 1200px;
-  font-size: 20px;
-  letter-spacing: 1px;
+  width: 70%;
+  font-size: 18px;
   overflow-wrap: break-word;
   text-align: justify;
-  line-height: 34px;
+  line-height: 30px;
 }
 
 .skill, .tool, .experiences, .educations, .languages{
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 1px;
 }
 
 .resume-button > a{
   font-size: 18px;
-  text-decoration: none;
+  text-decoration: underline;
   letter-spacing: 1px;
   color: var(--navy);
-  padding: 15px 25px;
-  border: 1px solid var(--navy);
-  border-radius: 5px;
+  font-weight: 600;
 }
 
 .resume-button > a:hover{
-  text-decoration: none;
-  color: white;
-  background-color: var(--navy);
+  opacity: 0.7;
 }
 
 .about-title-font, .skill-title, .company-name, .position, .school-name, .degree{
@@ -64,7 +69,7 @@
     letter-spacing: 3px;
     overflow-wrap: break-word;
     text-align: justify;
-    line-height: 34px;
+    line-height: 30px;
   }
 
   .work-tablet-left-section, .work-tablet-right-section{
@@ -95,7 +100,7 @@
   .about-title-font{
     letter-spacing: 0px;
     font-weight: 700;
-    line-height: 34px;
+    margin-top: 20px;
   }
 
   .about-subtitle{
@@ -104,13 +109,17 @@
     letter-spacing: 0px;
     overflow-wrap: break-word;
     text-align: justify;
-    line-height: 34px;
+    line-height: 32px;
+  }
+
+  .work-desktop-left-section{
+    padding: 45px 45px 0px 45px;
   }
 
   .work-tablet-right-section{
     display: block;
     width: 100%;
-    padding: 40px 45px 80px 45px;
+    padding: 0px 45px 80px 45px;
   }
 
   .skill, .tool, .experiences, .educations, .languages{
