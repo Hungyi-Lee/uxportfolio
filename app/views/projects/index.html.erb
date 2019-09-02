@@ -43,20 +43,20 @@
 
 
 <script language="javascript" type="text/javascript">
-function showimage(project_id)
-{
-  var res = project_id.split("-");
-  var coverId = "cover-" + res[1];
-  // alert(id);
-  // var element = document.getElementById(coverId).innerHTML = coverId;
-  var element = document.getElementById(coverId).style.display = 'block';
-}
+  function showimage(project_id)
+  {
+    var res = project_id.split("-");
+    var coverId = "cover-" + res[1];
+    // alert(id);
+    // var element = document.getElementById(coverId).innerHTML = coverId;
+    var element = document.getElementById(coverId).style.display = 'block';
+  }
 
-function normal(project_id)
-{
-  var res = project_id.split("-");
-  var coverId = "cover-" + res[1];
+  function normal(project_id)
+  {
+    var res = project_id.split("-");
+    var coverId = "cover-" + res[1];
 
-  document.getElementById(coverId).style.display = 'none';
-}
+    document.getElementById(coverId).style.display = 'none';
+  }
 </script>

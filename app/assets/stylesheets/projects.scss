@@ -49,27 +49,14 @@ p > a:hover, .project-title > a:hover{
   transition: transform 0.4s;
 }
 
-.project-cover-image{
-  width: 50%;
-  height: 42rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 2;
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 5rem;
-  padding-left: 30px;
-}
-
 .menu {
-  width: 50%;
+  width: 55%;
   float: left;
   padding: 15px;
 }
 
 .first-cover{
-  width: 50%;
+  width: 45%;
   height: 42rem;
   z-index: 1;
   background-size: cover;
@@ -82,12 +69,25 @@ p > a:hover, .project-title > a:hover{
   top: 5rem;
 }
 
+.project-cover-image{
+  width: 45%;
+  height: 42rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 5rem;
+  padding-left: 30px;
+}
+
 // project content
 .content-section{
   width: 100%;
   height: 100%;
   display: block;
-  padding: 0 80px;
+  padding: 0 120px;
   margin: 0 auto;
 }
 .content-list{

@@ -8,14 +8,13 @@
 }
 
 .about-title-font{
-  letter-spacing: 4px;
   font-weight: 700;
 }
 
 .about-subtitle{
   width: 1200px;
   font-size: 20px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   overflow-wrap: break-word;
   text-align: justify;
   line-height: 34px;
@@ -23,26 +22,35 @@
 
 .skill, .tool, .experiences, .educations, .languages{
   font-size: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .resume-button > a{
-  font-size: 20px;
-  text-decoration: underline;
-  letter-spacing: 3px;
-  color: var(--navy)
+  font-size: 18px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: var(--navy);
+  padding: 15px 25px;
+  border: 1px solid var(--navy);
+  border-radius: 5px;
+}
+
+.resume-button > a:hover{
+  text-decoration: none;
+  color: white;
+  background-color: var(--navy);
 }
 
 .about-title-font, .skill-title, .company-name, .position, .school-name, .degree{
   font-weight: 700;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
 }
 
 // Tablet
 @media (min-width: 768px) and (max-width: 1300px) {
   .about-top-section{
     width: 100%;
-    padding: 50px 20px 20px;
+    padding: 50px 20px 20px 40px;
   }
 
   .about-title-font{
@@ -81,7 +89,7 @@
 @media screen and (max-width: 767px){
   .about-top-section{
     width: 100%;
-    padding: 50px 20px 20px;
+    padding: 50px 40px 20px 40px;
   }
 
   .about-title-font{

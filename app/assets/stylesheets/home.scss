@@ -22,7 +22,7 @@
 }
 
 .homepage-title-font{
-  letter-spacing: 6px;
+  letter-spacing: 4px;
   font-weight: 700;
 }
 
@@ -34,7 +34,7 @@
 
 .homepage-subtitle{
   width: 473px;
-  font-size: 25px;
+  font-size: 23px;
   letter-spacing: 2px;
   overflow-wrap: break-word;
 }
@@ -78,6 +78,10 @@
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 3px;
+}
+
+.hello-button:hover{
+  opacity: 0.6;
 }
 
 .hello-button > a {
