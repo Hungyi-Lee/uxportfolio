@@ -34,7 +34,7 @@ class ProjectsController < ApplicationController
   end
 
   def index
-    @projects = Project.all
+    @projects = Project.order("created_at desc").all
   end
 
   def destroy

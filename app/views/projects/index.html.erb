@@ -14,7 +14,7 @@
   <!--<img class="first-cover" src="<%#= @projects.first.coverimage %>">-->
   <div class="first-cover" style="background-image: url('<%= @projects.first.coverimage %>');">
   </div>
-  <% @projects.each_with_index do |p, index|%>
+  <% @projects.reverse.each_with_index do |p, index|%>
     <!-- <div class="project-image"> -->
       <!-- <div class="cover-image"/> -->
       <!--<img id="cover-<%#= index+1 %>" class="project-cover-image" src="<%#= p.coverimage %>">-->
@@ -45,7 +45,9 @@
 <script language="javascript" type="text/javascript">
   function showimage(project_id)
   {
+    // project_id = "project-xxx"
     var res = project_id.split("-");
+    // res = array, res[0]=project, res[1] = xxx
     var coverId = "cover-" + res[1];
     // alert(id);
     // var element = document.getElementById(coverId).innerHTML = coverId;
