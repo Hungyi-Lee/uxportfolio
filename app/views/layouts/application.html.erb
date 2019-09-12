@@ -6,6 +6,7 @@
     <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', 'https://fonts.googleapis.com/css?family=Playfair+Display|Raleway&display=swap' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag asset_path('favicon.png')%>
   </head>
@@ -15,7 +16,7 @@
     <div class="header">
       <div class="header-content">
         <%= link_to root_path do %>
-          <div id="logo">HUNGYI LEE</div>
+          <div id="logo">Hungyi Lee</div>
         <% end %>
         <div id="navToggle">
           <div>
@@ -27,21 +28,21 @@
         <nav>
           <ul class="nav-list">
             <% if current_page?(controller: 'home', action: 'index') %>
-              <li class="active"><%= link_to root_path do %>Home<% end %></li>
+              <li class="active"><%= link_to root_path do %>HOME<% end %></li>
             <% else %>
-              <li class="nav-list-item"><%= link_to root_path do %>Home<% end %></li>
+              <li class="nav-list-item"><%= link_to root_path do %>HOME<% end %></li>
             <% end %>
             <% if current_page?(controller: 'works', action: 'index') %>
-              <li class="active"><%= link_to about_path do %>About<% end %></li>
+              <li class="active"><%= link_to about_path do %>ABOUT<% end %></li>
             <% else %>
-              <li class="nav-list-item"><%= link_to about_path do %>About<% end %></li>
+              <li class="nav-list-item"><%= link_to about_path do %>ABOUT<% end %></li>
             <% end %>
             <% if current_page?(controller: 'projects', action: 'index') %>
-              <li class="active"><%= link_to all_projects_path do %>Projects<% end %></li>
+              <li class="active"><%= link_to all_projects_path do %>PROJECTS<% end %></li>
             <% else %>
-              <li class="nav-list-item"><%= link_to all_projects_path do %>Projects<% end %></li>
+              <li class="nav-list-item"><%= link_to all_projects_path do %>PROJECTS<% end %></li>
             <% end %>
-            <li class="nav-list-item"><%= mail_to "horngyi6527@gmail.com" do %>Contact<% end %></li>
+            <li class="nav-list-item"><%= mail_to "horngyi6527@gmail.com" do %>CONTACT<% end %></li>
           </ul>
         </nav>
       </div>
@@ -49,11 +50,7 @@
     <%= yield %>
     <!-- Go to top -->
     <div onclick="topFunction()" id="myBtn" class="bottom-menu pull-right">
-      <i class="up-arrow"></i>
+      <span>&#8593;</span>
     </div>
-    <!-- footer -->
-    <footer class="footer">
-      <%= Time.current.year %> © Hungyi Lee
-    </footer>
   </body>
 </html>

@@ -1,8 +1,9 @@
-<div class="project-section desktop-projects">
-  <div class="menu m-t-100">
+<div class="section m-t-150 desktop-projects">
+  <div class="projects">
+    <div class="project-left">
       <% @projects.each do |p|%>
-        <div class="project-item m-t-20">
-          <div class="project-hover-effect m-r-9 m-t-10 m-l-100"></div>
+        <div class="project-item">
+          <div class="project-hover-effect"></div>
           <div class="project-title" id="project-<%=p.id%>" onmouseover="showimage(id)" onmouseout="normal(id)">
             <%= link_to project_path(p.title) do %>
               <%= p.title %> <span class="project-category">- <%= p.category%></span>
@@ -10,30 +11,27 @@
           </div>
         </div>
       <% end %>
-  </div>
-  <!--<img class="first-cover" src="<%#= @projects.first.coverimage %>">-->
-  <div class="first-cover" style="background-image: url('<%= @projects.first.coverimage %>');">
-  </div>
-  <% @projects.reverse.each_with_index do |p, index|%>
-    <!-- <div class="project-image"> -->
-      <!-- <div class="cover-image"/> -->
-      <!--<img id="cover-<%#= index+1 %>" class="project-cover-image" src="<%#= p.coverimage %>">-->
-      <div id="cover-<%= index+1 %>" class="project-cover-image" style="background-image: url('<%= p.coverimage %>');">
+    </div>
+    <div class="project-right">
+      <div class="first-cover" style="background-image: url('<%= @projects.first.coverimage %>');">
       </div>
-      <!-- </div> -->
-    <!-- </div> -->
-  <% end %>
+        <% @projects.reverse.each_with_index do |p, index|%>
+          <div id="cover-<%= index+1 %>" class="project-cover-image" style="background-image: url('<%= p.coverimage %>');">
+          </div>
+        <% end %>
+    </div>
+  </div>
 </div>
 
 <!-- mobile & tablet -->
-<div class="tablet-projects m-b-80">
+<div class="tablet-projects">
   <% @projects.each do |p|%>
     <%= link_to project_path(p.title) do %>
       <div class="tablet-cover-image" style="background-image: url('<%= p.coverimage %>');">
       </div>
-      <div class="tablet-title m-l-80">
-        <h3 class="m-t-40"><%= p.title %></h3>
-        <p class="m-b-40"><%= p.category %></p>
+      <div class="tablet-project-title">
+        <h3><%= p.title %></h3>
+        <p><%= p.category %></p>
       </div>
     <% end %>
   <% end %>

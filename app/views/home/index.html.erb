@@ -1,23 +1,19 @@
-<div class="section m-t-90 m-b-80">
-  <div class="left-section">
-    <h2 class="homepage-title-font">Hello! I’m Hungyi.</h2>
-    <div class="pink-line m-t-40 m-b-40"></div>
-    <p class="homepage-subtitle m-b-40">
-       I currently live in Seattle.
-       I’m a UI/UX designer and embrace
-       challenges, uncertainty and
-       problem solving process.
-    </p>
-    <div class="social-media-icons m-b-40">
-      <%= render 'home/social_media_icon' %>
-    </div>
-      <button class="hello-button m-b-10">
-        <%= mail_to "horngyi6527@gmail.com" do %>
-          SAY HELLO
-        <% end %>
-      </button>
+<div class="section m-t-150">
+  <div class="profile-image"></div>
+  <div class="top-greeting">Hello! I'm Hungyi Lee</div>
+  <div class="top-introduction">
+    I currently live in Seattle.
+    I’m a UI/UX designer and embrace challenges, uncertainty and problem solving process.
   </div>
-  <div class="right-section">
-    <%= render 'home/illustration' %>
+  <div class="top-contact">
+    Need help with a project?
+    <span class="talk-btn">
+      <%= mail_to "horngyi6527@gmail.com" do %>
+        Let's talk.
+      <% end %>
+    </span>
+  </div>
+  <div class="social-media-icons">
+    <%= render 'home/social_media_icon' %>
   </div>
 </div>

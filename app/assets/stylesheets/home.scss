@@ -3,168 +3,104 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .section{
-  width: 1200px;
+  width: 100%;
   height: 100%;
-  display: flex;
+}
+
+.profile-image{
+  width: 100px;
+  height: 100px;
+  border-radius: 60px;
   margin: 0 auto;
+  background-image: url('https://lh3.google.com/u/0/d/1Rf5PbPx64rLCzfz2Pvna5aAItSRAC8iY=w2880-h1578-iv1');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 130px;
+  filter: grayscale(100%);
 }
 
-.left-section{
-  width: 45%;
-  padding-top: 60px;
+.top-greeting{
+  font-family: Raleway-bold;
+  font-size: 40px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2.66px;
+  text-align: center;
+  color: var(--dusk);
+  margin-top: 40px;
 }
 
-.right-section{
-  width: 55%;
-  float: right;
-  padding-top: 60px;
-
+.top-introduction{
+  width: 639px;
+  height: 52px;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.4;
+  letter-spacing: 1.33px;
+  text-align: center;
+  color: var(--dusk);
+  margin: 0 auto;
+  margin-top: 25px;
 }
 
-.homepage-title-font{
-  letter-spacing: 4px;
-  font-weight: 700;
+.top-contact{
+  width: 639px;
+  height: 27px;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.33px;
+  text-align: center;
+  color: var(--dusk);
+  margin: 0 auto;
+  margin-top: 12px;
 }
 
-.pink-line{
-  width: 70px;
-  height: 7px;
-  background-color: var(--pink);
+.talk-btn > a{
+  font-weight: bold;
+  color: var(--salmon-pink);
 }
 
-.homepage-subtitle{
-  width: 473px;
-  font-size: 23px;
-  letter-spacing: 2px;
-  overflow-wrap: break-word;
+.talk-btn > a:hover{
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--salmon-pink);
+  opacity: 0.7;
 }
 
 .social-media-icons {
   display: flex;
+  width: 300px;
+  height: 15px;
+  margin: 35px auto 0 auto;
 }
 
 .icon{
-  height: 20px;
+  height: 17px;
   text-align: center;
-  fill: var(--navy)
+  fill: var(--dusk);
+  margin-right: 75px;
 }
 
-.social-media-icon-boder {
-  width: 45px;
-  height: 45px;
-  border: 1px solid var(--navy);
-  border-radius: 22px;
-  padding: 9px;
-  text-align: center;
-  background-color: white;
+.icon:hover{
+  fill: var(--salmon-pink);
 }
 
-.social-media-icon-boder:hover{
-  background-color: var(--navy);
-}
-
-.social-media-icon-boder:hover .icon{
-  fill: white;
-}
-
-.hello-button{
-  width: 209px;
-  height: 53px;
-  background: rgb(121,145,169);
-  background: linear-gradient(150deg, rgba(121,145,169,1) 0%, rgba(24,45,66,1) 100%);
-  border-radius: 40px;
-  text-align: center;
-  padding: 13px;
-  font-weight: bold;
-  font-size: 18px;
-  letter-spacing: 3px;
-}
-
-.hello-button:hover{
-  opacity: 0.6;
-}
-
-.hello-button > a {
-  color: white;
-}
-
-.hello-button > a:hover{
-  text-decoration: none;
-  color: white;
-}
-
-.illustration{
-  height: 430px;
-  width: 700px;
-}
 
 // Tablet
 @media (min-width: 768px) and (max-width: 1300px) {
-  .section{
-    width: 100%;
-    height: 100%;
-    display:block;
-  }
-
-  .left-section{
-    width: 100%;
-    height: 100%;
-    padding: 40px;
-  }
-
-  .homepage-subtitle{
-    width: 95%;
-    font-size: 20px;
-    letter-spacing: 2px;
-    overflow-wrap: break-word;
-    line-height: 32px;
-  }
-
-  .illustration{
-    height: 444px;
-    width: 340px;
-  }
-
-  .homepage-title-font{
-    margin-top: 90px;
-  }
-
-  .right-section, .illustration{
-    display: none;
-  }
+  
 }
+
 // Mobile
 @media screen and (max-width: 767px){
-  .section{
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
 
-  .left-section{
-    width: 100%;
-    height: 100%;
-    padding: 45px;
-  }
-
-  .homepage-subtitle{
-    width: 95%;
-    font-size: 20px;
-    letter-spacing: 2px;
-    overflow-wrap: break-word;
-    line-height: 32px;
-  }
-
-  .illustration{
-    height: 444px;
-    width: 340px;
-  }
-
-  .homepage-title-font{
-    margin-top: 60px;
-  }
-
-  .right-section, .illustration{
-    display: none;
-  }
 }

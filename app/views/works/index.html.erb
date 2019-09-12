@@ -1,109 +1,21 @@
-<div class="section">
-  <div class="left-section m-t-100 about-top-section">
-      <h4 class="about-title-font">Hi, I am Hungyi.</h4>
-      <div class="pink-line m-t-40 m-b-40"></div>
-      <p class="about-subtitle m-b-40">
-         I am a designer, a developer, a blogger, a giver and a receiver.
-         I am originally from Kaohsiung, Taiwan, and studied and worked about 5 years in Tokyo, Japan and currently live in Seattle, US.
-         I am willing to lump my design skills and progamming skills together to work  efficiently.
-         I hope you enjoy my portfolio.
-      </p>
-      <div class="resume-button m-b-40">
-        <%= link_to "https://drive.google.com/file/d/1L6XrO1ZbdMT8DRtHIW7ewkKQbxAsp6v0/view?usp=sharing", target: "_blank" do %>
-          View My Résumé
-        <% end %>
-      </div>
-      <div class="social-media-icons">
-        <%= render 'home/social_media_icon' %>
-      </div>
+<div class="section m-t-150 m-b-150">
+  <div class="about-myphoto"></div>
+  <div class="about-title">ABOUT ME</div>
+  <div class="about-bio">
+    I am a designer, a developer, a blogger, a giver and a receiver.
+    I am originally from Kaohsiung, Taiwan, and studied and worked about 5 years in Tokyo, Japan and currently live in Seattle, US.
+    I am willing to lump my design skills and progamming skills together to work efficiently.
+    I hope you enjoy my portfolio.
   </div>
-  <div class="right-section m-t-100 m-b-80">
-      <div class="myfoto"></div>
+  <div class="social-media-icons">
+    <%= render 'home/social_media_icon' %>
   </div>
-</div>
-
-
-<div class="section m-b-80">
-  <!-- left section -->
-  <div class="left-section work-tablet-left-section work-desktop-left-section">
-    <!-- skills -->
-    <h4 class="about-title-font">SKILLS</h4>
-    <div class="pink-line"></div>
-    <div class="skills">
-      <h5 class="skill-title m-t-20">Design</h5>
-        <p class="skill m-b-9">User Experience Design</p>
-        <p class="skill m-b-9">User Interface Design</p>
-        <p class="skill m-b-9">Graphics Design</p>
-        <p class="skill m-b-9">Infographcis Design</p>
-        <p class="skill m-b-9">Wire-framing</p>
-        <p class="skill m-b-9">Prototyping</p>
-        <p class="skill m-b-9">Design Research</p>
-      <h5 class="skill-title m-t-20">programming</h5>
-        <p class="skill m-b-9">Ruby on Rails</p>
-        <p class="skill m-b-9">React JS</p>
-        <p class="skill m-b-9">HTML</p>
-        <p class="skill m-b-9">CSS</p>
-    </div>
-    <!-- tools -->
-    <h4 class="m-t-200 about-title-font">TOOLS</h4>
-    <div class="pink-line"></div>
-    <div class="tools m-t-20">
-      <p class="tool m-b-9">Adobe XD</p>
-      <p class="tool m-b-9">Adobe Illustrator</p>
-      <p class="tool m-b-9">Adobe Photoshop</p>
-      <p class="tool m-b-9">Sketch</p>
-      <p class="tool m-b-9">InVision</p>
-      <p class="tool m-b-9">Wordpress</p>
-    </div>
-    <!-- languages -->
-    <h4 class="m-t-200 about-title-font">LANGUAGES</h4>
-    <div class="pink-line"></div>
-    <div class="languages m-t-20">
-      <p class="language m-b-9">Chinese (Native)</p>
-      <p class="language m-b-9">English (Fluent)</p>
-      <p class="language m-b-9">Japanese (Fluent)</p>
-    </div>
-  </div>
-
-<!-- right section -->
-  <div class="right-section work-tablet-right-section">
-    <!-- experiences -->
-    <h4 class="about-title-font">EXPERIENCES</h4>
-    <div class="pink-line"></div>
-    <% @works.each do |w| %>
-    <div class="experiences m-t-20 m-b-40">
-        <h5 class="company-name"><%= w.company %></h5>
-        <h5 class="position"><%= w.position %></h5>
-          <p class="date-location m-b-9"><%= w.timeline %>
-            <%if w.location.empty? %>
-
-            <% else %>
-              in <%= w.location  %>
-            <% end %>
-          </p>
-          <%= raw(w.description) %>
-    </div>
+  <div class="about-btn">
+    <%= link_to "https://drive.google.com/file/d/1L6XrO1ZbdMT8DRtHIW7ewkKQbxAsp6v0/view?usp=sharing", target: "_blank" do %>
+      <div class="resume-btn">VIEW MY RÉSUMÉ</div>
     <% end %>
-
-    <!-- education -->
-    <h4 class="about-title-font m-t-200">EDUCATION</h4>
-    <div class="pink-line"></div>
-    <div class="educations m-t-20">
-      <h5 class="school-name">Springboard</h5>
-      <p class="major m-b-9">User Experience Design Program</p>
-      <p class="date-location m-b-9">Aug 2019, US</p>
-
-      <h5 class="school-name m-t-40">Ochanomizu University</h5>
-      <p class="major m-b-9"><span class="degree">MA</span>, Applied Japanese Linguistics</p>
-      <p class="date-location m-b-9">Apr 2015 - Mar 2017 in Tokyo, Japan</p>
-
-      <h5 class="school-name m-t-40">Soochow University</h5>
-      <p class="major m-b-9"><span class="degree">MA</span>, Applied Japanese Linguistics</p>
-      <p class="date-location m-b-9">Sep 2011 - Dec 2013 in Taipei, Taiwan</p>
-
-      <h5 class="school-name m-t-40">Soochow University</h5>
-      <p class="major m-b-9"><span class="degree">BA</span>, Japanese Language and Culture</p>
-      <p class="date-location m-b-9">Sep 2007 - Jun 2011 in Taipei, Taiwan</p>
-    </div>
+    <%= mail_to "horngyi6527@gmail.com" do %>
+      <div class="request-work-btn">REQUEST SAMPLE WORK</div>
+    <% end %>
   </div>
 </div>
