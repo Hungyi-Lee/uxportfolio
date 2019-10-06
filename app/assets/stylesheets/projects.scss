@@ -371,19 +371,12 @@ a > .previous, a > .next{
   .project-content-title{
     width: 100%;
     height: 80px;
-    // font-family: Raleway-bold;
     font-size: 30px;
-    // font-weight: bold;
-    // letter-spacing: 4.06px;
-    // text-align: center;
-    // color: var(--dusk);
-    // text-transform: uppercase;
   }
 
   .project-info{
     width: 100%;
     height: 100%;
-    // border-top: 2px solid var(--lightgrey);
     border: none;
     margin: 0 auto;
     display: block;
@@ -399,7 +392,6 @@ a > .previous, a > .next{
 
   .project-duration, .project-role{
     border: none;
-    // border-bottom: 2px solid var(--lightgrey);
   }
 
   .duration-title, .role-title, .tools-title{
@@ -449,7 +441,6 @@ a > .previous, a > .next{
   .content-bottom-section{
     width: 300px;
     margin: 0 auto;
-    // text-align: center;
     display: block;
   }
 
@@ -479,5 +470,4 @@ a > .previous, a > .next{
     text-align: center;
     color: var(--dusk);
   }
-
 }

@@ -29,13 +29,10 @@
   width: 846px;
   height: 112px;
   font-family: Raleway;
-  font-size: 20px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
+  font-size: 18px;
   line-height: 1.4;
   letter-spacing: 1.33px;
-  text-align: center;
+  text-align: left;
   color: var(--dusk);
   margin: 30px auto 0 auto;
 }
@@ -51,6 +48,7 @@
   width: 345px;
   height: 70px;
   border-radius: 5px;
+  border: 2px solid var(--dusk);
   margin-right: 18px;
   text-align: center;
   font-family: Raleway-bold;
@@ -58,13 +56,12 @@
   font-weight: bold;
   letter-spacing: 3.03px;
   text-align: center;
-  color: var(--dusk);
-  background-color: var(--salmon-pink);
+  background-color: white;
   padding: 22px;
 }
 
 a > .resume-btn, a > .request-work-btn{
-  color: white;
+  color: var(--dusk);
 }
 
 .about-btn > a:hover {
@@ -74,12 +71,24 @@ a > .resume-btn, a > .request-work-btn{
 
 .resume-btn:hover, a > .request-work-btn:hover{
   background-color: var(--dusk);
+  color: white;
 }
 
 
 // Tablet
 @media (min-width: 768px) and (max-width: 1300px) {
+  .about-bio{
+    height: 100%;
+  }
 
+  .about-myphoto, .about-title, .about-bio{
+    width: 100%;
+    padding: 10px;
+  }
+
+  .about-btn{
+    width: 700px;
+  }
 }
 
 // Mobile
