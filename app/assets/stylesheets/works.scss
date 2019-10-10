@@ -14,11 +14,8 @@
   width: 950px;
   height: 52px;
   font-family: Raleway-bold;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
   letter-spacing: 2.66px;
   text-align: center;
   color: var(--dusk);
@@ -26,12 +23,12 @@
 }
 
 .about-bio{
-  width: 846px;
-  height: 112px;
+  width: 850px;
+  height: 100%;
   font-family: Raleway;
   font-size: 18px;
   line-height: 1.4;
-  letter-spacing: 1.33px;
+  letter-spacing: 1px;
   text-align: left;
   color: var(--dusk);
   margin: 30px auto 0 auto;
@@ -83,7 +80,7 @@ a > .resume-btn, a > .request-work-btn{
 
   .about-myphoto, .about-title, .about-bio{
     width: 100%;
-    padding: 10px;
+    padding: 15px;
   }
 
   .about-btn{
