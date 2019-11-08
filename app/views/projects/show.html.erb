@@ -52,35 +52,46 @@
     <h4>Site Maps & User flows</h4>
   </div>
   <div class="project-content-section">
-    <h4>Prototype & Usability Testing</h4>
-  </div>
-  <div class="project-content-section">
     <h4>Wireframe Sketches</h4>
   </div>
   <div class="project-content-section">
+    <h4>Usability Testing & Iterations</h4>
+  </div>
+  <div class="project-content-section">
     <h4>Visual Design System</h4>
+  </div>
+  <div class="project-content-section">
+    <h4>High Fidelity Mockup & Prototype</h4>
+  </div>
+  <div class="project-content-section">
+    <h4>Moderate & Iteration</h4>
+  </div>
+  <div class="project-content-section">
+    <h4>Final Work</h4>
   </div>
   <div class="project-content-section">
     <h4>Conclusion</h4>
   </div>
 </div>
 <!-- Description End -->
-
 <div class="section">
+
+    <div class="bk-pj-btn"><%= link_to projects_path do %>BACK TO PROJECTS  <% end %></div>
+
   <div class="content-bottom-section">
     <% if @project.previous.present? %>
-        <%= link_to @project.previous do %>
-          <div class="previous">
-             <span>&#8672;</span> PREVIOUS PROJECT
-          </div>
-        <% end %>
+        <div class="previous-pj">
+          <div class="previous-pj-img" style="background-image: url('<%= @project.previous.coverimage %>');"></div>
+          <div class="previous-pj-title"><%= @project.previous.title%></div>
+          <%= link_to @project.previous do %>Read More<% end %>
+        </div>
     <% end %>
     <% if @project.next.present? %>
-        <%= link_to @project.next do %>
-        <div class="next">
-          NEXT PROJECT <span>&#8674;</span>
+        <div class="next-pj">
+          <div class="next-pj-img" style="background-image: url('<%= @project.next.coverimage %>');"></div>
+          <div class="next-pj-title"><%= @project.next.title%></div>
+          <%= link_to @project.next do %>Read More<% end %>
         </div>
-        <% end %>
     <% end %>
   </div>
 </div>

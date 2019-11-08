@@ -157,7 +157,6 @@
 
 .project-content-section > h4{
   font-family: Raleway-bold;
-  font-size: 30px;
   font-weight: bold;
   letter-spacing: 4px;
   text-align: center;
@@ -172,42 +171,83 @@
 }
 
 .content-bottom-section{
-  width: 725px;
-  margin: 165px auto 170px auto;
+  width: 620px;
+  margin: 0 auto 170px auto;
   text-align: center;
   display: flex;
 }
 
-.previous, .next{
-  width: 350px;
-  height: 72px;
-  border-radius: 5px;
-  border: solid 2px var(--dusk);
-  padding: 22px 0;
-}
-
-.previous{
-  margin-right: 20px;
-}
-
-a > .previous, a > .next{
-  font-family: Raleway-bold;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1.4;
-  letter-spacing: 3.03px;
+.bk-pj-btn {
+  width: 300px;
+  height: 50px;
+  margin: 120px auto 80px;
   text-align: center;
-  color: var(--dusk);
 }
 
-.content-bottom-section > a:hover{
+.bk-pj-btn > a{
+  padding: 15px 25px;
+  text-decoration: none;
+  border: 2px solid var(--dusk);
+  font-size: 13px;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 4px;
+  border-radius: 5px;
+  color: var(--dusk);
+  font-family: Raleway-bold;
+}
+
+.bk-pj-btn > a:hover{
+  color: white;
+  background-color: var(--dusk);
   text-decoration: none;
 }
 
-.content-bottom-section > a:hover .previous, .content-bottom-section > a:hover .next{
-  background-color: var(--dusk);
-  border: none;
+.previous-pj, .next-pj{
+  width: 300px;
+  height: 340px;
+  background-color: var(--lightgrey);
+  border-radius: 10px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.previous-pj-img, .next-pj-img{
+  width: 300px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.previous-pj-title, .next-pj-title{
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3.03px;
+  margin-bottom: 10px;
+  font-family: Raleway-bold;
+}
+
+.previous-pj > a, .next-pj > a {
+  color: var(--dusk);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid var(--dusk);
+  margin: 10px auto;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 3%;
+  left: 35%;
+}
+
+.previous-pj > a:hover, .next-pj > a:hover{
   color: white;
+  background-color: var(--dusk);
+  text-decoration: none;
 }
 
 .tablet-projects{
@@ -309,38 +349,6 @@ a > .previous, a > .next{
     margin: 165px auto 170px auto;
     text-align: center;
     display: flex;
-  }
-
-  .previous, .next{
-    width: 350px;
-    height: 72px;
-    border-radius: 5px;
-    border: solid 2px var(--dusk);
-    padding: 22px 0;
-  }
-
-  .previous{
-    margin-right: 20px;
-  }
-
-  a > .previous, a > .next{
-    font-family: Raleway-bold;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 1.4;
-    letter-spacing: 3.03px;
-    text-align: center;
-    color: var(--dusk);
-  }
-
-  .content-bottom-section > a:hover{
-    text-decoration: none;
-  }
-
-  .content-bottom-section > a:hover .previous, .content-bottom-section > a:hover .next{
-    background-color: var(--dusk);
-    border: none;
-    color: white;
   }
 }
 
@@ -445,32 +453,5 @@ a > .previous, a > .next{
     width: 300px;
     margin: 0 auto;
     display: block;
-  }
-
-  .previous, .next{
-    width: 300px;
-    height: 60px;
-    border-radius: 5px;
-    border: solid 2px var(--dusk);
-    padding: 20px 0;
-    margin: 20px auto;
-  }
-
-  .previous{
-    margin-right: 0;
-  }
-
-  .next{
-    margin-bottom: 50px;
-  }
-
-  a > .previous, a > .next{
-    font-family: Raleway-bold;
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 1.4;
-    letter-spacing: 3.03px;
-    text-align: center;
-    color: var(--dusk);
   }
 }

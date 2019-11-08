@@ -20,7 +20,7 @@
 .m-b-150{ margin-bottom: 9.375rem; }
 
 :root{
-  --lightgrey: #E8E8E8;
+  --lightgrey: #F5f5f5;
   --dusk: #515976;
   --salmon-pink: #ff7f82;
 }
@@ -28,6 +28,10 @@
 *{
 	box-sizing: border-box;
   font-family: Raleway;
+}
+
+a, a:hover{
+  text-decoration: none;
 }
 
 .header{
