@@ -20,12 +20,8 @@
 }
 
 .top-greeting{
-  font-family: Raleway-bold;
   font-size: 40px;
-  font-weight: 900;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
+  font-weight: 700;
   letter-spacing: 2.66px;
   text-align: center;
   color: var(--dusk);
@@ -34,34 +30,13 @@
 
 .top-introduction{
   width: 639px;
-  height: 52px;
-  font-family: Raleway;
+  height: 100px;
   font-size: 20px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.4;
-  letter-spacing: 1.33px;
+  line-height: 1.6;
+  letter-spacing: 1.4px;
   text-align: center;
   color: var(--dusk);
-  margin: 0 auto;
-  margin-top: 25px;
-}
-
-.top-contact{
-  width: 639px;
-  height: 27px;
-  font-family: Raleway;
-  font-size: 20px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 1.33px;
-  text-align: center;
-  color: var(--dusk);
-  margin: 0 auto;
-  margin-top: 12px;
+  margin: 20px auto 40px;
 }
 
 .talk-btn > a{
@@ -79,8 +54,8 @@
 .social-media-icons {
   display: flex;
   width: 300px;
-  height: 15px;
-  margin: 35px auto 0 auto;
+  height: 20px;
+  margin: 30px auto 0 auto;
 }
 
 .icon{
@@ -102,5 +77,35 @@
 
 // Mobile
 @media screen and (max-width: 767px){
+  .top-greeting{
+    width: 100%;
+    height: 32px;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1.67px;
+    text-align: center;
+    color: var(--dusk);
+  }
 
+  .top-contact{
+    width: 253px;
+    height: 17px;
+    font-size: 12px;
+    letter-spacing: 0.67px;
+    text-align: center;
+    color: var(--dusk);
+    padding: 10px 0;
+  }
+
+  .top-introduction{
+    width: 100%;
+    height: 150px;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 1.3px;
+    text-align: center;
+    color: var(--dusk);
+    margin: 20px auto 40px;
+    padding: 0 10px;
+  }
 }
