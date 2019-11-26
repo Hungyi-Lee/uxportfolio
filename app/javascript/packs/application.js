@@ -21,7 +21,7 @@ import 'bootstrap'
 import './src/application.scss'
 
 window.onscroll = function() {scrollFunction()};
-window.onclick = function() {topFunction()};
+// window.onclick = function() {topFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
@@ -31,10 +31,10 @@ function scrollFunction() {
     }
 }
 
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+// function topFunction() {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// }
 
 $(document).on('turbolinks:load', function() {
     $('#navToggle').click(function(){

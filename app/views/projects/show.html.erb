@@ -1,4 +1,3 @@
-<%#= raw(@project.description) %>
 <div class="section m-t-150">
   <h3 class="project-content-title"><%= @project.title %></h3>
   <p class="project-content-category"><%= @project.category %></p>
@@ -15,6 +14,10 @@
       <h4 class="tools-title">Tools</h4>
       <p class="tools-description"><%= @project.tools %></p>
     </div>
+    <div class="project-pdf">
+      <h4 class="pdf-title">View PDF</h4>
+      <p class="pdf-description"><%= link_to @project.pdf, target:"_blank" do %>PDF<%end%></p>
+    </div>
   </div>
 </div>
 <div class="project-hero-image"
@@ -23,56 +26,8 @@
 </div>
 
 <!-- Description Start -->
-<div class="project-content">
-  <div class="project-content-section">
-    <h4>Overview</h4>
-  </div>
-  <div class="project-content-section">
-    <h4>Problem Space</h4>
-  </div>
-  <div class="project-content-section">
-    <h4>Competitive Analysis</h4>
-  </div>
-  <div class="project-content-section">
-    <h4>Interview Summary</h4>
-  </div>
-  <div class="project-content-section">
-    <h4>Personas & Empathy Maps</h4>
-  </div>
-  <div class="project-content-section">
-    <h4>Problem Statement - HMW Questions</h4>
-  </div>
-  <div class="project-content-section">
-    <h4>Users Stories & MVP</h4>
-  </div>
-  <div class="project-content-section">
-    <h4>Content Strategy</h4>
-  </div>
-  <div class="project-content-section">
-    <h4>Site Maps & User flows</h4>
-  </div>
-  <div class="project-content-section">
-    <h4>Wireframe Sketches</h4>
-  </div>
-  <div class="project-content-section">
-    <h4>Usability Testing & Iterations</h4>
-  </div>
-  <div class="project-content-section">
-    <h4>Visual Design System</h4>
-  </div>
-  <div class="project-content-section">
-    <h4>High Fidelity Mockup & Prototype</h4>
-  </div>
-  <div class="project-content-section">
-    <h4>Moderate & Iteration</h4>
-  </div>
-  <div class="project-content-section">
-    <h4>Final Work</h4>
-  </div>
-  <div class="project-content-section">
-    <h4>Conclusion</h4>
-  </div>
-</div>
+<%= raw(@project.description) %>
+
 <!-- Description End -->
 <div class="section">
   <div class="bk-pj-btn">
