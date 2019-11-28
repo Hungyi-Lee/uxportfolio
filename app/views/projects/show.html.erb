@@ -15,8 +15,8 @@
       <p class="tools-description"><%= @project.tools %></p>
     </div>
     <div class="project-pdf">
-      <h4 class="pdf-title">View PDF</h4>
-      <p class="pdf-description"><%= link_to @project.pdf, target:"_blank" do %>PDF<%end%></p>
+      <h4 class="pdf-title">PDF File</h4>
+      <p class="pdf-description"><%= link_to @project.pdf, target:"_blank" do %>View PDF<%end%></p>
     </div>
   </div>
 </div>
@@ -27,11 +27,15 @@
 
 <!-- Description Start -->
 <%= raw(@project.description) %>
-
 <!-- Description End -->
+
 <div class="section">
   <div class="bk-pj-btn">
     <%= link_to all_projects_path do %>BACK TO PROJECTS<% end %>
+  </div>
+  <hr>
+  <div>
+    <h3 class="more-studies">MORE CASE STUDIES</h3>
   </div>
   <div class="content-bottom-section">
     <% if @project.previous.present? %>
