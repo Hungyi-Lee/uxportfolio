@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :works, only: [:new, :edit, :update, :create]
   resources :projects, only: [:new, :edit, :update, :create]
   get 'about' => 'works#index', :as => :about
+  get 'resume' => 'resumes#index', :as => :resume
   get 'allprojects' => 'projects#index', :as => :all_projects
 
   # resources :projects, only:[:show], param: :title

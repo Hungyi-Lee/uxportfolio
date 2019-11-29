@@ -32,6 +32,11 @@
             <% else %>
               <li class="nav-list-item"><%= link_to root_path do %>HOME<% end %></li>
             <% end %>
+            <% if current_page?(controller: 'resumes', action: 'index') %>
+              <li class="active"><%= link_to resume_path do %>RESUME<% end %></li>
+            <% else %>
+              <li class="nav-list-item"><%= link_to resume_path do %>RESUME<% end %></li>
+            <% end %>
             <% if current_page?(controller: 'works', action: 'index') %>
               <li class="active"><%= link_to about_path do %>ABOUT<% end %></li>
             <% else %>
