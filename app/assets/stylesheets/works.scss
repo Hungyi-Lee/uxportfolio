@@ -34,41 +34,41 @@
   margin: 30px auto 0 auto;
 }
 
-.about-btn{
-  width: 750px;
-  height: 72px;
-  margin: 65px auto 0 auto;
-  display: flex;
-}
+// .about-btn{
+//   width: 750px;
+//   height: 72px;
+//   margin: 65px auto 0 auto;
+//   display: flex;
+// }
 
-.resume-btn, .request-work-btn{
-  width: 345px;
-  height: 70px;
-  border-radius: 5px;
-  border: 2px solid var(--dusk);
-  margin-right: 18px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 3.03px;
-  text-align: center;
-  background-color: white;
-  padding: 22px;
-}
+// .resume-btn, .request-work-btn{
+//   width: 345px;
+//   height: 70px;
+//   border-radius: 5px;
+//   border: 2px solid var(--dusk);
+//   margin-right: 18px;
+//   text-align: center;
+//   font-size: 18px;
+//   font-weight: bold;
+//   letter-spacing: 3.03px;
+//   text-align: center;
+//   background-color: white;
+//   padding: 22px;
+// }
 
-a > .resume-btn, a > .request-work-btn{
-  color: var(--dusk);
-}
-
-.about-btn > a:hover {
-  text-decoration: none;
-  color: white;
-}
-
-.resume-btn:hover, a > .request-work-btn:hover{
-  background-color: var(--dusk);
-  color: white;
-}
+// a > .resume-btn, a > .request-work-btn{
+//   color: var(--dusk);
+// }
+//
+// .about-btn > a:hover {
+//   text-decoration: none;
+//   color: white;
+// }
+//
+// .resume-btn:hover, a > .request-work-btn:hover{
+//   background-color: var(--dusk);
+//   color: white;
+// }
 
 
 // Tablet
@@ -83,9 +83,9 @@ a > .resume-btn, a > .request-work-btn{
     padding: 40px;
   }
 
-  .about-btn{
-    width: 700px;
-  }
+  // .about-btn{
+  //   width: 700px;
+  // }
 }
 
 // Mobile
@@ -113,23 +113,23 @@ a > .resume-btn, a > .request-work-btn{
    height: 100%;
  }
 
- .about-btn{
-   display: block;
-   width: 100%;
- }
+ // .about-btn{
+ //   display: block;
+ //   width: 100%;
+ // }
 
- .resume-btn, .request-work-btn{
-   width: 40%;
-   margin: 0;
-   font-size: 12px;
-   padding: 22px 5px;
-   margin: 10px auto;
-   background-color: white;
-   border: 1px solid var(--dusk);
- }
+ // .resume-btn, .request-work-btn{
+ //   width: 40%;
+ //   margin: 0;
+ //   font-size: 12px;
+ //   padding: 22px 5px;
+ //   margin: 10px auto;
+ //   background-color: white;
+ //   border: 1px solid var(--dusk);
+ // }
 
- a > .resume-btn, a > .request-work-btn{
-   color: var(--dusk);
- }
+ // a > .resume-btn, a > .request-work-btn{
+ //   color: var(--dusk);
+ // }
 
 }

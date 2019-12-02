@@ -9,12 +9,5 @@
   <div class="social-media-icons">
     <%= render 'home/social_media_icon' %>
   </div>
-  <div class="about-btn">
-    <%= link_to resume_path do %>
-      <div class="resume-btn">RÉSUMÉ</div>
-    <% end %>
-    <%= mail_to "horngyi6527@gmail.com" do %>
-      <div class="request-work-btn">WORK WITH ME</div>
-    <% end %>
-  </div>
+  <%= render 'home/back_home' %>
 </div>
