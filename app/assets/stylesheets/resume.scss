@@ -12,6 +12,7 @@
   letter-spacing: 2.66px;
   color: var(--dusk);
 }
+
 .job-description{
   color: var(--dusk);
   font-size: 15px;
@@ -62,5 +63,30 @@
   .resume-section{
     width: 100%;
     margin: 150px auto;
+  }
+
+  .work-position-section{
+    width: 100%;
+  }
+
+  .resume-title{
+    width: 100%;
+    text-align: center;
+  }
+
+  .work-experiences-section, .work-position-section, .work-duties-section{
+    width: 100%;
+    display: block;
+  }
+
+  .work-position-section, .work-duties-section{
+    padding: 10px 30px;
+  }
+
+  .skills{
+    padding: 0 90px;
+  }
+  .skills-section{
+    width: 100%;
   }
 }
