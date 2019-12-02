@@ -1,0 +1,66 @@
+.resume-section{
+  width: 900px;
+  margin: 80px auto;
+  font-size: 16px;
+}
+
+.resume-title{
+  width: 350px;
+  height: 50px;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 2.66px;
+  color: var(--dusk);
+}
+.job-description{
+  color: var(--dusk);
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.work-experiences-section{
+  display: flex;
+}
+
+.work-position-section{
+  width: 40%;
+}
+
+.work-duties-section{
+  width: 60%;
+}
+
+.position, .work-position-section>a{
+  color: var(--dusk);
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.work-dates{
+  color: grey;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.skills-section{
+  width:25%;
+}
+
+.position > a, .position > a:hover, .work-position-section > a, .work-position-section > a:hover{
+  color: var(--dusk);
+  text-decoration: none;
+}
+
+.position > a:hover, .work-position-section > a:hover{
+  color: var(--salmon-pink);
+}
+
+@media screen and (max-width: 767px){
+  .resume-section{
+    width: 100%;
+    margin: 150px auto;
+  }
+}
