@@ -65,18 +65,20 @@ a, a:hover{
 }
 
 #logo{
-	width: 254px;
+	width: 260px;
 	height: 50px;
-  font-family: PlayfairDisplay;
 	float: left;
-	display: table-cell;
+  margin-left: 70px;
+  display: flex;
+}
+
+.logo{
+  font-family: PlayfairDisplay;
   color: #000000;
   font-weight: 900;
-  font-size: 30px;
-  font-style: normal;
-  font-stretch: normal;
+  font-size: 33px;
   letter-spacing: 1.4px;
-  margin-left: 70px;
+  margin-left: 10px;
 }
 
 .nav-list{
@@ -273,14 +275,14 @@ a, a:hover{
   .openNav nav{
     -moz-transform: translateY(351px);
     -webkit-transform: translateY(351px);
-    transform: translateY(850px);
+    transform: translateY(870px);
     width: 100%;
     height: 1360px;
     text-align: center;
   }
 
   .nav-list{
-    width:100%;
+    width: 100%;
     height: 100%;
     position: relative;
     // right: 0;
@@ -288,24 +290,29 @@ a, a:hover{
   }
 
   #logo{
-    width: 200px;
+    width: 250px;
     height: 40px;
     margin-left: 10px;
     padding-left: 8px;
     position:relative;
-    background-size: cover;
-    background-position: center;
     float: left;
+  }
+
+  .logo{
     font-weight: 600;
-    font-size: 20px;
-    color: black;
+    font-size: 26px;
+    letter-spacing: 1.4px;
+    margin-left: 10px;
   }
 
   .profile-image{
     margin-top: 13rem;
   }
-}
 
+  .w-900{
+    width: 100%;
+  }
+}
 // Mobile
 @media screen and (max-width: 600px){
   .w-900{
@@ -401,15 +408,18 @@ a, a:hover{
   }
 
   #logo{
-  	width: 150px;
+  	width: 200px;
   	height: 40px;
   	margin-left: 10px;
   	position:relative;
-  	background-size: cover;
-  	background-position: center;
   	float: left;
-    color: black;
-    font-size: 20px;
     padding-left: 8px;
+  }
+
+  .logo{
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 10px;
   }
 }

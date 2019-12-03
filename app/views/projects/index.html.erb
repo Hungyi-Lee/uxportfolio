@@ -27,12 +27,11 @@
 <div class="tablet-projects">
   <% @projects.each do |p|%>
     <%= link_to project_path(p.title) do %>
-      <div class="tablet-cover-image" style="background-image: url('<%= p.coverimage %>');">
-      </div>
-      <div class="tablet-project-title">
-        <h3><%= p.title %></h3>
-        <p><%= p.category %></p>
-      </div>
+      <div class="tablet-cover-image" style="background-image: url('<%= p.coverimage %>');"></div>
+      <!-- <div class="tablet-project-title"> -->
+        <!-- <h3><%#= p.title %></h3> -->
+        <!-- <p><%#= p.category %></p> -->
+      <!-- </div> -->
     <% end %>
   <% end %>
 </div>
