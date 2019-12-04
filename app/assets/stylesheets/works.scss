@@ -2,36 +2,45 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.about-box{
+  display: flex;
+  width: 1080px;
+  margin: 0 auto;
+}
+
 .about-myphoto{
-  width: 950px;
-  height: 500px;
+  // width: 950px;
+  width: 45%;
+  // height: 500px;
+  height: 600px;
   background-image: url('https://lh3.google.com/u/0/d/1z7r_2aRJzvVv42pG16T1LwQpltw9fO1J=w2152-h1578-iv1');
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 50px auto 0 auto;
+  margin-right: 50px;
 }
 
 .about-title{
-  width: 950px;
-  height: 80px;
-  font-size: 36px;
+  // width: 950px;
+  // height: 80px;
+  font-size: 28px;
   font-weight: bold;
-  letter-spacing: 2.66px;
-  text-align: center;
+  letter-spacing: 2px;
+  // text-align: center;
   color: var(--dusk);
-  margin: 55px auto 0 auto;
+  // margin: 55px auto 0 auto;
 }
 
 .about-bio{
-  width: 850px;
+  // width: 850px;
+  width: 55%;
   height: 100%;
-  font-size: 16px;
-  line-height: 1.8;
+  font-size: 15px;
+  line-height: 1.7;
   // letter-spacing: 1px;
   text-align: justify;
   color: var(--dusk);
-  margin: 30px auto 0 auto;
+  // margin: 30px auto 0 auto;
 }
 
 // Tablet

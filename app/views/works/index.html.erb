@@ -1,14 +1,18 @@
-<div class="section m-t-150 m-b-150">
-  <div class="about-myphoto"></div>
-  <div class="about-title">Thanks for coming!</div>
-  <div class="about-bio">
-    <p><b>Hungyi Lee</b> got her B.A and M.A in Japanese Language and Literature at Soochow University in Taipei, Taiwan. Out of school, she <b>started self-education in design and started doing graphic design</b> for some business. However, she aimed to being a professor in Linguistics field at that time. Therefore, she viewed the creative side of her as a hobby instead of a career. After she graduated, she earned scholarships from Japanese government and went to Tokoy to study Applied Japanese Linguistics at Ochanomizu University. In addition to her academy, she also learned programming skills due to enthusiasm in learning new things.</p><br/>
-    <p>She felt programming was fascinating. Hence, she committed herself to career transition as she just finished her first year of doctoral studies. She <b>worked as a web developer in Metro Engines</b>. She was responsible for developing a website which aggregates hotels’ reviews and provides an analysis to clients with Ruby on Rails and React JS. At Metro Engines, she worked closely with an UI/UX designer. She learned that as an UI/UX designer, <b>she can identify people's pain points and create solutions to help people figure out their problem</b>. She felt that is inspiring and willing to lump her engineering experiences and design skills together to work efficiently. In 2019, she moved to Seattle, WA and enrolled in UX design program on Springboard online bootcamp to advance her design thinking and skills.</p><br/>
-    <p>Today, she is glad she made the switch. Although she does not have technical and design related degree, <b>her academic background enables her to think logically and handle pressure</b>. In addition, <b>her past working experiences help her grow industrial knowledge and sharpen skills</b>. The last but not the least, there’s so much about UI/UX that she is <b>eager to learn more about</b>. It’s a good indicator that she has chosen a path correctly. In the future, she is willing to constantly challenge herself and learn more skills to enrich her thoughts and life.</p>
-    <p>Check out my <%= link_to resume_path do %>resume<%end%> or learn more about me and my works through the following social networks.
+<div class="section m-t-150 m-b-50">
+  <div class="about-box center">
+    <div class="about-myphoto"></div>
+    <div class="about-bio">
+      <div class="about-title">Thanks for coming!</div>
+      <p>Hungyi’s background is Linguistics, but she taught herself graphic design and started working as a freelancer for some business in her spare time. However, she aimed to be a teacher rather than a designer at that time. Therefore, she viewed the creative side of her as a hobby instead of a career.</p>
+      <p>Afterwards, she continued her academy and learned programming in Tokyo. She felt that programming was fascinating, and hence, she committed herself to career transition as she finished the first year of doctoral studies. She worked as a web developer and collaborated with a UI/UX designer. She learned that being a UI/UX designer is inspiring because she can identify people's pain points and create solutions for that. Also, she believes that her developing experiences help her make more detailed and better design deliverables. </p>
+      <p>she currently lives in Seattle and enrolled in UX design online program to advance her design thinking and skills. She is glad to made the switch. There’s so much about UI/UX that she is eager to learn more about. It’s a good indicator that she has chosen a path correctly. In the future, she is willing to constantly challenge herself and learn more skills to enrich her thoughts and life.</p>
+      <p>Check out my <%= link_to resume_path do %>resume<%end%> or learn more about me through the following:
+      <div class="social-media-icons" style="margin-left: 5px;">
+        <%= render 'home/social_media_icon' %>
+      </div>
+    </div>
   </div>
-  <div class="social-media-icons">
-    <%= render 'home/social_media_icon' %>
-  </div>
+</div>
+<div class="section ">
   <%= render 'home/back_home' %>
 </div>
