@@ -21,7 +21,7 @@ class WorksController < ApplicationController
   def update
     @work = Work.find(params[:id])
     if @work.update(work_params)
-      redirect_to works_path
+      redirect_to resume_path
     else
       render :template => "works/edit"
     end

@@ -77,6 +77,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.w-900 > a:hover{
+  text-decoration: none;
+  opacity: 0.8;
+}
 
 .view-more-btn{
   width: 200px;
