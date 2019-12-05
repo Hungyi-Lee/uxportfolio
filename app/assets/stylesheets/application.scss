@@ -1,0 +1,426 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require bootstrap/scss/bootstrap
+ */
+
+@import "bootstrap/scss/bootstrap";
+.m-t-150{ margin-top: 9.375rem; }
+.m-t-50{ margin-top: 50px; }
+.m-t-20{ margin-top: 20px; }
+.m-b-150{ margin-bottom: 9.375rem; }
+.m-b-50{ margin-bottom: 50px; }
+.w-900 { width: 900px; }
+
+:root{
+  --lightgrey: #F5f5f5;
+  --dusk: #515976;
+  --salmon-pink: #ff7f82;
+}
+
+.center{
+  margin: 0 auto;
+}
+
+.font-center{
+  text-align: center;
+}
+
+*{
+	box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a, a:hover{
+  text-decoration: none;
+}
+
+.header{
+	width: 100%;
+	height: 70px;
+	background-color: white;
+	position:fixed;
+	z-index: 999;
+	display:table;
+	font-size: 0;
+  top: 0;
+}
+
+.header-content{
+	// width: 1280px;
+  width: 100%;
+	height: 80px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+#logo{
+	width: 260px;
+	height: 50px;
+	float: left;
+  margin-left: 70px;
+  display: flex;
+}
+
+.logo{
+  font-family: PlayfairDisplay;
+  color: #000000;
+  font-weight: 900;
+  font-size: 33px;
+  letter-spacing: 1.4px;
+  margin-left: 10px;
+}
+
+.nav-list{
+	text-align: center;
+	padding:10px 0;
+	margin: 0 auto;
+	float: right;
+	display: table-cell;
+}
+
+.active, .nav-list-item{
+	list-style: none;
+	display: inline-block;
+	margin: 0 30px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.active > a, .nav-list-item > a{
+  color: var(--dusk);
+  letter-spacing: 1.33px;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+}
+
+.active > a{
+  color: var(--salmon-pink);
+  font-weight: 700;
+}
+
+.active > a:hover{
+  text-decoration: none;
+  color: var(--salmon-pink);
+}
+
+.nav-list-item > a:hover{
+  text-decoration: none;
+  color: var(--salmon-pink);
+}
+
+#navToggle{
+    display: none;
+    position: absolute;
+    right: 8px;
+    top:7px;
+    width:45px;
+    height:44px;
+    cursor:pointer;
+    // border: 1px solid black;
+    padding: 10px 7px;
+}
+
+#navToggle div{
+	position: relative
+}
+
+#navToggle span{
+    display: block;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: solid 3px black;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out}
+
+#navToggle span:nth-child(1){
+	top: 2px;
+}
+
+#navToggle span:nth-child(2){
+	top: 10px;
+}
+
+#navToggle span:nth-child(3){
+	top: 18px;
+}
+
+.bottom-menu{
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  outline: none;
+  background-color: var(--salmon-pink);
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  width: 65px;
+  height: 65px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.bottom-menu:hover{
+ -webkit-animation: rotation 0.5s linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+//Tablet
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+  }
+
+  .header-content{
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    position: absolute;
+  }
+
+  nav{
+    position: absolute;
+    right: 0;
+    top: -800px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    -webkit-transition: .5s ease-in-out; /*transitionで動きを*/
+    -moz-transition:.5s ease-in-out;
+    transition: .5s ease-in-out;
+    text-align: center;
+  }
+
+
+  .header-content ul{
+    margin: 0
+  }
+
+  .header-content ul li{
+      display: block;
+      margin: 0;
+      border-bottom: dotted 2px var(--lightgrey);
+      line-height: 3;
+      background-color: white;
+  }
+
+  .header-content ul li a{
+    display:block;
+  }
+
+  .header-content ul li::after{
+    content:'';
+  }
+
+  .header-content ul li:last-child{
+    border-bottom:none;
+  }
+
+  .active, .nav-list-item{
+    height: 10rem;
+    padding: 4rem;
+  }
+
+  .active > a, .nav-list-item > a{
+    font-size: 40px;
+  }
+
+  #navToggle{
+    display: block
+  }
+
+  .openNav #navToggle span:nth-child(1){
+    top: 11px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg)}
+
+  .openNav #navToggle span:nth-child(2),
+  .openNav #navToggle span:nth-child(3){
+    top: 11px;
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    transform:rotate(45deg)
+  }
+
+  .openNav nav{
+    -moz-transform: translateY(351px);
+    -webkit-transform: translateY(351px);
+    transform: translateY(870px);
+    width: 100%;
+    height: 1360px;
+    text-align: center;
+  }
+
+  .nav-list{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    // right: 0;
+    text-align: center;
+  }
+
+  #logo{
+    width: 250px;
+    height: 40px;
+    margin-left: 10px;
+    padding-left: 8px;
+    position:relative;
+    float: left;
+  }
+
+  .logo{
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 1.4px;
+    margin-left: 10px;
+  }
+
+  .profile-image{
+    margin-top: 13rem;
+  }
+
+  .w-900{
+    width: 100%;
+  }
+}
+// Mobile
+@media screen and (max-width: 600px){
+  .w-900{
+    width:300px;
+  }
+
+  .header{
+  	width: 100%;
+  	height: 80px;
+  	background-color: white;
+  }
+
+  .header-content{
+  	width: 100%;
+  	height: 70px;
+  	margin: 0 auto;
+  	position: absolute;
+  }
+
+  nav{
+      position: absolute;
+      right: 0;
+      top: -400px;
+      background-color: white;
+      width: 100%;
+      padding: 0 18px;
+      -webkit-transition:.5s ease-in-out; /*transitionで動きを*/
+      -moz-transition:.5s ease-in-out;
+      transition:.5s ease-in-out;
+      text-align: center;
+  }
+
+  .header-content ul{
+  	margin:0
+  }
+
+  .header-content ul li{
+      display: block;
+      margin: 0;
+      border-bottom: dotted 2px var(--lightgrey);
+      line-height: 3;
+  }
+
+  .header-content ul li a{
+  	display:block;
+  }
+
+  .header-content ul li::after{
+  	content:'';
+  }
+  .header-content ul li:last-child{
+  	border-bottom:none;
+  }
+
+  #navToggle{
+  	display: block
+  }
+
+  .active, .nav-list-item{
+    height: 5rem;
+    padding: 1.6rem;
+  }
+
+  .openNav #navToggle span:nth-child(1){
+      top: 11px;
+      -webkit-transform:rotate(-45deg);
+      -moz-transform:rotate(-45deg);
+      transform:rotate(-45deg)}
+
+  .openNav #navToggle span:nth-child(2),
+  .openNav #navToggle span:nth-child(3){
+      top: 11px;
+      -webkit-transform:rotate(45deg);
+      -moz-transform:rotate(45deg);
+      transform:rotate(45deg)
+  }
+
+  .openNav nav{
+      -moz-transform: translateY(351px);
+      -webkit-transform: translateY(351px);
+      transform: translateY(470px);
+      width: 100%;
+      height: 900px;
+      text-align: center;
+      padding-top: 10px;
+  }
+
+  .nav-list{
+    width: 100%;
+  	position:relative;
+  	right: 0;
+  	text-align: center;
+  }
+
+  #logo{
+  	width: 200px;
+  	height: 40px;
+  	margin-left: 10px;
+  	position:relative;
+  	float: left;
+    padding-left: 8px;
+  }
+
+  .logo{
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 10px;
+  }
+}

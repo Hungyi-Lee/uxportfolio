@@ -1,0 +1,15 @@
+<%= form_for(@work) do |f| %>
+  <h5>Company Name</h5>
+  <%= f.text_field :company, autofocus: true, class:"form-control"%>
+  <h5>Position</h5>
+  <%= f.text_field :position, autofocus: true, class:"form-control"%>
+  <h5>Timeline</h5>
+  <%= f.text_field :timeline, autofocus: true, class:"form-control"%>
+  <h5>Location</h5>
+  <%= f.text_field :location, autofocus: true, class:"form-control"%>
+  <h5>Decription</h5>
+  <%= f.text_area :description, autofocus: true, class:"form-control"%>
+  <br/>
+  <%= f.submit "Save", class:"btn btn-success" %>
+  <%= link_to "Unsave", works_path, class:"btn btn-danger" %>
+<% end %>

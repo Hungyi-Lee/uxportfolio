@@ -1,0 +1,61 @@
+<div class="section m-t-150 desktop-projects">
+  <div class="projects">
+    <div class="project-left">
+      <% @projects.each do |p|%>
+        <div class="project-item">
+          <div class="project-hover-effect"></div>
+          <div class="project-title" id="project-<%=p.id%>" onmouseover="showimage(id)" onmouseout="normal(id)">
+            <%= link_to project_path(p.title) do %>
+              <%= p.title %> <span class="project-category">- <%= p.category%></span>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="project-right">
+      <div class="first-cover" style="background-image: url('<%= @projects.first.coverimage %>');">
+      </div>
+        <% @projects.reverse.each_with_index do |p, index|%>
+          <div id="cover-<%= index+1 %>" class="project-cover-image" style="background-image: url('<%= p.coverimage %>');">
+          </div>
+        <% end %>
+    </div>
+  </div>
+</div>
+
+<!-- mobile & tablet -->
+<div class="tablet-projects">
+  <% @projects.each do |p|%>
+    <%= link_to project_path(p.title) do %>
+      <div class="tablet-cover-image" style="background-image: url('<%= p.coverimage %>');"></div>
+      <!-- <div class="tablet-project-title"> -->
+        <!-- <h3><%#= p.title %></h3> -->
+        <!-- <p><%#= p.category %></p> -->
+      <!-- </div> -->
+    <% end %>
+  <% end %>
+</div>
+
+
+
+
+<script language="javascript" type="text/javascript">
+  function showimage(project_id)
+  {
+    // project_id = "project-xxx"
+    var res = project_id.split("-");
+    // res = array, res[0]=project, res[1] = xxx
+    var coverId = "cover-" + res[1];
+    // alert(id);
+    // var element = document.getElementById(coverId).innerHTML = coverId;
+    var element = document.getElementById(coverId).style.display = 'block';
+  }
+
+  function normal(project_id)
+  {
+    var res = project_id.split("-");
+    var coverId = "cover-" + res[1];
+
+    document.getElementById(coverId).style.display = 'none';
+  }
+</script>

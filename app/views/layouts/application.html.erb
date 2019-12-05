@@ -1,15 +1,72 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Uxportfolio</title>
+    <title>Hungyi's Portfolio</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag asset_path('favicon.png')%>
   </head>
 
   <body>
+    <!-- top-nav -->
+    <div class="header">
+      <div class="header-content">
+        <%= link_to root_path do %>
+        <div id="logo">
+          <img src="https://lh3.google.com/u/0/d/1TrQcr7voRw3KEIUy0O0ilPCn7f9xHG-E=w2880-h910-iv1" width="50">
+          <span class="logo">Hungyi Lee</span>
+        </div>
+        <% end %>
+        <div id="navToggle">
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <nav>
+          <ul class="nav-list">
+            <% if current_page?(controller: 'home', action: 'index') %>
+              <li class="active"><%= link_to root_path do %>HOME<% end %></li>
+            <% else %>
+              <li class="nav-list-item"><%= link_to root_path do %>HOME<% end %></li>
+            <% end %>
+            <% if current_page?(controller: 'resumes', action: 'index') %>
+              <li class="active"><%= link_to resume_path do %>RESUME<% end %></li>
+            <% else %>
+              <li class="nav-list-item"><%= link_to resume_path do %>RESUME<% end %></li>
+            <% end %>
+            <% if current_page?(controller: 'works', action: 'index') %>
+              <li class="active"><%= link_to about_path do %>ABOUT<% end %></li>
+            <% else %>
+              <li class="nav-list-item"><%= link_to about_path do %>ABOUT<% end %></li>
+            <% end %>
+            <% if current_page?(controller: 'projects', action: 'index') %>
+              <li class="active"><%= link_to all_projects_path do %>PROJECTS<% end %></li>
+            <% else %>
+              <li class="nav-list-item"><%= link_to all_projects_path do %>PROJECTS<% end %></li>
+            <% end %>
+            <li class="nav-list-item"><%= mail_to "horngyi6527@gmail.com" do %>CONTACT<% end %></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <%= yield %>
+    <!-- Go to top -->
+    <div onclick="topFunction()" id="myBtn" class="bottom-menu pull-right">
+      <span>&#8593;</span>
+    </div>
   </body>
 </html>
+
+
+<script language="javascript" type="text/javascript">
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>

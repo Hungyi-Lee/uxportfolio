@@ -1,0 +1,224 @@
+<div class="section resume-section m-t-150">
+  <div class="resume-title center font-center">Hungyi Lee</div>
+  <div class="work-experiences-section">
+    <div class="work-position-section center font-center">
+      <div class="job-description">Seattle, WA</div>
+      <%= link_to "https://www.linkedin.com/in/hungyi-lee/", target: "_blank" do %>LinkedIn<% end %> |
+      <%= mail_to "horngyi6527@gmail.com" do %>Email Me<% end %> |
+      <%= link_to "https://drive.google.com/file/d/1pBwq-j8eqokrglA9dDrnE4Jfr9BK10Ya/view", target: "_blank" do %>PDF Resume<% end %>
+    </div>
+  </div>
+</div>
+<!-- Profile Begin -->
+<div class="section resume-section">
+  <div class="resume-title">Profile</div>
+  <hr/>
+  <div class="work-experiences-section">
+    <!-- <div class="work-position-section"> -->
+      <!-- <div class="position"> -->
+      <ul>
+        <li>Targeting junior UI/UX designer position</li>
+        <li>Experience in web development</li>
+        <li>Up-to-date knowledge of Sketch, Figma, InVision, Adobe Creative Suites</li>
+      </ul>
+      <!-- </div> -->
+    <!-- </div> -->
+  </div>
+</div>
+<!-- Profile End -->
+<!-- Projects Begin -->
+<div class="section resume-section m-t-20">
+  <div class="resume-title">Projects</div>
+  <hr/>
+  <div class="work-experiences-section">
+    <div class="work-position-section">
+      <div class="position">
+        <%=link_to project_path(@projects.second.title) do%>PostUp Mobile App<%end%>
+      </div>
+      <div class="work-dates">Nov. 2019</div>
+    </div>
+    <div class="work-duties-section">
+      <ul>
+        <li>Design an app which helps people find a public place to work from</li>
+        <li>Responsible for wireframing, prototyping, usability testing</li>
+      </ul>
+    </div>
+  </div>
+  <div class="work-experiences-section m-t-20">
+    <div class="work-position-section">
+      <div class="position">
+        <%=link_to project_path(@projects.first.title) do%>
+          Tripik Mobile App
+        <%end%>
+      </div>
+      <div class="work-dates">Aug. 2019 - Nov. 2019</div>
+    </div>
+    <div class="work-duties-section">
+      <ul>
+        <li>Design an app which helps people find travel destinations</li>
+        <li>Responsible for user research, wireframing, visual design, prototyping, usability testing</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Projects End -->
+<!-- Experiences Begin -->
+<div class="section resume-section">
+  <div class="resume-title">Experience</div>
+  <hr/>
+  <% @works.each do |w|%>
+  <div class="work-experiences-section m-t-20">
+    <div class="work-position-section">
+      <div class="position"><%= w.company %> / <%= w.position%></div>
+      <div class="work-dates"><%= w.timeline %> <%= w.location%></div>
+    </div>
+    <div class="work-duties-section">
+      <%= raw(w.description) %>
+    </div>
+  </div>
+  <%end%>
+</div>
+<!-- Experiences End -->
+<!-- Education Begin -->
+<div class="section resume-section">
+  <div class="resume-title">Education</div>
+  <hr/>
+  <div class="work-experiences-section">
+    <div class="work-position-section">
+      <div class="position">Springboard</div>
+      <div class="position">UX Design Career Track Certification</div>
+      <div class="work-dates">Aug. 2019 - Present / San Francisco, CA</div>
+    </div>
+    <div class="work-duties-section">
+      <ul>
+        <li>Learning the full process of UX design</li>
+        <li>Deliver Tipik mobile app for capstone project</li>
+        <li>Deliver PostUp mobile app for 5 days design sprint</li>
+      </ul>
+    </div>
+  </div>
+  <div class="work-experiences-section m-t-20">
+    <div class="work-position-section">
+      <div class="position">Ochanomizu University</div>
+      <div class="position">MA, Applied Japanese Linguistics</div>
+      <div class="work-dates">Apr. 2015 - Mar. 2017 / Tokyo, Japan</div>
+    </div>
+    <div class="work-duties-section">
+      <ul>
+        <li>Study with full scholarship approximate $45,000</li>
+      </ul>
+    </div>
+  </div>
+  <div class="work-experiences-section m-t-20">
+    <div class="work-position-section">
+      <div class="position">Soochow University</div>
+      <div class="position">MA, Japanese Language and Literature</div>
+      <div class="work-dates">Sep. 2011 - Dec. 2013 Taipei, Taiwan</div>
+    </div>
+  </div>
+  <div class="work-experiences-section m-t-20">
+    <div class="work-position-section">
+      <div class="position">Soochow University</div>
+      <div class="position">BA, Japanese Language and Literature</div>
+      <div class="work-dates">Sep. 2007 - Jun. 2011 Taipei, Taiwan</div>
+    </div>
+  </div>
+</div>
+<!-- Education End -->
+<!-- Design Skills begin -->
+<div class="section resume-section">
+  <div class="resume-title">Design skills</div>
+  <hr/>
+  <div class="work-experiences-section skills">
+      <div class="skills-section">
+        <ul>
+          <li>Sketch</li>
+          <li>Figma</li>
+          <li>Invision</li>
+        </ul>
+      </div>
+      <div class="skills-section">
+        <ul>
+          <li>Adobe Illustrator</li>
+          <li>Adobe XD</li>
+          <li>Adobe Photoshop</li>
+        </ul>
+      </div>
+      <div class="skills-section">
+        <ul>
+          <li>Zeplin</li>
+          <li>Wireframing</li>
+          <li>Prototyping</li>
+        </ul>
+      </div>
+      <div class="skills-section">
+        <ul>
+          <li>Usability Testing</li>
+          <li>User Research</li>
+          <li>Visual Design</li>
+        </ul>
+      </div>
+  </div>
+</div>
+<!-- Skills End -->
+<!-- Development Skills begin -->
+<div class="section resume-section">
+  <div class="resume-title">Development skills</div>
+  <hr/>
+  <div class="work-experiences-section skills">
+    <div class="skills-section">
+      <ul>
+        <li>Ruby on Rails</li>
+        <li>HTML</li>
+      </ul>
+    </div>
+    <div class="skills-section">
+      <ul>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+      </ul>
+    </div>
+    <div class="skills-section">
+      <ul>
+        <li>Javascript</li>
+        <li>JQuery</li>
+      </ul>
+    </div>
+    <div class="skills-section">
+      <ul>
+        <li>React JS</li>
+        <li>Git</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Development Skills end -->
+<!-- Language Begin -->
+<div class="section resume-section">
+  <div class="resume-title">Languages</div>
+  <hr/>
+  <div class="work-experiences-section skills">
+    <div class="skills-section">
+      <ul>
+        <li>Mandarin (Native)</li>
+      </ul>
+    </div>
+    <div class="skills-section">
+      <ul>
+        <li>Japanese (Advanced)</li>
+      </ul>
+    </div>
+    <div class="skills-section">
+      <ul>
+        <li>English (Advanced)</li>
+      </ul>
+    </div>
+    <div class="skills-section">
+      <ul>
+        <li>French (Beginner)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Language End -->
+<%= render 'home/back_home' %>

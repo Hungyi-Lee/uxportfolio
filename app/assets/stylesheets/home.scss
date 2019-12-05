@@ -1,0 +1,195 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.section{
+  width: 100%;
+  height: 100%;
+}
+
+.profile-image{
+  width: 125px;
+  height: 125px;
+  border-radius: 80px;
+  margin: 0 auto;
+  background-image: url('https://lh3.google.com/u/0/d/1zXWAmYC-rCvTgJM-n0tlUwunUqNdrXcf=w2880-h1432-iv1');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 130px;
+  filter: grayscale(100%);
+}
+
+.top-greeting{
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2.66px;
+  text-align: center;
+  color: var(--dusk);
+  margin-top: 40px;
+}
+
+.top-introduction{
+  width: 639px;
+  height: 100px;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 1.4px;
+  text-align: center;
+  color: var(--dusk);
+  margin: 20px auto 40px;
+}
+
+.talk-btn > a{
+  font-weight: bold;
+  color: var(--salmon-pink);
+}
+
+.talk-btn > a:hover{
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--salmon-pink);
+  opacity: 0.7;
+}
+
+.social-media-icons {
+  display: flex;
+  width: 400px;
+  height: 20px;
+  margin: 30px auto 0 auto;
+}
+
+.icon{
+  height: 17px;
+  text-align: center;
+  fill: var(--dusk);
+  margin-right: 75px;
+}
+
+.icon:hover{
+  fill: var(--salmon-pink);
+}
+
+.box-30{
+  width:33%;
+  height: 300px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.w-900 > a:hover{
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.view-more-btn{
+  width: 200px;
+  height: 45px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--dusk);
+  color: var(--dusk);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.view-more-btn > a, .view-more-btn:hover{
+  text-decoration: none;
+  color: var(--dusk);
+}
+
+.view-more-btn:hover{
+  background-color: var(--dusk);
+  color: white;
+}
+
+.arrow{
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  border-radius: 35px;
+  border: 1px solid var(--dusk);
+  text-align: center;
+  margin: 50px auto;
+}
+
+i {
+  border: solid var(--dusk);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+// Tablet
+@media (min-width: 768px) and (max-width: 1300px) {
+  .box-30{
+    width:30%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+}
+
+// Mobile
+@media screen and (max-width: 767px){
+  .top-greeting{
+    width: 100%;
+    height: 32px;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1.67px;
+    text-align: center;
+    color: var(--dusk);
+  }
+
+  .top-contact{
+    width: 253px;
+    height: 17px;
+    font-size: 12px;
+    letter-spacing: 0.67px;
+    text-align: center;
+    color: var(--dusk);
+    padding: 10px 0;
+  }
+
+  .top-introduction{
+    width: 100%;
+    height: 150px;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: center;
+    color: var(--dusk);
+    margin: 20px auto 40px;
+    padding: 0 40px;
+  }
+
+  .box-30{
+    width:100%;
+    height: 300px;
+    display:block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+
+  .social-media-icons {
+    width: 250px;
+    height: 20px;
+    margin: 30px auto 0 auto;
+  }
+
+  .icon{
+    margin-right: 40px;
+  }
+}

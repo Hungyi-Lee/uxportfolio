@@ -1,0 +1,37 @@
+<div class="section m-t-150">
+  <div class="profile-image"></div>
+  <div class="top-greeting">Hello! I'm Hungyi Lee</div>
+  <div class="top-introduction">
+    I am a developer turned <b>UI/UX designer</b> from Seattle WA.<br/>
+    <!-- I am a Seattle based developer turned UI/UX designer.<br/> -->
+    I embrace challenges and problem solving process.
+    <br/>
+    Say hello or get in touch for design works!
+    <span class="talk-btn">
+      <%= mail_to "horngyi6527@gmail.com" do %>
+        Let's talk.
+      <% end %>
+    </span>
+  </div>
+  <div class="social-media-icons">
+    <%= render 'home/social_media_icon' %>
+  </div>
+  <a href="#projects-section">
+    <div class="arrow">
+      <i class="down"></i>
+    </div>
+  </a>
+</div>
+<div class="section m-t-150 m-b-150 font-center" id="projects-section">
+  <hr/>
+  <div class="top-greeting m-b-50">Projects</div>
+  <div class="w-900 center">
+    <% @projects.each do |p| %>
+      <%= link_to project_path(p.title) do %>
+        <div class="box-30" style="background-image: url('<%= p.coverimage %>')"></div>
+      <% end %>
+    <% end %>
+  </div>
+  <br/>
+  <%= link_to all_projects_path, class:"view-more-btn center" do %>View More<% end %>
+</div>

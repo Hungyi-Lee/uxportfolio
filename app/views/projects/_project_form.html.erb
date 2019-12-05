@@ -1,0 +1,23 @@
+<%= form_for(@project) do |f| %>
+  <h5>Project Title</h5>
+  <%= f.text_field :title, autofocus: true, class:"form-control"%>
+  <h5>Cover image</h5>
+  <%= f.text_field :coverimage, autofocus: true, class:"form-control"%>
+  <h5>Hero image</h5>
+  <%= f.text_field :heroimage, autofocus: true, class:"form-control"%>
+  <h5>Category</h5>
+  <%= f.text_field :category, autofocus: true, class:"form-control"%>
+  <h5>Project date</h5>
+  <%= f.text_field :projectdate, autofocus: true, class:"form-control"%>
+  <h5>My Role</h5>
+  <%= f.text_field :role, autofocus: true, class:"form-control"%>
+  <h5>Tools</h5>
+  <%= f.text_field :tools, autofocus: true, class:"form-control"%>
+  <h5>PDF File</h5>
+  <%= f.text_field :pdf, autofocus: true, class:"form-control"%>
+  <h5>Decription</h5>
+  <%= f.text_area :description, autofocus: true, class:"form-control"%>
+  <br/>
+  <%= f.submit "Save", class:"btn btn-success" %>
+  <%= link_to "Unsave", projects_path, class:"btn btn-danger" %>
+<% end %>
