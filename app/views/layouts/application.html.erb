@@ -41,9 +41,9 @@
               <li class="nav-list-item"><%= link_to resume_path do %>RESUME<% end %></li>
             <% end %>
             <% if current_page?(controller: 'works', action: 'index') %>
-              <li class="active"><%= link_to about_path do %>ABOUT<% end %></li>
+              <li class="active"><%= link_to bio_path do %>BIO<% end %></li>
             <% else %>
-              <li class="nav-list-item"><%= link_to about_path do %>ABOUT<% end %></li>
+              <li class="nav-list-item"><%= link_to bio_path do %>BIO<% end %></li>
             <% end %>
             <% if current_page?(controller: 'projects', action: 'index') %>
               <li class="active"><%= link_to all_projects_path do %>PROJECTS<% end %></li>

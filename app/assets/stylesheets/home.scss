@@ -116,6 +116,16 @@
   margin: 50px auto;
 }
 
+.arrow:hover{
+  border: 1px solid var(--salmon-pink);
+  i {
+    border: solid var(--salmon-pink);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+}
+
 i {
   border: solid var(--dusk);
   border-width: 0 3px 3px 0;
