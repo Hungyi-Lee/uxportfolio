@@ -1,12 +1,12 @@
 class ProjectsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  # before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   def new
     @project = Project.new
   end
 
   def create
     @project = Project.new(project_params)
-    @project.user_id = current_user.id
+    # @project.user_id = current_user.id
     if @project.save
      redirect_to all_projects_path
    else
@@ -46,6 +46,6 @@ class ProjectsController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:title, :user_id, :coverimage, :description, :category, :projectdate, :role, :tools, :heroimage, :pdf)
+    params.require(:project).permit(:title, :coverimage, :description, :category, :projectdate, :role, :tools, :heroimage, :pdf)
   end
 end

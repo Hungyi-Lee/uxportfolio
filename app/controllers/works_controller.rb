@@ -1,12 +1,12 @@
 class WorksController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  # before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   def new
     @work = Work.new
   end
 
   def create
     @work = Work.new(work_params)
-    @work.user_id = current_user.id
+    # @work.user_id = current_user.id
     if @work.save
       redirect_to works_path
     else
@@ -40,6 +40,6 @@ class WorksController < ApplicationController
   private
 
   def work_params
-    params.require(:work).permit(:company, :timeline, :position, :location, :description, :user_id, :link)
+    params.require(:work).permit(:company, :timeline, :position, :location, :description, :link)
   end
 end
