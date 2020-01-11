@@ -1,3 +1,4 @@
+<% if @project.password.nil? %>
 <div class="section m-t-150">
   <h3 class="project-content-title"><%= @project.title %></h3>
   <p class="project-content-category"><%= @project.category %></p>
@@ -24,7 +25,6 @@
      style="background-image: url('<%= @project.heroimage %>');"
 >
 </div>
-
 <!-- Description Start -->
 <%= raw(@project.description) %>
 <!-- Description End -->
@@ -54,3 +54,12 @@
     <% end %>
   </div>
 </div>
+<% else %>
+  <div class="section m-t-150 lock-section">
+    <div class="lock"></div>
+    <h3 class="lock-decrip">Sorry! you don't have permission to visit this case study.</h3>
+    <div class="bk-pj-btn lock-bk-btn">
+      <%= link_to all_projects_path do %>BACK TO PROJECTS<% end %>
+    </div>
+  </div>
+<% end %>
