@@ -2,11 +2,10 @@
   <div class="profile-image"></div>
   <div class="top-greeting">Hello! I'm Hungyi Lee</div>
   <div class="top-introduction">
-    I am a developer turned <b>UX designer</b> from Seattle WA.<br/>
-    <!-- I am a Seattle based developer turned UI/UX designer.<br/> -->
+    I am a developer turned <b>UX designer</b> based in Seattle WA.<br/>
     I embrace challenges and problem solving process.
     <br/>
-    Say hello or get in touch for design works!
+    Say hello or get in touch for design work!
     <span class="talk-btn">
       <%= mail_to "horngyi6527@gmail.com", body:"Hi Hungyi," do %>
         Let's talk.
@@ -24,7 +23,7 @@
 </div>
 <div class="section m-t-150 m-b-150 font-center" id="projects-section">
   <hr/>
-  <div class="top-greeting m-b-50">Projects</div>
+  <div class="top-greeting m-b-50">Latest Projects</div>
   <div class="w-900 center">
     <% @projects.each do |p| %>
       <%= link_to project_path(p.title) do %>
