@@ -15,7 +15,7 @@
 
 .job-description{
   color: var(--dusk);
-  font-size: 15px;
+  font-size: 20px;
   letter-spacing: 1px;
   font-weight: 700;
 }
@@ -25,7 +25,7 @@
 }
 
 .work-position-section{
-  width: 40%;
+  width: 50%;
 }
 
 .work-duties-section{
@@ -38,6 +38,10 @@
   letter-spacing: 1px;
   font-size: 15px;
   margin-bottom: 10px;
+}
+
+.work-position-section>a{
+  font-size: 17px;
 }
 
 .work-dates{
@@ -90,6 +94,10 @@
   .work-position-section, .work-duties-section{
     padding: 10px 30px;
   }
+
+    .work-position-section >a {
+      font-size: 13px;
+    }
 
   .skills{
     padding: 0 90px;

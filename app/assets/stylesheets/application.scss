@@ -94,7 +94,7 @@ a, a:hover{
 	list-style: none;
 	display: inline-block;
 	margin: 0 30px;
-	font-size: 20px;
+	font-size: 16px;
 	text-align: center;
 }
 
@@ -102,7 +102,7 @@ a, a:hover{
   color: var(--dusk);
   letter-spacing: 1.33px;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
@@ -308,10 +308,6 @@ a, a:hover{
 
   .profile-image{
     margin-top: 13rem;
-  }
-
-  .w-900{
-    width: 100%;
   }
 }
 // Mobile
