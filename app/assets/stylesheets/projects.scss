@@ -323,10 +323,14 @@
     margin-bottom: 30px;
   }
 
-  // .tablet-project-title{
-  //   padding: 20px;
-  //   color: var(--dusk);
-  // }
+  a>h2.sm-pj-title, a>p.sm-pj-cat{
+    padding-left: 20px;
+    color: var(--dusk);
+  }
+
+  a>h2.sm-pj-title{
+    font-weight: 700;
+  }
 
   // show page
   .project-info{
@@ -414,6 +418,15 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  a>h2.sm-pj-title, a>p.sm-pj-cat{
+    padding-left: 20px;
+    color: var(--dusk);
+  }
+
+  a>h2.sm-pj-title{
+    font-weight: 700;
   }
 
   // show page
