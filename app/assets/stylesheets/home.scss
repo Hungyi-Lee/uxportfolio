@@ -130,22 +130,36 @@
 }
 
 .arrow{
-  width: 60px;
+  width: 150px;
   height: 60px;
   padding: 15px;
-  border-radius: 35px;
-  border: 1px solid var(--dusk);
+  // border-radius: 35px;
+  // border: 1px solid var(--dusk);
   text-align: center;
   margin: 50px auto;
 }
 
-.arrow:hover{
-  border: 1px solid var(--salmon-pink);
+a > div > span{
+  color: var(--dusk);
+}
+
+.arrow>a:hover{
+  text-decoration: none;
+}
+
+a > div:hover{
+  // border: 1px solid var(--salmon-pink);
+  color: var(--salmon-pink);
+  text-decoration: none;
   i {
     border: solid var(--salmon-pink);
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
+  }
+  span{
+      color: var(--salmon-pink);
+    text-decoration: none;
   }
 }
 

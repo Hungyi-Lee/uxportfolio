@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root "home#index"
   resources :works, only: [:new, :edit, :update, :create]
   resources :projects, only: [:new, :edit, :update, :create]
-  get 'bio' => 'works#index', :as => :bio
+  get 'about' => 'works#index', :as => :about
   get 'resume' => 'resumes#index', :as => :resume
   get 'allprojects' => 'projects#index', :as => :all_projects
 

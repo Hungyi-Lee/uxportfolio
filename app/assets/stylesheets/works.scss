@@ -3,37 +3,35 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .about-box{
-  display: flex;
+  // display: flex;
   width: 1080px;
   margin: 0 auto;
 }
 
 .about-myphoto{
-  // width: 950px;
-  width: 45%;
-  // height: 500px;
-  height: 600px;
-  background-image: url('https://live.staticflickr.com/65535/49184658617_09a922d86f_o.png');
-  background-size: cover;
+  width: 100%;
+  height: 350px;
+  background-image: url('https://live.staticflickr.com/65535/49184658617_81db544fff_o.png');
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  margin-right: 50px;
+  margin-bottom: 50px;
 }
 
 .about-title{
   // width: 950px;
   // height: 80px;
-  font-size: 28px;
+  font-size: 18px;
   font-weight: bold;
   letter-spacing: 2px;
   // text-align: center;
   color: var(--dusk);
-  // margin: 55px auto 0 auto;
+  margin-bottom: 5px;
 }
 
 .about-bio{
-  // width: 850px;
-  width: 55%;
+  width: 100%;
+  // width: 55%;
   height: 100%;
   font-size: 15px;
   line-height: 1.7;
@@ -43,6 +41,10 @@
   // margin: 30px auto 0 auto;
 }
 
+.about-bio > p, .about-bio>ul>li{
+  font-weight: 300;
+}
+
 .about-icons{
   margin-left: 5px;
 }
@@ -50,18 +52,18 @@
 // Tablet
 @media (min-width: 768px) and (max-width: 1300px) {
   .about-box{
-    display: flex;
+    // display: flex;
     width: 900px;
     margin: 0 auto;
   }
 
   .about-myphoto{
-    width: 50%;
-    margin-top: 70px;
+    width: 100%;
+    margin-bottom: 50px;
   }
 
   .about-bio{
-    height: 50%;
+    height: 100%;
     text-align: justify;
   }
 
@@ -76,12 +78,15 @@
  .about-box{
    width: 100%;
    display: block;
+   padding-left: 20px;
+   padding-right: 20px;
  }
 
  .about-myphoto{
-   width: 100%;
-   height: 500px;
-   background-size: cover;
+   width: 90%;
+   height: 200px;
+   margin-bottom: 50px;
+   background-size: contain;
    background-position: center;
    background-repeat: no-repeat;
    margin: 0 auto;
@@ -89,7 +94,7 @@
 
  .about-title{
    text-align: left;
-   font-size: 26px;
+   font-size: 16px;
    margin-bottom: 10px;
  }
 

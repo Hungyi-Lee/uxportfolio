@@ -32,6 +32,13 @@
   width: 60%;
 }
 
+.work-duties-section, .work-experiences-section > ul, .skills-section > ul{
+  font-weight: 350;
+  font-size: 15px;
+  color: var(--dusk);
+  line-height: 25px;
+}
+
 .position, .work-position-section>a{
   color: var(--dusk);
   font-weight: 700;
