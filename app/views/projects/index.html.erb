@@ -1,43 +1,65 @@
-<div class="section m-t-150 desktop-projects">
-  <div class="projects">
-    <div class="project-left">
-      <% @projects.each do |p|%>
-        <div class="project-item">
-          <div class="project-hover-effect"></div>
-          <div class="project-title" id="project-<%=p.id%>" onmouseover="showimage(id)" onmouseout="normal(id)">
-            <%= link_to project_path(p.title) do %>
-              <%= p.title %> <span class="project-category">- <%= p.category%></span>
-            <% end %>
-          </div>
-        </div>
-      <% end %>
-    </div>
-    <div class="project-right">
-      <div class="first-cover" style="background-image: url('<%= @projects.first.coverimage %>');">
-      </div>
-        <% @projects.reverse.each_with_index do |p, index|%>
-          <div id="cover-<%= index+1 %>" class="project-cover-image" style="background-image: url('<%= p.coverimage %>');">
-          </div>
-        <% end %>
-    </div>
-  </div>
-</div>
-
-<!-- mobile & tablet -->
-<div class="tablet-projects">
+<div class="section projects">
   <% @projects.each do |p|%>
-    <%= link_to project_path(p.title) do %>
-      <div class="tablet-cover-image" style="background-image: url('<%= p.coverimage %>');"></div>
-      <h2 class="sm-pj-title"><%= p.title %></h2>
-      <p class="sm-pj-cat"><%= p.category %></p>
-    <% end %>
+    <div class="project">
+      <div class="project-image">
+        <img class="image" src="<%= p.coverimage%>">
+      </div>
+      <div class="project-description">
+          <div class="project-title"><%= p.title %></div>
+          <div class="project-category">
+            <%= p.category %><br/>
+            <%= p.projectdate %>
+          </div>
+          <div class="brief-description">
+          </div>
+          <div class="project-link">
+            <%= link_to project_path(p.title), class:"view-more-btn center" do %>Read More<% end %>
+          </div>
+      </div>
+    </div>
   <% end %>
 </div>
 
+<!-- <div class="section m-t-150 desktop-projects">
+  <div class="projects">
+    <div class="project-left">
+      <%# @projects.each do |p|%>
+        <div class="project-item">
+          <div class="project-hover-effect"></div>
+          <div class="project-title" id="project-<%#=p.id%>" onmouseover="showimage(id)" onmouseout="normal(id)">
+            <%#= link_to project_path(p.title) do %>
+              <%#= p.title %> <span class="project-category">- <%#= p.category%></span>
+            <%# end %>
+          </div>
+        </div>
+      <%# end %>
+    </div>
+    <div class="project-right">
+      <div class="first-cover" style="background-image: url('<%#= @projects.first.coverimage %>');">
+      </div>
+        <%# @projects.reverse.each_with_index do |p, index|%>
+          <div id="cover-<%#= index+1 %>" class="project-cover-image" style="background-image: url('<%#= p.coverimage %>');">
+          </div>
+        <%# end %>
+    </div>
+  </div>
+</div> -->
+
+<!-- mobile & tablet -->
+<!-- <div class="tablet-projects">
+  <%# @projects.each do |p|%>
+    <%#= link_to project_path(p.title) do %>
+      <div class="tablet-cover-image" style="background-image: url('<%#= p.coverimage %>');"></div>
+      <h2 class="sm-pj-title"><%#= p.title %></h2>
+      <p class="sm-pj-cat"><%#= p.category %></p>
+    <%# end %>
+  <%# end %>
+</div> -->
 
 
 
-<script language="javascript" type="text/javascript">
+
+<!-- <script language="javascript" type="text/javascript">
   function showimage(project_id)
   {
     // project_id = "project-xxx"
@@ -56,4 +78,4 @@
 
     document.getElementById(coverId).style.display = 'none';
   }
-</script>
+</script> -->
