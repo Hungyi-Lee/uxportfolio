@@ -30,11 +30,11 @@
   <div class="w-900 center">
     <% @projects.each do |p| %>
       <%= link_to project_path(p.title) do %>
-      <div class="w-300">
-          <div class="box-image" style="background-image: url('<%= p.coverimage %>')"></div>
-          <p class="project-title-top"><%= p.title %></p>
-          <p class="project-cat-top"><%= p.category %></p>
-      </div>
+        <div class="w-300">
+            <div class="box-image" style="background-image: url('<%= p.coverimage %>')"></div>
+            <p class="project-title-top"><%= p.title %></p>
+            <p class="project-cat-top"><%= p.category %></p>
+        </div>
       <% end %>
     <% end %>
   </div>
