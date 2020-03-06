@@ -78,8 +78,9 @@
 }
 
 .w-300{
-  width:33%;
+  width: 300px;
   height: 300px;
+  margin-right: 10px;
   display: inline-block;
   text-align: left;
 }
@@ -98,6 +99,12 @@
   font-weight: 300;
   font-size: 14px;
   color: grey;
+}
+
+.w-900{
+  width: 930px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .w-900 > a:hover{
@@ -177,21 +184,22 @@ i {
 
 // Tablet
 @media (min-width: 768px) and (max-width: 1300px) {
-  // .w-900{
-  //   width: 100%;
-  //   padding: 10px;
-  //   display: flex;
-  // }
-  //
-  // .w-300{
-  //   width:100%;
-  //   height: 300px;
-  //   text-align: left;
-  // }
+    .w-900{
+      width: 768px;
+      margin: 0 auto;
+      // padding: 0 5%;
+    }
+
+  .w-300{
+    width:245px;
+    height: 245px;
+    margin-left: 8px;
+    text-align: left;
+  }
 
   .box-image{
-    width:100%;
-    height: 270px;
+    width: 245px;
+    height: 245px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -251,6 +259,7 @@ i {
   .w-900{
     width: 100%;
     padding: 10px;
+    display: block;
   }
 
   .w-300{
