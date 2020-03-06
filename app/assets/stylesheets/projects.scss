@@ -285,82 +285,82 @@
   background-color: var(--dusk);
   text-decoration: none;
 }
-//
-// .previous-pj, .next-pj{
-//   width: 300px;
-//   height: 340px;
-//   background-color: var(--lightgrey);
-//   border-radius: 10px;
-//   margin: 20px auto;
-//   position: relative;
+
+.previous-pj, .next-pj{
+  width: 300px;
+  height: 340px;
+  background-color: var(--lightgrey);
+  border-radius: 10px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.previous-pj-img, .next-pj-img{
+  width: 300px;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover ;
+  border-radius: 10px 10px 0 0;
+}
+
+.previous-pj-title, .next-pj-title{
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.03px;
+  margin-bottom: 10px;
+  color: var(--dusk);
+}
+
+.previous-pj > a, .next-pj > a {
+  color: var(--dusk);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid var(--dusk);
+  margin: 10px auto;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 3%;
+  left: 35%;
+}
+
+.previous-pj > a:hover, .next-pj > a:hover{
+  color: white;
+  background-color: var(--dusk);
+  text-decoration: none;
+}
+
+.tablet-projects{
+  display: none;
+}
+
+// .lock-section{
+//   text-align: center;
 // }
 //
-// .previous-pj-img, .next-pj-img{
-//   width: 300px;
-//   height: 200px;
+// .lock{
+//   width: 100px;
+//   height: 100px;
+//   background-image: url('https://live.staticflickr.com/65535/49342377516_3d19927ca4_o.png');
+//   background-size: cover;
 //   background-position: center;
 //   background-repeat: no-repeat;
-//   background-size: cover ;
-//   border-radius: 10px 10px 0 0;
+//   margin: 15% auto 3%;
 // }
 //
-// .previous-pj-title, .next-pj-title{
-//   padding: 15px;
-//   font-size: 14px;
-//   font-weight: 700;
-//   text-transform: uppercase;
-//   letter-spacing: 3.03px;
-//   margin-bottom: 10px;
+// .lock-decrip{
 //   color: var(--dusk);
+//
 // }
 //
-// .previous-pj > a, .next-pj > a {
-//   color: var(--dusk);
-//   font-size: 12px;
-//   font-weight: 700;
-//   text-decoration: none;
-//   padding: 10px;
-//   border: 1px solid var(--dusk);
-//   margin: 10px auto;
-//   border-radius: 5px;
-//   position: absolute;
-//   bottom: 3%;
-//   left: 35%;
+// .lock-bk-btn{
+//   margin-top: 60px;
 // }
-//
-// .previous-pj > a:hover, .next-pj > a:hover{
-//   color: white;
-//   background-color: var(--dusk);
-//   text-decoration: none;
-// }
-//
-// .tablet-projects{
-//   display: none;
-// }
-//
-// // .lock-section{
-// //   text-align: center;
-// // }
-// //
-// // .lock{
-// //   width: 100px;
-// //   height: 100px;
-// //   background-image: url('https://live.staticflickr.com/65535/49342377516_3d19927ca4_o.png');
-// //   background-size: cover;
-// //   background-position: center;
-// //   background-repeat: no-repeat;
-// //   margin: 15% auto 3%;
-// // }
-// //
-// // .lock-decrip{
-// //   color: var(--dusk);
-// //
-// // }
-// //
-// // .lock-bk-btn{
-// //   margin-top: 60px;
-// // }
-//
+
 // tablet
 @media (min-width: 768px) and (max-width: 1300px) {
   .projects{
