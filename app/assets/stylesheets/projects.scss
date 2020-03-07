@@ -300,53 +300,6 @@
 }
 
 
-// .project-info{
-//   width: 75rem;
-//   height: 130px;
-//   border-top: 2px solid var(--lightgrey);
-//   margin: 0 auto;
-//   display: flex;
-// }
-
-// .project-duration, .project-role, .project-tools, .project-pdf{
-//   width: 300px;
-//   height: 120px;
-//   text-align: center;
-//   color: var(--dusk);
-//   padding: 25px;
-// }
-
-// .project-duration, .project-role, .project-tools{
-//   border-right: 2px solid var(--lightgrey);
-// }
-//
-// .duration-title, .role-title, .tools-title, .pdf-title{
-//   font-size: 20px;
-//   letter-spacing: 4px;
-//   text-transform: uppercase;
-//   font-weight: 700;
-// }
-
-// .duration-date, .role-description, .tools-description, .pdf-description{
-//   line-height: 1.4;
-//   letter-spacing: 1.33px;
-//   color: var(--dusk);
-// }
-
-// .project-pdf > p > a{
-//   color: var(--dusk);
-//   margin-top: 20px;
-// }
-
-// .project-hero-image{
-//   width: 100%;
-//   height: 37.5rem;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   margin: 30px 0 40px 0;
-// }
-
-
 // tablet
 @media (min-width: 768px) and (max-width: 1300px) {
   .projects{
@@ -451,6 +404,12 @@
     letter-spacing: 4px;
   }
 
+  .project-detailed-content{
+    width: 85%;
+    margin: 0 auto;
+    padding: 5%;
+  }
+
   .foreword{
     width: 100%;
     padding: 7%;
@@ -460,5 +419,15 @@
     width: 300px;
     margin: 0 auto;
     display: block;
+  }
+
+  .detail-content > h4{
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--dusk);
+    text-transform: uppercase;
+    margin-bottom: 25px;
   }
 }
