@@ -1,33 +1,44 @@
-<%# if @project.password.nil? %>
-<div class="section m-t-150">
-  <h3 class="project-content-title"><%= @project.title %></h3>
-  <p class="project-content-category"><%= @project.category %></p>
-  <div class="project-info">
-    <div class="project-duration">
-      <h4 class="duration-title">Duration</h4>
-      <p class="duration-date"><%= @project.projectdate %></p>
-    </div>
-    <div class="project-role">
-      <h4 class="role-title">Role</h4>
-      <p class="role-description"><%= @project.role %></p>
-    </div>
-    <div class="project-tools">
-      <h4 class="tools-title">Tools</h4>
-      <p class="tools-description"><%= @project.tools %></p>
-    </div>
-    <div class="project-pdf">
-      <h4 class="pdf-title">PDF File</h4>
-      <p class="pdf-description"><%= link_to @project.pdf, target:"_blank" do %>View PDF<%end%></p>
+
+<div class="section m-t-50">
+  <div class="project-top">
+    <div class="project-content-title"><%= @project.title %></div>
+    <p class="project-content-category"><%= @project.category %></p>
+    <!-- project brief information -->
+    <%= raw(@project.heroimage)%>
+    <!-- project brief information finish-->
+    <div class="open-case-study">
+      <div onclick="myFunction()" id="readMoreBtn">Read Full Case Study</div>
+      <%= link_to @project.pdf, target:"_blank" do %><div id="pdfBtn">Download PDF Case Study</div><%end%>
     </div>
   </div>
+  <!-- project detailed content start -->
+  <%= raw(@project.description) %>
+  <!-- project detailed content end -->
 </div>
-<div class="project-hero-image"
-     style="background-image: url('<%= @project.heroimage %>');"
->
-</div>
-<!-- Description Start -->
-<%= raw(@project.description) %>
-<!-- Description End -->
+
+
+<script>
+function myFunction() {
+  window.scrollTo(0, 1500);
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("readMoreBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read Full Case Study";
+    moreText.style.display = "none";
+    window.scrollTo(0,0);
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Close Case Study";
+    moreText.style.display = "inline";
+    window.scrollTo(0,1000);
+  }
+}
+</script>
+
+
 
 <div class="section">
   <div class="bk-pj-btn">
@@ -54,11 +65,3 @@
     <% end %>
   </div>
 </div>
-<%# else %>
-  <!-- <div class="section m-t-150 lock-section"> -->
-    <!-- <div class="lock"></div> -->
-    <!-- <h3 class="lock-decrip">Sorry! you don't have permission to visit this case study.</h3> -->
-    <!-- <div class="bk-pj-btn lock-bk-btn"> -->
-    <!-- </div> -->
-  <!-- </div> -->
-<%# end %>
