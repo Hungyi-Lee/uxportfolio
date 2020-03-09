@@ -82,10 +82,15 @@
 @media screen and (max-width: 767px){
   .resume-section{
     width: 100%;
+    padding: 0 5%;
     margin: 150px auto;
   }
 
   .work-position-section{
+    width: 100%;
+  }
+
+  .work-duties-section{
     width: 100%;
   }
 
@@ -103,13 +108,15 @@
     padding: 10px 30px;
   }
 
-    .work-position-section >a {
-      font-size: 13px;
-    }
+  .work-position-section >a {
+    font-size: 13px;
+  }
 
   .skills{
-    padding: 0 90px;
+    padding: 0 15%;
+    width: 100%;
   }
+
   .skills-section{
     width: 100%;
   }
