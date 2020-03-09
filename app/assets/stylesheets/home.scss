@@ -110,6 +110,9 @@
 .w-900 > a:hover{
   text-decoration: none;
   opacity: 0.8;
+  .project-title-top, .project-cat-top{
+    color: var(--salmon-pink);
+  }
 }
 
 .view-more-btn{

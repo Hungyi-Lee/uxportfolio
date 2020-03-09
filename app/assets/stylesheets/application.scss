@@ -25,7 +25,7 @@
 
 :root{
   --lightgrey: #F5f5f5;
-  --dusk: #515976;
+  --dusk: #3B3B3B;
   --salmon-pink: #ff7f82;
 }
 
@@ -74,11 +74,11 @@ a, a:hover{
 }
 
 .logo{
-  font-family: PlayfairDisplay;
-  color: #000000;
-  font-weight: 900;
-  font-size: 33px;
-  letter-spacing: 1.4px;
+  // font-family: PlayfairDisplay;
+  color: var(--dusk);
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 1px;
   margin-left: 10px;
 }
 
@@ -414,9 +414,9 @@ a, a:hover{
   }
 
   .logo{
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
-    letter-spacing: 1px;
     margin-left: 10px;
+    margin-top: 3px;
   }
 }

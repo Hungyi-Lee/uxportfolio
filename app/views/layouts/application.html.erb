@@ -56,7 +56,9 @@
             <% else %>
               <li class="nav-list-item"><%= link_to about_path do %>ABOUT<% end %></li>
             <% end %>
-            <% if current_page?(controller: 'projects', action: 'index') %>
+            <%# <% if current_page?(controller: 'projects', action: 'index') %> %>
+              <!-- <li class="active"><%#= link_to all_projects_path do %>PROJECTS<%# end %></li> -->
+            <% if controller.controller_name == 'projects' %>
               <li class="active"><%= link_to all_projects_path do %>PROJECTS<% end %></li>
             <% else %>
               <li class="nav-list-item"><%= link_to all_projects_path do %>PROJECTS<% end %></li>
