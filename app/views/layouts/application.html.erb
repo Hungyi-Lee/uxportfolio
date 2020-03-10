@@ -56,8 +56,6 @@
             <% else %>
               <li class="nav-list-item"><%= link_to about_path do %>ABOUT<% end %></li>
             <% end %>
-            <%# <% if current_page?(controller: 'projects', action: 'index') %> %>
-              <!-- <li class="active"><%#= link_to all_projects_path do %>PROJECTS<%# end %></li> -->
             <% if controller.controller_name == 'projects' %>
               <li class="active"><%= link_to all_projects_path do %>PROJECTS<% end %></li>
             <% else %>
@@ -69,6 +67,15 @@
       </div>
     </div>
     <%= yield %>
+    <!-- footer -->
+    <footer>
+        <p class="footer-left">Designed and developed by Hungyi Lee &copy; <%= Time.zone.now.year %></p>
+        <p class="footer-right">
+          <%= mail_to "horngyi6527@gmail.com", body:"Hi Hungyi,", target: "_blank" do %>Email<% end %>
+          |
+          <%= link_to "https://linkedin.com/in/hungyi-lee/", target: "_blank" do %>LinkedIn<% end %>
+        </p>
+    </footer>
     <!-- Go to top -->
     <div onclick="topFunction()" id="myBtn" class="bottom-menu pull-right">
       <span>&#8593;</span>

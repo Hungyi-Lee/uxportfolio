@@ -175,7 +175,7 @@ figcaption{
 }
 
 .project-detailed-content{
-  width: 65%;
+  width: 60%;
   margin: 0 auto;
   padding: 5%;
 }
@@ -206,7 +206,8 @@ figcaption{
 
 .detail-content > h6{
   color: var(--dusk);
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
 #closeBtn{
@@ -311,6 +312,17 @@ figcaption{
   text-decoration: none;
 }
 
+figure > img{
+  width: 100%;
+  margin-top: 0.7rem;
+}
+
+figure.prototype-screens{
+  width: 30%;
+  margin: 0 0.3rem 1rem;
+  display: inline-block;
+  vertical-align: top;
+}
 
 // tablet
 @media (min-width: 768px) and (max-width: 1300px) {
@@ -408,11 +420,11 @@ figcaption{
 
   // show page
   .project-top{
-    padding: 20% 3%;
+    padding: 20% 2%;
   }
 
   .project-content-title{
-    font-size: 1.75rem;
+    font-size: 1.2rem;
     letter-spacing: 4px;
   }
 
@@ -441,5 +453,12 @@ figcaption{
     color: var(--dusk);
     text-transform: uppercase;
     margin-bottom: 25px;
+  }
+
+  figure.prototype-screens{
+    width: 45%;
+    margin: 0 0.3rem 1rem;
+    display: inline-block;
+    vertical-align: top;
   }
 }
