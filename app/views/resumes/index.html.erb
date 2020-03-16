@@ -24,6 +24,23 @@
   </div>
 </div>
 <!-- Profile End -->
+<!-- Experiences Begin -->
+<div class="section resume-section">
+  <div class="resume-title">Experience</div>
+  <hr/>
+  <% @works.each do |w|%>
+  <div class="work-experiences-section m-t-20">
+    <div class="work-position-section">
+      <div class="position"><%= w.company %> / <%= w.position%></div>
+      <div class="work-dates"><%= w.timeline %> <%= w.location%></div>
+    </div>
+    <div class="work-duties-section">
+      <%= raw(w.description) %>
+    </div>
+  </div>
+  <%end%>
+</div>
+<!-- Experiences End -->
 <!-- Projects Begin -->
 <div class="section resume-section m-t-20">
   <div class="resume-title">UX design projects</div>
@@ -93,23 +110,6 @@
   </div>
 </div>
 <!-- Projects End -->
-<!-- Experiences Begin -->
-<div class="section resume-section">
-  <div class="resume-title">Experience</div>
-  <hr/>
-  <% @works.each do |w|%>
-  <div class="work-experiences-section m-t-20">
-    <div class="work-position-section">
-      <div class="position"><%= w.company %> / <%= w.position%></div>
-      <div class="work-dates"><%= w.timeline %> <%= w.location%></div>
-    </div>
-    <div class="work-duties-section">
-      <%= raw(w.description) %>
-    </div>
-  </div>
-  <%end%>
-</div>
-<!-- Experiences End -->
 <!-- Education Begin -->
 <div class="section resume-section">
   <div class="resume-title">Education</div>
