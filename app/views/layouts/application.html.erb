@@ -41,16 +41,16 @@
         </div>
         <nav>
           <ul class="nav-list">
-            <% if current_page?(controller: 'home', action: 'index') %>
-              <li class="active"><%= link_to root_path do %>HOME<% end %></li>
+            <% if current_page?(controller: 'home', action: 'index') || controller.controller_name == 'projects'%>
+              <li class="active"><%= link_to root_path do %>PORTFOLIO<% end %></li>
             <% else %>
-              <li class="nav-list-item"><%= link_to root_path do %>HOME<% end %></li>
+              <li class="nav-list-item"><%= link_to root_path do %>PORTFOLIO<% end %></li>
             <% end %>
-            <% if controller.controller_name == 'projects' %>
-              <li class="active"><%= link_to all_projects_path do %>PROJECTS<% end %></li>
-            <% else %>
-              <li class="nav-list-item"><%= link_to all_projects_path do %>PROJECTS<% end %></li>
-            <% end %>
+            <%# if controller.controller_name == 'projects' %>
+              <!-- <li class="active"><%#= link_to all_projects_path do %>PROJECTS<%# end %></li> -->
+            <%# else %>
+              <!-- <li class="nav-list-item"><%#= link_to all_projects_path do %>PROJECTS<%# end %></li> -->
+            <%# end %>
             <% if current_page?(controller: 'resumes', action: 'index') %>
               <li class="active"><%= link_to resume_path do %>RESUME<% end %></li>
             <% else %>
@@ -61,7 +61,7 @@
             <% else %>
               <li class="nav-list-item"><%= link_to about_path do %>ABOUT<% end %></li>
             <% end %>
-            <li class="nav-list-item"><%= mail_to "horngyi6527@gmail.com", body:"Hi Hungyi,", target: "_blank" do %>CONTACT<% end %></li>
+            <!-- <li class="nav-list-item"><%#= mail_to "horngyi6527@gmail.com", body:"Hi Hungyi,", target: "_blank" do %>CONTACT<%# end %></li> -->
           </ul>
         </nav>
       </div>

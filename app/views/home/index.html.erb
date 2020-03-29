@@ -2,9 +2,9 @@
   <div class="profile-image"></div>
   <div class="top-greeting">Hello! I'm Hungyi Lee</div>
   <div class="top-introduction">
-    I am a developer turned <b>UX designer</b> based in Seattle WA.<br/>
-    I embrace challenges and problem solving process.
-    <br/>
+    A developer turned <b>UX designer</b> based in Seattle WA.<br/>
+    <!-- I embrace challenges and problem solving process. -->
+    <!-- <br/> -->
     Say hello or get in touch for design work!
     <span class="talk-btn">
       <%= mail_to "horngyi6527@gmail.com", body:"Hi Hungyi," do %>
@@ -24,20 +24,42 @@
     </a>
   </div>
 </div>
-<div class="section m-t-150 m-b-150 font-center" id="projects-section">
+<div class="section projects" id="projects-section">
+  <% @projects.each do |p|%>
+    <div class="project">
+      <div class="project-image">
+        <img class="image" src="<%= p.coverimage%>">
+      </div>
+      <div class="project-description">
+          <div class="project-title"><%= p.title %></div>
+          <div class="project-category">
+            <%= p.projectdate %>
+          </div>
+          <div class="brief-description">
+            <%= p.password %>
+          </div>
+          <div class="project-link">
+            <%= link_to project_path(p.title), class:"view-more-btn center" do %>Read Case Study<% end %>
+          </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<!-- <div class="section m-t-150 m-b-150 font-center" id="projects-section">
   <hr/>
-  <div class="top-greeting m-b-50">Latest Projects</div>
+  <div class="top-greeting m-b-50">Projects</div>
   <div class="w-900 center">
-    <% @projects.each do |p| %>
-      <%= link_to project_path(p.title) do %>
+    <%# @projects.each do |p| %>
+      <%#= link_to project_path(p.title) do %>
         <div class="w-300">
-            <div class="box-image" style="background-image: url('<%= p.coverimage %>')"></div>
-            <p class="project-title-top"><%= p.title %></p>
-            <p class="project-cat-top"><%= p.projectdate %></p>
+            <div class="box-image" style="background-image: url('<%#= p.coverimage %>')"></div>
+            <p class="project-title-top"><%#= p.title %></p>
+            <p class="project-cat-top"><%#= p.projectdate %></p>
         </div>
-      <% end %>
-    <% end %>
+      <%# end %>
+    <%# end %>
   </div>
   <br/><br/>
-  <%= link_to all_projects_path, class:"view-more-btn center" do %>View More Projects<% end %>
-</div>
+  <%#= link_to all_projects_path, class:"view-more-btn center" do %>View More Projects<%# end %>
+</div> -->
