@@ -3,75 +3,67 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .about-box{
-  // display: flex;
+  display: flex;
   width: 100%;
-  padding: 0 20%;
+  padding: 7% 15% 0;
   margin: 0 auto;
 }
 
 .about-myphoto{
-  width: 100%;
+  width: 40%;
   height: 100%;
-  // background-image: url('https://live.staticflickr.com/65535/49184658617_81db544fff_o.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  // margin-bottom: 50px;
-  margin-bottom: 5%;
 }
 
 .about-title{
   // width: 950px;
   // height: 80px;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: bold;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.75px;
   // text-align: center;
   color: var(--dusk);
   margin-bottom: 5px;
 }
 
 .about-bio{
-  width: 100%;
-  // width: 55%;
+  width: 55%;
   height: 100%;
+  padding-top: 2%;
   font-size: 14px;
   line-height: 1.9;
-  // letter-spacing: 1px;
   text-align: justify;
   color: var(--dusk);
-  // margin: 30px auto 0 auto;
+  margin-left: 4%;
 }
 
-.about-bio > p, .about-bio>ul>li{
-  // font-weight: 300;
-}
-
-.about-icons{
-  display: flex;
-  width: 100%;
-  height: 20px;
-  margin-left: 5px;
-  margin-top: 10px;
-}
+// .about-icons{
+//   display: flex;
+//   width: 100%;
+//   height: 20px;
+//   margin-left: 5px;
+//   margin-top: 10px;
+// }
 
 // Tablet
 @media (min-width: 768px) and (max-width: 1300px) {
   .about-box{
-    // display: flex;
     width: 100%;
-    padding: 0 10%;
-    // margin: 0 auto;
+    padding: 25% 8% 8%;
+    display: block;
+    padding: 7% 15% 0;
+    margin: 0 auto;
   }
 
   .about-myphoto{
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    // height: 50%;
     // margin-bottom: 50px;
   }
 
   .about-bio{
-    height: 100%;
+    width: 70%;
+    margin: 0 auto;
     text-align: justify;
   }
 
@@ -86,18 +78,23 @@
  .about-box{
    width: 100%;
    display: block;
-   padding-left: 20px;
-   padding-right: 20px;
+   padding: 20% 5% 0;
  }
 
  .about-myphoto{
    width: 100%;
-   height: 100%;
+   // height: 100%;
    // margin-bottom: 50px;
-   background-size: contain;
-   background-position: center;
-   background-repeat: no-repeat;
+   // background-size: contain;
+   // background-position: center;
+   // background-repeat: no-repeat;
    margin: 0 auto;
+ }
+ .about-bio{
+   width: 100%;
+   padding: 5%;
+   margin-left:0;
+   text-align: justify;
  }
 
  .about-title{
@@ -106,13 +103,4 @@
    margin-bottom: 10px;
  }
 
- .about-bio{
-   width: 100%;
-   padding: 25px;
-   text-align: justify;
- }
-
- .about-bio{
-   height: 100%;
- }
 }
