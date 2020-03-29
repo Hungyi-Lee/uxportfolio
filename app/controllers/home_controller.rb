@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @projects = Project.last(3).reverse
+    @projects = Project.all.reverse
   end
 end

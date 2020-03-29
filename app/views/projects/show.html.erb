@@ -1,13 +1,25 @@
 
 <div class="section m-t-50">
-  <div class="project-top">
-    <div class="project-content-title"><%= @project.title %></div>
-    <!-- project brief information -->
-    <%= raw(@project.heroimage)%>
-    <!-- project brief information finish-->
-    <div class="open-case-study">
-      <div onclick="myFunction()" id="readMoreBtn">Read Full Case Study</div>
-      <%= link_to @project.pdf, target:"_blank" do %><div id="pdfBtn">PDF Case Study</div><%end%>
+  <div class="project-content-title"><%= @project.title %></div>
+  <div class="project-content-date"><%= @project.projectdate %></div>
+  <!-- <div class="pdf"> -->
+    <%#= link_to @project.pdf, target:"_blank" do %>
+      <!-- <div class="open-case-study"> -->
+          <!-- Download PDF -->
+      <!-- </div> -->
+    <%#end%>
+  <!-- </div> -->
+  <div class="project-detailed-content">
+    <div class="detail-content">
+      <h4>Overview</h4>
+      <h6>The Problem</h6>
+      <%= raw(@project.category) %>
+      <h6>My Role</h6>
+      <%= raw(@project.role) %>
+      <h6>Tools</h6>
+      <p><%= raw(@project.tools) %></p>
+      <h6>Process</h6>
+      <%= raw(@project.heroimage) %>
     </div>
   </div>
   <!-- project detailed content start -->
@@ -16,7 +28,7 @@
 </div>
 
 
-<script>
+<!-- <script>
 function myFunction() {
   window.scrollTo(0, 1500);
   var dots = document.getElementById("dots");
@@ -35,13 +47,13 @@ function myFunction() {
     window.scrollTo(0,1000);
   }
 }
-</script>
+</script> -->
 
 
 
 <div class="section">
   <div class="bk-pj-btn">
-    <%= link_to all_projects_path do %>BACK TO PROJECTS<% end %>
+    <%= link_to root_path(anchor: "projects-section") do %>BACK TO PROJECTS<% end %>
   </div>
   <hr>
   <div>
