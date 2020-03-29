@@ -74,11 +74,35 @@
 .about-bio>p>a{
   color: var(--salmon-pink);
 }
+
 .about-bio>p>a:hover{
   opacity: 0.7;
   text-decoration: none;
 }
+.resume-pdfbtn{
+  width: 300px;
+  height: 50px;
+  margin: 5% auto;
+  text-align: center;
+}
 
+.resume-pdfbtn > a{
+  padding: 15px 25px;
+  text-decoration: none;
+  border: 2px solid var(--dusk);
+  font-size: 13px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 4px;
+  border-radius: 5px;
+  color: var(--dusk);
+}
+
+.resume-pdfbtn > a:hover{
+  color: white;
+  background-color: var(--dusk);
+  text-decoration: none;
+}
 @media screen and (max-width: 767px){
   .resume-section{
     width: 100%;

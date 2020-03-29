@@ -3,7 +3,7 @@
   <div class="work-experiences-section">
     <div class="work-position-section center font-center">
       <div class="job-description">Hungyi Lee <br/>UX Designer in Seattle</div>
-        <div class="bk-pj-btn">
+        <div class="resume-pdfbtn">
           <%= link_to "https://drive.google.com/file/d/1pBwq-j8eqokrglA9dDrnE4Jfr9BK10Ya/view", target: "_blank" do %>
           Download PDF Resume
           <% end %>
@@ -48,9 +48,7 @@
   <div class="work-experiences-section">
     <div class="work-position-section">
       <div class="position">
-        <%=link_to project_path(@projects.offset(4).first.title) do%>
           LEGO Ecommerce (Website)
-        <%end%>
       </div>
       <div class="work-dates">Mar. 2020</div>
     </div>
@@ -58,15 +56,14 @@
       <ul>
         <li>Redesigned LEGO Ecommerce webiste to provide users a better experience in looking for LEGO products</li>
         <li>Performed UX aduit, user research, competitor analysis, information design and interface design</li>
+        <p><%=link_to project_path(@projects.offset(4).first.title) do%>See case study here<%end%></p>
       </ul>
     </div>
   </div>
   <div class="work-experiences-section">
     <div class="work-position-section">
       <div class="position">
-        <%=link_to project_path(@projects.fourth.title) do%>
           Savr Mobile App (iOS)
-        <%end%>
       </div>
       <div class="work-dates">Feb. 2020</div>
     </div>
@@ -74,15 +71,14 @@
       <ul>
         <li>Designed an app to help people easily follow new recipes and cook great meals</li>
         <li>Completed a high-fidelity prototype and conducted the usability testing</li>
+        <p><%=link_to project_path(@projects.fourth.title) do%> See case study here<%end%></p>
       </ul>
     </div>
   </div>
   <div class="work-experiences-section">
     <div class="work-position-section">
       <div class="position">
-        <%=link_to project_path(@projects.third.title) do%>
           Project5 Music Platform (Website)
-        <%end%>
       </div>
       <div class="work-dates">Dec. 2019</div>
     </div>
@@ -90,13 +86,14 @@
       <ul>
         <li>Redesigned the website which helps music producers develop their music and be discovered</li>
         <li>Responsible for user research, wireframing, prototyping, and usability testing</li>
+        <p><%=link_to project_path(@projects.third.title) do%>See case study here<%end%></p>
       </ul>
     </div>
   </div>
   <div class="work-experiences-section m-t-20">
     <div class="work-position-section">
       <div class="position">
-        <%=link_to project_path(@projects.second.title) do%>PostUp Mobile App (iOS)<%end%>
+        PostUp Mobile App (iOS)
       </div>
       <div class="work-dates">Nov. 2019</div>
     </div>
@@ -104,15 +101,14 @@
       <ul>
         <li>Designed an app to help people easily find a public place to work</li>
         <li>Completed a high-fidelity prototype and conducted the usability testing</li>
+        <p><%=link_to project_path(@projects.second.title) do%>See case study here<%end%></p>
       </ul>
     </div>
   </div>
   <div class="work-experiences-section m-t-20">
     <div class="work-position-section">
       <div class="position">
-        <%=link_to project_path(@projects.first.title) do%>
           Tripik Mobile App (iOS)
-        <%end%>
       </div>
       <div class="work-dates">Aug. 2019 - Nov. 2019</div>
     </div>
@@ -120,6 +116,7 @@
       <ul>
         <li>Designed an app for people easily find ideal  travel destinations</li>
         <li>Responsible for user research, wireframing, visual design, prototyping, and usability testing</li>
+        <p><%=link_to project_path(@projects.first.title) do%>See case study here <%end%></p>
       </ul>
     </div>
   </div>
@@ -136,8 +133,8 @@
     </div>
     <div class="work-duties-section">
       <ul>
-        <li>Work on Northwest Health Career Path (NHCP) project to make health career programs information available for the prospective students from the northewest region</li>
-        <li>My role is to create wireframes, prototypes, and collect users' feedback by usability testing</li>
+        <li>Work on Northwest Health Career Path (NWHCP) project to make health career programs information available for the prospective students from the northewest region</li>
+        <li>My role is to create wireframes, visual design guideline, prototypes, and collect users' feedback by usability testing</li>
       </ul>
     </div>
   </div>
