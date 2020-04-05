@@ -1,0 +1,40 @@
+
+<div class="section m-t-50">
+  <div class="project-content-title"><%= @sideproject.title %></div>
+  <div class="project-content-date"><%= @sideproject.projectdate %></div>
+  <div class="project-detailed-content">
+    <div class="detail-content">
+      <%= raw(@sideproject.description) %>
+    </div>
+  </div>
+  <%= raw(@sideproject.description) %>
+</div>
+
+
+
+
+<div class="section">
+  <div class="bk-pj-btn">
+    <%= link_to sideprojects_path do %>BACK<% end %>
+  </div>
+  <hr>
+  <div>
+    <h3 class="more-studies">MORE CASE STUDIES</h3>
+  </div>
+  <div class="content-bottom-section">
+    <% if @sideproject.previous.present? %>
+        <div class="previous-pj">
+          <div class="previous-pj-img" style="background-image: url('<%= @sideproject.previous.coverimage %>');"></div>
+          <div class="previous-pj-title"><%= @sideproject.previous.title%></div>
+          <%= link_to @sideproject.previous.title do %>Read More<% end %>
+        </div>
+    <% end %>
+    <% if @sideproject.next.present? %>
+        <div class="next-pj">
+          <div class="next-pj-img" style="background-image: url('<%= @sideproject.next.coverimage %>');"></div>
+          <div class="next-pj-title"><%= @sideproject.next.title%></div>
+          <%= link_to @sideproject.next.title do %>Read More<% end %>
+        </div>
+    <% end %>
+  </div>
+</div>
