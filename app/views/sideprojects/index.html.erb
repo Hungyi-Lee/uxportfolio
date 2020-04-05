@@ -1,0 +1,21 @@
+<div class="section projects">
+  <% @sideprojects.each do |p|%>
+    <div class="project">
+      <div class="project-image">
+        <img class="image" src="<%= p.coverimage%>">
+      </div>
+      <div class="project-description">
+          <div class="project-title"><%= p.title %></div>
+          <div class="project-category">
+            <%= p.projectdate %>
+          </div>
+          <div class="brief-description">
+            <%= p.briefintro %>
+          </div>
+          <div class="project-link">
+            <%= link_to sideproject_path(p.title), class:"view-more-btn center" do %>Read More<% end %>
+          </div>
+      </div>
+    </div>
+  <% end %>
+</div>
