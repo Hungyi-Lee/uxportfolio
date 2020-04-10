@@ -15,12 +15,9 @@
 }
 
 .about-title{
-  // width: 950px;
-  // height: 80px;
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.75px;
-  // text-align: center;
   color: var(--dusk);
   margin-bottom: 5px;
 }
@@ -34,6 +31,13 @@
   text-align: justify;
   color: var(--dusk);
   margin-left: 4%;
+}
+
+.page-name{
+  font-size: 2rem;
+  color: var(--dusk);
+  letter-spacing: 2px;
+  font-weight: 700;
 }
 
 // .about-icons{

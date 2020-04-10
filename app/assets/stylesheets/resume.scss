@@ -10,14 +10,13 @@
   height: 50px;
   font-size: 30px;
   font-weight: 700;
-  // letter-spacing: 2.66px;
   color: var(--dusk);
 }
 
 .job-description{
   color: var(--dusk);
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-size: 2rem;
+  letter-spacing: 2px;
   font-weight: 700;
 }
 
@@ -82,7 +81,7 @@
 .resume-pdfbtn{
   width: 300px;
   height: 50px;
-  margin: 5% auto;
+  margin: 7% auto 5%;
   text-align: center;
 }
 
@@ -107,7 +106,7 @@
   .resume-section{
     width: 100%;
     padding: 0 5%;
-    margin: 150px auto;
+    margin: 100px auto;
   }
 
   .work-position-section{
@@ -121,6 +120,10 @@
   .resume-title{
     width: 100%;
     text-align: center;
+  }
+
+  .resume-pdfbtn{
+    margin: 10% auto 5%;
   }
 
   .work-experiences-section, .work-position-section, .work-duties-section{
