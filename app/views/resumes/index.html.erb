@@ -17,9 +17,8 @@
   <hr/>
   <div class="work-experiences-section">
       <ul>
-        <li>Targeting junior UX designer position</li>
-        <li>1 year experience in web programming, and ~7 years in graphic design</li>
-        <li>UX bootcamp graduated and experienced a 4-week UX designer intern</li>
+        <li>Targeting UX designer position</li>
+        <li>Having ~1 year experience in web development, and ~7 years in graphic design</li>
       </ul>
   </div>
 </div>
@@ -32,7 +31,12 @@
   <div class="work-experiences-section m-t-20">
     <div class="work-position-section">
       <div class="position"><%= w.company %> / <%= w.position%></div>
-      <div class="work-dates"><%= w.timeline %> <%= w.location%></div>
+      <div class="work-dates">
+        <%= w.timeline %>
+      </div>
+      <div class="work-dates">
+        <%= w.location%>
+      </div>
     </div>
     <div class="work-duties-section">
       <%= raw(w.description) %>
@@ -54,8 +58,9 @@
     </div>
     <div class="work-duties-section">
       <ul>
-        <li>Designed an onboarding experience to help people successfully look for possible workouts</li>
-        <li>Performed competitor analysis, wireframing, prototyping and usability testing</li>
+        <li>Designed a seamless onboarding experience for new users to help them set up workout at home successfully</li>
+        <li>Created wireframes and a high-fidelity prototype based on users’ needs</li>
+        <li>Validated the solutions by conducting usability test</li>
         <p><%=link_to project_path(@projects.second.title) do%>See case study here<%end%></p>
       </ul>
     </div>
@@ -70,7 +75,8 @@
     <div class="work-duties-section">
       <ul>
         <li>Redesigned the website to provide users a better shopping experience</li>
-        <li>Performed UX audit, user research, competitor analysis, information design and interface design</li>
+        <li>Performed UX audit, user research, competitor analysis and information design</li>
+        <li>Created a high-fidelity prototype with HTML, CSS and jQuery </li>
         <p><%=link_to project_path(@projects.offset(4).first.title) do%>See case study here<%end%></p>
       </ul>
     </div>
@@ -90,51 +96,6 @@
       </ul>
     </div>
   </div>
-  <div class="work-experiences-section">
-    <div class="work-position-section">
-      <div class="position">
-          Project5 Music Platform (Website)
-      </div>
-      <div class="work-dates">Dec. 2019</div>
-    </div>
-    <div class="work-duties-section">
-      <ul>
-        <li>Redesigned the website which helps music producers develop their music and be discovered</li>
-        <li>Responsible for user research, wireframing, prototyping, and usability testing</li>
-        <p><%=link_to project_path(@projects.third.title) do%>See case study here<%end%></p>
-      </ul>
-    </div>
-  </div>
-  <!-- <div class="work-experiences-section m-t-20">
-    <div class="work-position-section">
-      <div class="position">
-        PostUp Mobile App (iOS)
-      </div>
-      <div class="work-dates">Nov. 2019</div>
-    </div>
-    <div class="work-duties-section">
-      <ul>
-        <li>Designed an app to help people easily find a public place to work</li>
-        <li>Completed a high-fidelity prototype and conducted the usability testing</li>
-        <p><%#=link_to project_path(@projects.second.title) do%>See case study here<%#end%></p>
-      </ul>
-    </div>
-  </div> -->
-  <div class="work-experiences-section m-t-20">
-    <div class="work-position-section">
-      <div class="position">
-          Tripik Mobile App (iOS)
-      </div>
-      <div class="work-dates">Aug. 2019 - Nov. 2019</div>
-    </div>
-    <div class="work-duties-section">
-      <ul>
-        <li>Designed an app for people easily find ideal  travel destinations</li>
-        <li>Responsible for user research, wireframing, visual design, prototyping, and usability testing</li>
-        <p><%=link_to project_path(@projects.first.title) do%>See case study here <%end%></p>
-      </ul>
-    </div>
-  </div>
 </div>
 <!-- Projects End -->
 <!-- Volunteer Start -->
@@ -148,8 +109,8 @@
     </div>
     <div class="work-duties-section">
       <ul>
-        <li>Work on Northwest Health Career Path (NWHCP) project to make health career programs information available for the prospective students from the northewest region</li>
-        <li>My role is to create wireframes, visual design guideline, prototypes, and collect users' feedback by usability testing</li>
+        <li>Collaborated with 4 UX designers to make health career programs information available for the prospective students from the northwest region</li>
+        <li>Created wireframes, visual design guideline, prototypes, and collect users' feedback by usability testing</li>
       </ul>
     </div>
   </div>
@@ -203,31 +164,32 @@
 <!-- Education End -->
 <!-- Design Skills begin -->
 <div class="section resume-section">
-  <div class="resume-title">Design skills</div>
+  <div class="resume-title">UX Design skills</div>
   <hr/>
   <div class="work-experiences-section skills">
       <div class="skills-section">
         <ul>
-          <li>User Experience Design</li>
-          <li>User Interface Design</li>
-        </ul>
-      </div>
-      <div class="skills-section">
-        <ul>
-          <li>User Research</li>
-          <li>Usability Testing</li>
-        </ul>
-      </div>
-      <div class="skills-section">
-        <ul>
-          <li>Wireframing</li>
-          <li>Prototyping</li>
-        </ul>
-      </div>
-      <div class="skills-section">
-        <ul>
-          <li>Visual Design</li>
+          <li>Illustration</li>
           <li>Information Architecture</li>
+          <li>Interface Design</li>
+        </ul>
+      </div>
+      <div class="skills-section">
+        <ul>
+          <li>Prototyping</li>
+          <li>User Research</li>
+        </ul>
+      </div>
+      <div class="skills-section">
+        <ul>
+          <li>Usability Testing</li>
+          <li>Visual Design</li>
+        </ul>
+      </div>
+      <div class="skills-section">
+        <ul>
+          <li>Web Design</li>
+          <li>Wireframing</li>
         </ul>
       </div>
   </div>
@@ -240,26 +202,26 @@
   <div class="work-experiences-section skills">
       <div class="skills-section">
         <ul>
-          <li>Sketch</li>
-          <li>Figma</li>
-        </ul>
-      </div>
-      <div class="skills-section">
-        <ul>
-          <li>Invision</li>
-          <li>Adobe XD</li>
-        </ul>
-      </div>
-      <div class="skills-section">
-        <ul>
           <li>Adobe Illustrator</li>
           <li>Adobe Photoshop</li>
         </ul>
       </div>
       <div class="skills-section">
         <ul>
-          <li>Zeplin</li>
+          <li>Adobe XD</li>
           <li>Balsamiq</li>
+        </ul>
+      </div>
+      <div class="skills-section">
+        <ul>
+          <li>Figma</li>
+          <li>Invision</li>
+        </ul>
+      </div>
+      <div class="skills-section">
+        <ul>
+          <li>Sketch</li>
+          <li>Zeplin</li>
         </ul>
       </div>
   </div>
@@ -272,14 +234,14 @@
   <div class="work-experiences-section skills">
     <div class="skills-section">
       <ul>
-        <li>Ruby on Rails</li>
-        <li>HTML</li>
+        <li>Bootstrap</li>
+        <li>CSS</li>
       </ul>
     </div>
     <div class="skills-section">
       <ul>
-        <li>CSS</li>
-        <li>Bootstrap</li>
+        <li>Git</li>
+        <li>HTML</li>
       </ul>
     </div>
     <div class="skills-section">
@@ -291,7 +253,7 @@
     <div class="skills-section">
       <ul>
         <li>React JS</li>
-        <li>Git</li>
+        <li>Ruby on Rails</li>
       </ul>
     </div>
   </div>
