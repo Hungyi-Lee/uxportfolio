@@ -169,7 +169,7 @@ a, a:hover{
   z-index: 99;
   font-size: 18px;
   outline: none;
-  background-color: var(--salmon-pink);
+  background-color: var(--dusk);
   color: white;
   cursor: pointer;
   padding: 20px;
@@ -180,17 +180,19 @@ a, a:hover{
 }
 
 .bottom-menu:hover{
- -webkit-animation: rotation 0.5s linear;
+ // -webkit-animation: rotation 0.5s linear;
+ background-color: var(--dusk);
+ opacity: 0.8;
 }
-
-@-webkit-keyframes rotation {
-		from {
-				-webkit-transform: rotate(0deg);
-		}
-		to {
-				-webkit-transform: rotate(359deg);
-		}
-}
+//
+// @-webkit-keyframes rotation {
+// 		from {
+// 				-webkit-transform: rotate(0deg);
+// 		}
+// 		to {
+// 				-webkit-transform: rotate(359deg);
+// 		}
+// }
 
 //Tablet
 @media (min-width: 768px) and (max-width: 1024px) {
