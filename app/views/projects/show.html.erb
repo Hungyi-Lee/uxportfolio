@@ -1,7 +1,6 @@
 
 <div class="section m-t-50">
   <div class="project-content-title"><%= @project.title %></div>
-  <div class="project-content-date"><%= @project.projectdate %></div>
   <!-- <div class="pdf"> -->
     <%#= link_to @project.pdf, target:"_blank" do %>
       <!-- <div class="open-case-study"> -->
@@ -16,8 +15,8 @@
       <%= raw(@project.category) %>
       <h6>My Role</h6>
       <%= raw(@project.role) %>
-      <h6>Tools</h6>
-      <p><%= raw(@project.tools) %></p>
+      <!-- <h6>Tools</h6> -->
+      <!-- <p><%#= raw(@project.tools) %></p> -->
       <h6>Process</h6>
       <%= raw(@project.heroimage) %>
     </div>
@@ -53,7 +52,7 @@ function myFunction() {
 
 <div class="section">
   <div class="bk-pj-btn">
-    <%= link_to root_path(anchor: "projects-section") do %>BACK<% end %>
+    <%= link_to root_path(anchor: "projects-section") do %>GO BACK<% end %>
   </div>
   <hr>
   <div>
