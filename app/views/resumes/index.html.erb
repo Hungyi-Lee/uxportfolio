@@ -1,4 +1,4 @@
-<div class="section resume-section m-t-150">
+<div class="section m-t-150">
   <!-- <div class="resume-title center font-center">Hungyi Lee</div> -->
   <div class="work-experiences-section">
     <div class="work-position-section center font-center">
@@ -12,39 +12,269 @@
   </div>
 </div>
 <!-- Profile Begin -->
-<div class="section resume-section">
-  <div class="resume-title">Summary</div>
-  <hr/>
-  <div class="work-experiences-section">
+<!-- <div class="section resume-section"> -->
+  <!-- <div class="resume-title">Summary</div> -->
+  <!-- <hr/> -->
+  <!-- <div class="work-experiences-section">
       <ul>
         <li>Targeting junior UX designer position</li>
         <li>Having experience in end-to-end UX design</li>
         <li>Turn to UX design from a background in web development and graphic design </li>
       </ul>
-  </div>
-</div>
+  </div> -->
+<!-- </div> -->
 <!-- Profile End -->
 <!-- Experiences Begin -->
-<div class="section resume-section">
-  <div class="resume-title">Experience</div>
+<div class="resume-section">
+  <div class="resume-title">Where I've Worked</div>
+    <div class="tabbox">
+      <div class="tab bs-tab sm-tab">
+        <button class="tablinks" onclick="openCity(event, 'HCI')" id="defaultOpen">Human Capable Inc.</button>
+        <button class="tablinks" onclick="openCity(event, 'NHCP')">Northwest Health Career Path</button>
+        <button class="tablinks" onclick="openCity(event, 'P5')">Project5</button>
+        <button class="tablinks" onclick="openCity(event, 'ME')">Metro Engines</button>
+        <button class="tablinks" onclick="openCity(event, 'SE')">Self Employed</button>
+      </div>
+      <div id="HCI" class="tabcontent">
+        <div class="position">UX Designer @ Human Capable Inc.</div>
+        <div class="work-dates">Apr. 2020 - Present | Plantation, FL</div>
+        <div class="work-duties-section">
+          <ul>
+            <li>Executed responsive design for Norm Glasses E-Commerce</li>
+            <li>Worked as a full stack UX designer and collaborated with business team</li>
+            <li>Created a seamless ordering flow for people to order the smart glasses which aims to increase the sales</li>
+            <li><a href="https://www.hungyilee.com/projects/Norm%20Glasses%20(Website)" target="_blank">See case study here</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="NHCP" class="tabcontent">
+        <div class="position">UX Designer @ Northwest Health Career Path</div>
+        <div class="work-dates">Mar. 2020 - Present | Seattle, WA</div>
+        <div class="work-duties-section">
+          <ul>
+            <li>Collaborated with 4 UX designers and 3 project managers</li>
+            <li>Responsible for creating wireframes, visual design guideline, and collect users' feedback by usability testing</li>
+            <li>Created a responsive website and make health career programs' information available for the underrepresented students</li>
+          </ul>
+        </div>
+      </div>
+      <div id="P5" class="tabcontent">
+        <div class="position">UX Designer @ Project5</div>
+        <div class="work-dates">Dec. 2019 - Jan. 2020 | Shanghai, China</div>
+        <div class="work-duties-section">
+          <ul>
+            <li>Proposed a new design of the music platform to help musicians to be discovered</li>
+            <li>Completed user research, competitor analysis, prototyping, and usability testing</li>
+          </ul>
+        </div>
+      </div>
+      <div id="ME" class="tabcontent">
+        <div class="position">Web Developer @ Metro Engines</div>
+        <div class="work-dates">Apr. 2018 - Dec. 2018 | Tokyo, Japan</div>
+        <div class="work-duties-section">
+          <ul>
+            <li>Collaborated with multidisciplinary teams to develop a new product that aggregates hotels’ reviews and provides an analysis to clients with Ruby on Rails and ReactJS</li>
+            <li>Managed project by setting timelines and allocating bandwidth and defined the website requirements</li>
+          </ul>
+        </div>
+      </div>
+      <div id="SE" class="tabcontent">
+        <div class="position">Graphic Designer Freelancer @ Self Employed</div>
+        <div class="work-dates">Sep. 2012 - Aug. 2019 | Remote</div>
+        <div class="work-duties-section">
+          <ul>
+            <li>Designed logos, flyers, posters, logos and book covers for the clients from Taiwan, Japan, and the United States</li>
+            <li><a href="https://www.hungyilee.com/graphicdesign" target="_blank">See my work here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" tabactive", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " tabactive";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+</div>
+<!-- Experience End -->
+<!-- Skills Begin -->
+<div class="resume-section">
+  <div class="resume-title">My Skillset</div>
+  <div class="tabbox">
+    <div class="skilltab bs-tab sm-tab">
+      <button class="skilltablinks" onclick="openSkill(event, 'design')" id="defaultOpenSkill">Design Skills</button>
+      <button class="skilltablinks" onclick="openSkill(event, 'DT')">Design Tools</button>
+      <button class="skilltablinks" onclick="openSkill(event, 'DS')">Development Skills</button>
+      <button class="skilltablinks" onclick="openSkill(event, 'lan')">Languages</button>
+    </div>
+    <div id="design" class="skilltabcontent">
+      <div class="work-duties-section">
+        <ul>
+          <li>Information Architecture</li>
+          <li>Prototyping</li>
+          <li>User Research</li>
+          <li>Usability Testing</li>
+          <li>Visual Design</li>
+          <li>Web Design</li>
+          <li>Wireframing</li>
+        </ul>
+      </div>
+    </div>
+    <div id="DT" class="skilltabcontent">
+      <div class="work-duties-section">
+        <ul>
+          <li>Adobe Illustrator / Photoshop / XD</li>
+          <li>Balsamiq</li>
+          <li>Figma</li>
+          <li>Framer X</li>
+          <li>Invision</li>
+          <li>Sketch</li>
+          <li>Zeplin</li>
+        </ul>
+      </div>
+    </div>
+    <div id="DS" class="skilltabcontent">
+      <div class="work-duties-section">
+        <ul>
+          <li>Bootstrap</li>
+          <li>CSS</li>
+          <li>Git</li>
+          <li>HTML</li>
+          <li>Invision</li>
+          <li>Javascript / JQuery / React JS</li>
+          <li>Ruby on Rails</li>
+        </ul>
+      </div>
+    </div>
+    <div id="lan" class="skilltabcontent">
+      <div class="work-duties-section">
+        <ul>
+          <li>Mandarin (Native)</li>
+          <li>English (Advanced)</li>
+          <li>Japanese (Advanced)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script>
+  function openSkill(evt, Skill) {
+    var i, skilltabcontent, skilltablinks;
+    skilltabcontent = document.getElementsByClassName("skilltabcontent");
+    for (i = 0; i < skilltabcontent.length; i++) {
+      skilltabcontent[i].style.display = "none";
+    }
+    skilltablinks = document.getElementsByClassName("skilltablinks");
+    for (i = 0; i < skilltablinks.length; i++) {
+      skilltablinks[i].className = skilltablinks[i].className.replace(" tabactive", "");
+    }
+    document.getElementById(Skill).style.display = "block";
+    evt.currentTarget.className += " tabactive";
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpenSkill").click();
+  </script>
+</div>
+<!-- Skills End -->
+<!-- Education Begin -->
+<div class="resume-section">
+  <div class="resume-title">My Degree</div>
+  <div class="tabbox">
+    <div class="edutab bs-tab sm-tab">
+      <button class="edutablinks" onclick="openEdu(event, 'certificate')" id="defaultOpenEdu">UX Certification</button>
+      <button class="edutablinks" onclick="openEdu(event, 'ma')">Master</button>
+      <button class="edutablinks" onclick="openEdu(event, 'matw')">Master</button>
+      <button class="edutablinks" onclick="openEdu(event, 'ba')">Bachelor</button>
+    </div>
+    <div id="certificate" class="edutabcontent">
+      <div class="position">UX Design Career Track Certification @ Springboard</div>
+      <div class="work-dates">Aug. 2019 - Feb. 2020 | San Francisco, CA</div>
+      <div class="work-duties-section">
+        <ul>
+          <li>Learning the full process of UX design</li>
+          <li>Deliver Tripik mobile app for capstone project</li>
+          <li>Deliver PostUp mobile app for 5 days design sprint</li>
+        </ul>
+      </div>
+    </div>
+    <div id="ma" class="edutabcontent">
+      <div class="position">MA, Applied Japanese Linguistics @ Ochanomizu University</div>
+      <div class="work-dates">Apr. 2015 - Mar. 2017 | Tokyo, Japan</div>
+      <div class="work-duties-section">
+        <ul>
+          <li>Study with full scholarship approximate $45,000</li>
+        </ul>
+      </div>
+    </div>
+    <div id="matw" class="edutabcontent">
+      <div class="position">MA, Japanese Language and Literature @ Soochow University</div>
+      <div class="work-dates">Sep. 2011 - Dec. 2013 | Taipei, Taiwan</div>
+      <div class="work-duties-section"></div>
+    </div>
+    <div id="ba" class="edutabcontent">
+      <div class="position">BA, Japanese Language and Literature @ Soochow University</div>
+      <div class="work-dates">Sep. 2007 - Jun. 2011 | Taipei, Taiwan</div>
+      <div class="work-duties-section"></div>
+    </div>
+  </div>
+  <script>
+  function openEdu(evt, Edu) {
+    var i, edutabcontent, edutablinks;
+    edutabcontent = document.getElementsByClassName("edutabcontent");
+    for (i = 0; i < edutabcontent.length; i++) {
+      edutabcontent[i].style.display = "none";
+    }
+    edutablinks = document.getElementsByClassName("edutablinks");
+    for (i = 0; i < edutablinks.length; i++) {
+      edutablinks[i].className = edutablinks[i].className.replace(" tabactive", "");
+    }
+    document.getElementById(Edu).style.display = "block";
+    evt.currentTarget.className += " tabactive";
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpenEdu").click();
+  </script>
+</div>
+<!--Education End-->
+
+
+
+
+
+
+<!-- <div class="section resume-section">
+  <div class="resume-title">Where I've worked</div>
   <hr/>
-  <% @works.each do |w|%>
+  <%# @works.each do |w|%>
   <div class="work-experiences-section m-t-20">
     <div class="work-position-section">
-      <div class="position"><%= w.company %> / <%= w.position%></div>
+      <div class="position"><%#= w.company %> / <%#= w.position%></div>
       <div class="work-dates">
-        <%= w.timeline %>
+        <%#= w.timeline %>
       </div>
       <div class="work-dates">
-        <%= w.location%>
+        <%#= w.location%>
       </div>
     </div>
     <div class="work-duties-section">
-      <%= raw(w.description) %>
+      <%#= raw(w.description) %>
     </div>
   </div>
-  <%end%>
-</div>
+  <%#end%>
+</div> -->
 <!-- Experiences End -->
 <!-- Projects Begin -->
 <!-- <div class="section resume-section m-t-20">
@@ -99,72 +329,12 @@
   </div>
 </div> -->
 <!-- Projects End -->
-<!-- Volunteer Start -->
-<!-- <div class="section resume-section">
-  <div class="resume-title">Volunteer</div>
-  <hr/>
-  <div class="work-experiences-section m-t-20">
-    <div class="work-position-section">
-      <div class="position">Northwest Health Careers / UX Designer</div>
-      <div class="work-dates">Mar. 2020 - Present Seattle,WA</div>
-    </div>
-    <div class="work-duties-section">
-      <ul>
-        <li>Collaborated with 4 UX designers to make health career programs information available for the prospective students from the northwest region</li>
-        <li>Created wireframes, visual design guideline, prototypes, and collect users' feedback by usability testing</li>
-      </ul>
-    </div>
-  </div>
-</div> -->
-<!-- Volunteer End -->
+
 <!-- Education Begin -->
-<div class="section resume-section">
-  <div class="resume-title">Education</div>
-  <hr/>
-  <div class="work-experiences-section">
-    <div class="work-position-section">
-      <div class="position">Springboard</div>
-      <div class="position">UX Design Career Track Certification</div>
-      <div class="work-dates">Aug. 2019 - Feb. 2020 / San Francisco, CA</div>
-    </div>
-    <div class="work-duties-section">
-      <ul>
-        <li>Learning the full process of UX design</li>
-        <li>Deliver Tripik mobile app for capstone project</li>
-        <li>Deliver PostUp mobile app for 5 days design sprint</li>
-      </ul>
-    </div>
-  </div>
-  <div class="work-experiences-section m-t-20">
-    <div class="work-position-section">
-      <div class="position">Ochanomizu University</div>
-      <div class="position">MA, Applied Japanese Linguistics</div>
-      <div class="work-dates">Apr. 2015 - Mar. 2017 / Tokyo, Japan</div>
-    </div>
-    <div class="work-duties-section">
-      <ul>
-        <li>Study with full scholarship approximate $45,000</li>
-      </ul>
-    </div>
-  </div>
-  <div class="work-experiences-section m-t-20">
-    <div class="work-position-section">
-      <div class="position">Soochow University</div>
-      <div class="position">MA, Japanese Language and Literature</div>
-      <div class="work-dates">Sep. 2011 - Dec. 2013 / Taipei, Taiwan</div>
-    </div>
-  </div>
-  <div class="work-experiences-section m-t-20">
-    <div class="work-position-section">
-      <div class="position">Soochow University</div>
-      <div class="position">BA, Japanese Language and Literature</div>
-      <div class="work-dates">Sep. 2007 - Jun. 2011 / Taipei, Taiwan</div>
-    </div>
-  </div>
-</div>
+
 <!-- Education End -->
 <!-- Design Skills begin -->
-<div class="section resume-section">
+<!-- <div class="section resume-section">
   <div class="resume-title">UX Design skills</div>
   <hr/>
   <div class="work-experiences-section skills">
@@ -194,10 +364,10 @@
         </ul>
       </div>
   </div>
-</div>
+</div> -->
 <!-- Skills End -->
 <!-- Tools Begin -->
-<div class="section resume-section">
+<!-- <div class="section resume-section">
   <div class="resume-title">Design tools</div>
   <hr/>
   <div class="work-experiences-section skills">
@@ -227,10 +397,10 @@
         </ul>
       </div>
   </div>
-</div>
+</div> -->
 <!-- Tools End -->
 <!-- Development Skills begin -->
-<div class="section resume-section">
+<!-- <div class="section resume-section">
   <div class="resume-title">Development skills</div>
   <hr/>
   <div class="work-experiences-section skills">
@@ -259,10 +429,10 @@
       </ul>
     </div>
   </div>
-</div>
+</div> -->
 <!-- Development Skills end -->
 <!-- Language Begin -->
-<div class="section resume-section">
+<!-- <div class="section resume-section">
   <div class="resume-title">Languages</div>
   <hr/>
   <div class="work-experiences-section skills">
@@ -282,6 +452,6 @@
       </ul>
     </div>
   </div>
-</div>
+</div> -->
 <!-- Language End -->
 <%= render 'home/back_home' %>
