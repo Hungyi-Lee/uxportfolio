@@ -39,10 +39,19 @@
 }
 
 .project-category{
+  margin-top: 1%;
+}
+
+.project-category > span{
+  width: auto;
+  height: auto;
+  background-color: var(--lightgrey);
+  color: var(--dusk);
+  padding: 1% 2%;
+  border-radius: 5px;
   font-weight: 300;
   font-size: 0.9rem;
-  margin-top: 3%;
-  color: grey;
+  margin: 1% 1% 1% 0;
 }
 
 .brief-description{
