@@ -67,27 +67,6 @@
   display: block;
 }
 
-
-
-// .job-description{
-//   color: var(--dusk);
-//   font-size: 2rem;
-//   letter-spacing: 2px;
-//   font-weight: 700;
-// }
-
-// .work-experiences-section{
-//   display: flex;
-// }
-
-// .work-position-section{
-//   width: 50%;
-// }
-
-// .work-duties-section{
-//   width: 60%;
-// }
-
 .work-duties-section{
   font-size: 14px;
   color: var(--dusk);
@@ -115,7 +94,7 @@
 .resume-pdfbtn{
   width: 300px;
   height: 50px;
-  margin: 7% auto 5%;
+  margin: 2% auto 7%;
   text-align: center;
 }
 
@@ -160,19 +139,11 @@
   .resume-section{
     width: 100%;
     padding: 0 5%;
-    margin: 100px auto;
-  }
-
-  .work-position-section{
-    width: 100%;
-  }
-
-  .work-duties-section{
-    width: 100%;
+    // margin: 60px auto;
+    height: 480px;
   }
 
   .resume-title{
-    width: 100%;
     text-align: center;
   }
 
@@ -180,25 +151,70 @@
     margin: 10% auto 5%;
   }
 
-  .work-experiences-section, .work-position-section, .work-duties-section{
-    width: 100%;
-    display: block;
-  }
-
   .work-position-section, .work-duties-section{
-    padding: 10px 30px;
+    padding: 10px;
   }
 
   .work-position-section >a {
     font-size: 13px;
   }
 
-  .skills{
-    padding: 0 15%;
-    width: 100%;
+  .bs-tab{
+    display: none;
   }
 
-  .skills-section{
+  .tabbox{
+    height: 380px;
+    display: block;
+  }
+
+  .tab, .edutab, .skilltab {
+    border-left: none;
+    background-color: white;
+    width: 30%;
+  }
+
+  .tab button, .edutab button, .skilltab button {
+    display: block;
+    background-color: inherit;
+    color: var(--dusk);
+    padding: 5% 3%;
     width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 12px;
+  }
+
+  .tab button.tabactive, .edutab button.tabactive, .skilltab button.tabactive {
+    font-weight: 700;
+    border-left: none;
+    border-bottom: 3px solid var(--salmon-pink);
+    color: var(--salmon-pink);
+  }
+
+  .tabcontent, .edutabcontent, .skilltabcontent {
+    padding: 2%;
+    width: 100%;
+    border-left: none;
+  }
+
+  .work-experiences-section,
+  .work-position-section,
+  .work-duties-section,
+  .resume-title,
+  .tabbox,
+  .sm-tab {
+    width: 100%;
+    display: block;
+  }
+
+  .sm-tab{
+    display:flex;
+    border-bottom: 1px solid #e3e3e3;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
