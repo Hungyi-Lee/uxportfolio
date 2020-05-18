@@ -87,7 +87,12 @@
   letter-spacing: 1px;
 }
 
-.about-bio > p > a {
+.about-bio > p > a, .work-duties-section > ul > li > a {
+  color: var(--dusk);
+  text-decoration: underline;
+}
+
+.about-bio > p > a:hover, .work-duties-section > ul > li > a:hover{
   color: var(--salmon-pink);
 }
 
