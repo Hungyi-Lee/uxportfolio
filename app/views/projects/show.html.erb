@@ -1,6 +1,9 @@
 
 <div class="section m-t-50">
-  <div class="project-content-title"><%= @project.title %></div>
+  <div class="project-content-title">
+    <%= @project.title %>
+    <div class="project-category"><%= raw(@project.projectdate) %></div>
+  </div>
   <!-- <div class="pdf"> -->
     <%#= link_to @project.pdf, target:"_blank" do %>
       <!-- <div class="open-case-study"> -->
