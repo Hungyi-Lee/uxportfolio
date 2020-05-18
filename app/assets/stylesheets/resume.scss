@@ -88,8 +88,7 @@
 //   width: 60%;
 // }
 
-.work-duties-section, .work-experiences-section > ul, .skills-section > ul{
-  // font-weight: 350;
+.work-duties-section{
   font-size: 14px;
   color: var(--dusk);
   line-height: 2;
@@ -103,37 +102,16 @@
   margin-bottom: 10px;
 }
 
-.work-position-section>a{
-  font-size: 17px;
-}
-
 .work-dates{
   color: grey;
   font-size: 13px;
   letter-spacing: 1px;
 }
 
-.skills-section{
-  width:25%;
-}
-
-.position > a, .position > a:hover, .work-position-section > a, .work-position-section > a:hover{
-  color: var(--dusk);
-  text-decoration: none;
-}
-
-.position > a:hover, .work-position-section > a:hover{
+.about-bio > p > a {
   color: var(--salmon-pink);
 }
 
-.about-bio>p>a{
-  color: var(--salmon-pink);
-}
-
-.about-bio>p>a:hover{
-  opacity: 0.7;
-  text-decoration: none;
-}
 .resume-pdfbtn{
   width: 300px;
   height: 50px;
