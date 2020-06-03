@@ -26,7 +26,6 @@ ActiveRecord::Schema.define(version: 2020_04_05_010757) do
     t.text "heroimage"
     t.text "pdf"
     t.string "password"
-    t.text "briefdp"
   end
 
   create_table "sideprojects", force: :cascade do |t|
