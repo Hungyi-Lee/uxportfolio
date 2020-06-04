@@ -20,6 +20,7 @@ require("bootstrap/dist/js/bootstrap")
 import 'bootstrap'
 import './src/application.scss'
 
+
 window.onscroll = function() {scrollFunction()};
 // window.onclick = function() {topFunction()};
 
@@ -40,4 +41,30 @@ $(document).on('turbolinks:load', function() {
     $('#navToggle').click(function(){
         $('.header-content').toggleClass('openNav');
     });
+});
+
+// $(document).ready(function() {
+//     $(".intro").click(function(e) {
+//         $.scrollTo($(this).attr("href"));
+//         e.preventDefault();
+//     });
+// });
+
+
+window.addEventListener('DOMContentLoaded', () => {
+	const observer = new IntersectionObserver(entries => {
+		entries.forEach(entry => {
+			const id = entry.target.getAttribute('id');
+			if (entry.intersectionRatio > 0) {
+				document.querySelector(`div ol li a[href="#${id}"]`).parentElement.classList.add('activecontent');
+			} else {
+				document.querySelector(`div ol li a[href="#${id}"]`).parentElement.classList.remove('activecontent');
+			}
+		});
+	});
+
+	// Track all sections that have an `id` applied
+	document.querySelectorAll('section[id]').forEach((section) => {
+		observer.observe(section);
+	});
 });

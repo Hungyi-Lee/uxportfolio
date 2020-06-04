@@ -1,57 +1,232 @@
-
-<div class="section m-t-50">
-  <div class="project-content-title">
-    <%= @project.title %>
-    <div class="project-category"><%= raw(@project.projectdate) %></div>
-  </div>
-  <!-- <div class="pdf"> -->
-    <%#= link_to @project.pdf, target:"_blank" do %>
-      <!-- <div class="open-case-study"> -->
-          <!-- Download PDF -->
-      <!-- </div> -->
-    <%#end%>
-  <!-- </div> -->
-  <div class="project-detailed-content">
-    <div class="detail-content">
-      <h4>Overview</h4>
-      <h6>The Problem</h6>
-      <%= raw(@project.category) %>
-      <h6>My Role</h6>
-      <%= raw(@project.role) %>
-      <!-- <h6>Tools</h6> -->
-      <!-- <p><%#= raw(@project.tools) %></p> -->
-      <h6>Process</h6>
-      <%= raw(@project.heroimage) %>
+<div class="section m-t-150">
+  <div class="maincontent">
+    <!-- table -->
+    <div class="table-content">
+      <ol>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#discover">Discover</a></li>
+        <li><a href="#define">Define</a></li>
+        <li><a href="#ideate">Ideate</a></li>
+        <li><a href="#validate">Validate</a></li>
+        <li><a href="#wrapup">Wrap up</a></li>
+      </ol>
     </div>
+  	<div class="project-detailed-content">
+      <div class="project-content-title"><%= @project.title %></div>
+      <div class="project-content-category"><%= raw(@project.projectdate) %></div>
+      <!-- Content -->
+  		<section class="content-section" id="intro">
+  			<h4>Introduction</h4>
+        <p>Norm Glasses is a smart glasses ecommerce owned by Human Capable.</p>
+        <p class="content-sub-title">The Problem</p>
+        <p>
+          Human Capable wants customers to undrstand Norm Glasses better and hence increase the sales of Norm Glasses.
+          Besides, Human Capable wants their backers from the crowdfunding websites "<a href="https://www.kickstarter.com/" target="_blank">Kickstarter</a>" and "<a href="https://www.indiegogo.com/" target="_blank">Indiegogo</a>" to claim and customize their Norm Glasses through the website.
+        </p>
+        <p class="content-sub-title">My Role</p>
+        <p>
+          Founder - Charles<br/>
+          UX Designer - Hungyi (Me)
+        </p>
+        <p class="content-sub-title">Metrics</p>
+        <ul>
+          <li>
+            100% of users could understand Norm Glasses after using the website. 71% of users especially felt "use case" page is informative.
+          </li>
+          <li>
+            100% of users were able to complete the process of customizing their Norm Glasses without problems.
+          </li>
+        </ul>
+        <div class="iframe-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Z7EU8jkPo7s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+  		</section>
+  		<section class="content-section" id="discover">
+  			<h4>Discover</h4>
+        <p class="content-sub-title">User Insights</p>
+        <p>To understand users' needs better, I conducted in-person interviews. The results can be summarized into 3 big points:</p>
+        <ol>
+          <li>
+            <b>Users worry about customizing their own smart glasses.</b>
+            <p>Users with myopia worry about the lens.
+            E.g. how to select the lenses with their prescription, what lenses they can choose, etc.
+            Besides, users cannot imagine that wearing a micro computer on their face.
+            They afraid that the glasses would be too heavy or uncomfortable.
+            </p>
+          </li>
+          <li>
+            <b>Users want to learn more information about Norm Glasses.</b>
+            <p>There are multiple companies producing smart glasses.
+            Therefore, users want the main features of the smart glasses can be shown clearly to help them tell the difference efficiently.
+            They especially want to learn different use cases of the smart glasses and tech specs, like camera’s quality, battery life, etc.
+            </p>
+          </li>
+          <li>
+            <b>Users care about after-sale service.</b>
+            <p>Users worry about the after-sale services. They wish they could learn the support before buying the glasses.</p>
+          </li>
+        </ol>
+        <figure>
+          <img src="https://live.staticflickr.com/65535/49811812797_1377f4b675_o.png">
+          <figcaption>Fig.1 - Users' quotes </figcaption>
+        </figure>
+        <p class="content-sub-title">Competitor Analysis</p>
+        <p>Next, I turned to study competitors to learn who the main competitors are and what are the differences between their products.
+       Also, I studied some websites selling regular glasses to understand their checkout process.
+       Please see the <a href="https://docs.google.com/spreadsheets/d/1-0NV9Bh2BG57etGiHLkmqdhvpL-6WKf1EN_l-ypuirk/edit?usp=sharing" target="_blank">file</a> if you would like to learn the details.
+    </p>
+    <p>There are some insights:</p>
+      <ol>
+        <li>
+          <b>Creating a seamless checkout process to help users select suitable frames and lenses is important.</b>
+          <p>Shopping smart glasses including many customization steps, like frame's colors, size, lens' materials, prescription, etc.
+          Making the customization flow easier for users is crucial.</p>
+        </li>
+        <li>
+          <b>Having FAQ or support pages, and categorizing the problems is necessary.</b>
+          <p>Users might have many problems with smart glasses, and thus, an FAQ or support page is necessary.</p>
+        </li>
+        <li>
+          <b>Providing different use cases for users would help them understand the glasses better.</b>
+          <p>There's a competitor providing various use cases. Users can clear learn how the smart glasses help them in the daily life.</p>
+        </li>
+      </ol>
+  		</section>
+  		<section class="content-section" id="define">
+  			<h4>Define</h4>
+        <p class="content-sub-title">Personas</p>
+        <p>
+          Based on the research, I created representations of 2 major user types:
+          one is "<b>who is familiar with smart glasses</b>"; the other is "<b>who is unfamiliar with smart glasses</b>".
+        </p>
+        <figure>
+          <img src="https://live.staticflickr.com/65535/49812471882_993dab5cc8_o.png">
+          <figcaption>Fig. 2 - Personas (Who is familiar with smart glasses) </figcaption>
+        </figure>
+        <figure>
+          <img src="https://live.staticflickr.com/65535/49811624133_e13eb65c8e_o.png">
+          <figcaption>Fig. 3 - Personas (Who is not familiar with smart glasses) </figcaption>
+        </figure>
+        <p class="content-sub-title">Problem Statements</p>
+        <p>Based on the research, the problems are further defined as follows:</p>
+        <ul>
+          <li>How might we make users understand Norm Glasses better?</li>
+          <li>How might we help users buy the Norm Glasses online confidently?</li>
+          <li>How might we help users easily customize a pair of Norm Glasses that fit their needs?</li>
+        </ul>
+        <p class="content-sub-title">User Flows</p>
+        <p>
+          There are 2 critical flows on the webiste.
+          One is "ordering flow for regular customers"; the other is "claim orders from crowdfunding website flow".
+        </p>
+        <p>1. Ordering flow for regular customers</p>
+        <p>
+          Customizing a pair of glasses is not easy for users. They have to set multiple preferences and needs.
+          To reduce users' affordances, I split the options into different pages.
+          Therefore, users will focus on less options at a time.
+        </p>
+        <figure>
+          <img src="https://live.staticflickr.com/65535/49815506288_3c5f649894_b.jpg">
+          <figcaption>Fig.4 - Ordering flow</figcaption>
+        </figure>
+        <p>2. Claim orders from crowdfunding website flow</p>
+        <p>
+          Some users have ordered the smart glasses from crowdfunding webiste "<a href="https://www.kickstarter.com/" target="_blank">Kickstarter</a>" and "<a href="https://www.indiegogo.com/" target="_blank">Indiegogo</a>".
+          To allow them claim their order and customize their glasses, Norm needs to provde a flow for them.
+          After providing the verification of the crowdfunding (e.g. email, order number, username), the users would be directed to the "orders" page.
+          And they would see their previous orders and can start customizing their smart glasses.
+        </p>
+        <figure>
+          <img src="https://live.staticflickr.com/65535/49822903293_125f9d6ed0_o.png">
+          <figcaption>Fig.5 - Claim orders from crowdfunding website flow</figcaption>
+        </figure>
+  		</section>
+  		<section class="content-section" id="ideate">
+  			<h4>Ideate</h4>
+        <p><b>The solutions for making users understand Norm Glasses better</b></p>
+        <figure>
+          <img src="https://live.staticflickr.com/65535/49969450422_44e8423b76_o.png">
+          <figcaption>Fig.6 - Design dicisions for making users understand Norm Glasses better</figcaption>
+        </figure>
+        <ol>
+          <li>Telling users what "Norm" is at the begining, so that users can quickly understand the brand.</li>
+          <li>Instead of listing all features, I summarized 3 key features to let users quickly get Norm Glasses' strength.</li>
+          <li>Presenting Norm Glasses with a video rather than text. Because videos are engaging mediums and they grab people's attention better.</li>
+          <li>Providing different use cases to help users easily learn how Norm Glasses incorporate in the daily life.</li>
+        </ol>
+        <p><b>The solutions for solutions for helping users buy Norm Glasses online confidently</b></p>
+        <figure>
+          <img src="https://live.staticflickr.com/65535/49969496832_fe36f614be_o.png">
+          <figcaption>Fig.7 - Design dicisions for helping users buy Norm Glasses online confidentl</figcaption>
+        </figure>
+        <ol>
+          <li>I kept FAQ page, but I changed the design. I gave users a search bar, so they can search the topic by keywords. In addition, I grouped the questions into different categories so that users can quickly find the related topics.</li>
+          <li>I gave users an online chat robot, so that users can contact us if they couldn't find the answers from the website.</li>
+        </ol>
+        <p><b>The solutions for helping users easily customize their Norm Glasses</b></p>
+        <figure>
+          <img src="https://live.staticflickr.com/65535/49969249626_3c8490ebd1_o.png">
+          <figcaption>Fig.8 - Design dicisions for helping users easily customize their Norm Glasses</figcaption>
+        </figure>
+        <ol>
+          <li>
+            Customizing a pair of glasses is a complicated process.
+            To make it easier, I designed a step-by-step process.
+            It would make users focus on one thing and reduce the cognitive affordances.
+            In addition, I named each step since it would be convenient if users want to go back to the specific step.
+            Moreover, the sequence of the step is a big point. I put colors' settings later since people are likely change colors. Lens material and prescription are relatively invarient.
+            Especially on the mobile screen, users don't need to scroll to the first step if they want to change colors' settings.
+          </li>
+          <li>I put the selection on the left side since it's important thing. People have "F-shape" reading pattern, so they can easily pay attention to here.</li>
+          <li>I showed the price on the right side. Customers care money a lot, and therefore, showing the costs can make them understand how much they will pay for their customizations. It will reduce their anxiety.</li>
+        </ol>
+        <p><b>The solutions for helping bakers claim their Norm Glasses</b></p>
+        <figure>
+          <img src="https://live.staticflickr.com/65535/49969554647_e84ea0df74_o.png">
+          <figcaption>Fig.9 - Design dicisions for helping bakers claim their Norm Glasses</figcaption>
+        </figure>
+        <p>I designed a claim tab in My Account page. Bakers can claim their pre-ordering after signing up.</p>
+  		</section>
+  		<section class="content-section" id="validate">
+  			<h4>Validate</h4>
+        <p>Once my high-fidelity prototype were complete, it was time to put them to the test.
+        The participants were instructed to complete "order a pair of Norm Glasses" task and "claim the Norm Glasses" task.</p>
+        <p class="content-sub-title">Positive feedback from the usability testing</p>
+        <ol>
+          <li>100% of users were able to complete the tasks without problems.</li>
+          <li>100% of users could understand Norm Glasses after using this website.</li>
+          <li>71% of users felt "use cases" page is informative.</li>
+        </ol>
+        <p class="content-sub-title">Rooms for improvement based on the users' feedback</p>
+        <ol>
+          <li>Some users suggested that it would be better if there's a screen shows they placed the order succesfully. To solve this problem, I added a page after checkout to inform users that their order have been placed succesfully.</li>
+          <figure>
+            <img src="https://live.staticflickr.com/65535/49820236022_38cd7ee5d2_o.png">
+            <figcaption>Fig.10 - Successfully placed order screen</figcaption>
+          </figure>
+          <li>Most users felt that claiming the orders after signing up was overwhelmed. They said that they don't want to fill any form after signing up.
+        Therefore, instead of directing to the form, I added a reminder page to inform users that they can claim their order and customize the smart glasses at "Claim" page.
+        They can go to that page anytime they want.</li>
+        <figure>
+          <img src="https://live.staticflickr.com/65535/49819962316_140183cbc6_o.png">
+          <figcaption>Fig.11 - Reminder screen</figcaption>
+        </figure>
+        </ol>
+  		</section>
+  		<section class="content-section" id="wrapup">
+  			<h4>Wrap Up</h4>
+        <p>It's my pleasure to work with Human Capable. Working on this project has been a fun and great experience.
+          Ordering a pair of glasses is not a easy task, and it makes me realize the importance of every step in the design process which impacts the results.
+        </p>
+        <p>
+          The next steps for this project would be to collect more users' data to see more users' behaviors through the website and keep optimizing.
+          Besides, how to make users feel more enjoyable during the customization process would be my next task.
+        </p>
+        <p>Thank you for reading.</p>
+  		</section>
+  	</div>
   </div>
-  <!-- project detailed content start -->
-  <%= raw(@project.description) %>
-  <!-- project detailed content end -->
 </div>
-
-
-<!-- <script>
-function myFunction() {
-  window.scrollTo(0, 1500);
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("readMoreBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read Full Case Study";
-    moreText.style.display = "none";
-    window.scrollTo(0,0);
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Close Case Study";
-    moreText.style.display = "inline";
-    window.scrollTo(0,1000);
-  }
-}
-</script> -->
-
-
 
 <div class="section">
   <div class="bk-pj-btn">
