@@ -2,6 +2,7 @@
   <div class="maincontent">
     <!-- table -->
     <div class="table-content">
+      <%#= @project.category %>
       <ol>
         <li><a href="#intro">Introduction</a></li>
         <li><a href="#discover">Discover</a></li>
@@ -15,6 +16,7 @@
       <div class="project-content-title"><%= @project.title %></div>
       <div class="project-content-category"><%= raw(@project.projectdate) %></div>
       <!-- Content -->
+      <%#= @project.description %>
   		<section class="content-section" id="intro">
   			<h4>Introduction</h4>
         <p>Norm Glasses is a smart glasses ecommerce owned by Human Capable.</p>
