@@ -20,7 +20,6 @@ require("bootstrap/dist/js/bootstrap")
 import 'bootstrap'
 import './src/application.scss'
 
-
 window.onscroll = function() {scrollFunction()};
 // window.onclick = function() {topFunction()};
 
@@ -43,15 +42,25 @@ $(document).on('turbolinks:load', function() {
     });
 });
 
-// $(document).ready(function() {
-//     $(".intro").click(function(e) {
-//         $.scrollTo($(this).attr("href"));
-//         e.preventDefault();
-//     });
-// });
+$(document).ready(function(){
+  $("li a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      alert("scroll being called");
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        window.location.hash = hash;
+      });
+    }
+  });
+});
 
 
-window.addEventListener('DOMContentLoaded', () => {
+
+window.addEventListener('mousemove', () => {
 	const observer = new IntersectionObserver(entries => {
 		entries.forEach(entry => {
 			const id = entry.target.getAttribute('id');
