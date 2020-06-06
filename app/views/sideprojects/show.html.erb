@@ -1,15 +1,16 @@
-
-<div class="section m-t-50">
-  <div class="project-content-title">
-    <%= @sideproject.title %>
-    <div class="project-category"><%= raw(@sideproject.projectdate) %></div>
-  </div>
-  <div class="project-detailed-content">
-    <div class="detail-content">
+<div class="section m-t-150">
+  <div class="maincontent">
+    <!-- table -->
+    <div class="table-content">
       <%= raw(@sideproject.overview) %>
     </div>
+  	<div class="project-detailed-content">
+      <div class="project-content-title"><%= @sideproject.title %></div>
+      <div class="project-content-category"><%= raw(@sideproject.projectdate) %></div>
+      <!-- Content -->
+      <%= raw(@sideproject.description) %>
+  	</div>
   </div>
-  <%= raw(@sideproject.description) %>
 </div>
 
 
