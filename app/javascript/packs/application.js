@@ -41,3 +41,38 @@ $(document).on('turbolinks:load', function() {
         $('.header-content').toggleClass('openNav');
     });
 });
+
+$(document).ready(function(){
+  $("li a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+
+
+
+window.addEventListener('mousemove', () => {
+	const observer = new IntersectionObserver(entries => {
+		entries.forEach(entry => {
+			const id = entry.target.getAttribute('id');
+			if (entry.intersectionRatio > 0) {
+				document.querySelector(`div ol li a[href="#${id}"]`).parentElement.classList.add('activecontent');
+			} else {
+				document.querySelector(`div ol li a[href="#${id}"]`).parentElement.classList.remove('activecontent');
+			}
+		});
+	});
+
+	// Track all sections that have an `id` applied
+	document.querySelectorAll('section[id]').forEach((section) => {
+		observer.observe(section);
+	});
+});
