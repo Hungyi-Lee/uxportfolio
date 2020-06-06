@@ -47,7 +47,6 @@ $(document).ready(function(){
     if (this.hash !== "") {
       event.preventDefault();
       var hash = this.hash;
-      alert("scroll being called");
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 900, function(){
