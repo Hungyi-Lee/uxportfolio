@@ -57,9 +57,7 @@ $(document).ready(function(){
   });
 });
 
-
-
-window.addEventListener('mousemove', () => {
+window.addEventListener('scroll', () => {
 	const observer = new IntersectionObserver(entries => {
 		entries.forEach(entry => {
 			const id = entry.target.getAttribute('id');
