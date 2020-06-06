@@ -242,6 +242,13 @@ figcaption{
   // margin: 8% 0;
 }
 
+.content-bottom-section{
+  width: 620px;
+  margin: 0 auto 80px auto;
+  text-align: center;
+  display: flex;
+}
+
 .bk-pj-btn {
   width: 300px;
   height: 50px;
@@ -447,6 +454,12 @@ figure > img{
   //   display: inline-block;
   //   vertical-align: top;
   // }
+  .content-bottom-section{
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+
 
   .table-content{
     display: none;
