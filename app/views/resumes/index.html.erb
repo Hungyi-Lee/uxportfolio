@@ -11,50 +11,35 @@
     </div>
   </div>
 </div>
-<!-- Profile Begin -->
-<!-- <div class="section resume-section"> -->
-  <!-- <div class="resume-title">Summary</div> -->
-  <!-- <hr/> -->
-  <!-- <div class="work-experiences-section">
-      <ul>
-        <li>Targeting junior UX designer position</li>
-        <li>Having experience in end-to-end UX design</li>
-        <li>Turn to UX design from a background in web development and graphic design </li>
-      </ul>
-  </div> -->
-<!-- </div> -->
-<!-- Profile End -->
-<!-- Experiences Begin -->
 <div class="resume-section">
   <div class="resume-title">Where I've Worked</div>
-    <div class="tabbox">
+    <div class="tabbox1">
       <div class="tab bs-tab sm-tab">
-        <button class="tablinks" onclick="openCity(event, 'HCI')" id="defaultOpen">Human Capable Inc.</button>
-        <button class="tablinks" onclick="openCity(event, 'NHCP')">Northwest Health Career Path</button>
-        <button class="tablinks" onclick="openCity(event, 'P5')">Project5</button>
-        <button class="tablinks" onclick="openCity(event, 'ME')">Metro Engines</button>
-        <button class="tablinks" onclick="openCity(event, 'SE')">Self Employed</button>
+        <button class="tablinks" onclick="openJob(event, 'HelpArt')" id="defaultOpen">HelpArt</button>
+        <button class="tablinks" onclick="openJob(event, 'HCI')">Human Capable Inc.</button>
+        <button class="tablinks" onclick="openJob(event, 'P5')">Project5</button>
+        <button class="tablinks" onclick="openJob(event, 'ME')">Metro Engines</button>
+        <button class="tablinks" onclick="openJob(event, 'SE')">Self Employed</button>
+      </div>
+      <div id="HelpArt" class="tabcontent">
+        <div class="position">UX Designer @ HelpArt.</div>
+        <div class="work-dates">Jun. 2020 - Present | Seattle, WA</div>
+        <div class="work-duties-section">
+          <ul>
+            <li>Executed responsive design for HelpArt website</li>
+            <li>Worked as a full stack UX designer and collaborated with marketers and developers</li>
+          </ul>
+        </div>
       </div>
       <div id="HCI" class="tabcontent">
         <div class="position">UX Designer @ Human Capable Inc.</div>
-        <div class="work-dates">Apr. 2020 - Present | Plantation, FL</div>
+        <div class="work-dates">Apr. 2020 - Jun. 2020 | Plantation, FL</div>
         <div class="work-duties-section">
           <ul>
             <li>Executed responsive design for Norm Glasses E-Commerce</li>
             <li>Worked as a full stack UX designer and collaborated with business team</li>
             <li>Created a seamless ordering flow for people to order the smart glasses which aims to increase the sales</li>
             <li><a href="https://www.hungyilee.com/projects/Norm%20Glasses" target="_blank">See case study here</a></li>
-          </ul>
-        </div>
-      </div>
-      <div id="NHCP" class="tabcontent">
-        <div class="position">UX Designer @ Northwest Health Career Path</div>
-        <div class="work-dates">Mar. 2020 - Present | Seattle, WA</div>
-        <div class="work-duties-section">
-          <ul>
-            <li>Collaborated with 4 UX designers and 3 project managers</li>
-            <li>Responsible for creating wireframes, visual design guideline, and collect users' feedback by usability testing</li>
-            <li>Created a responsive website and make health career programs' information available for the underrepresented students</li>
           </ul>
         </div>
       </div>
@@ -91,7 +76,7 @@
       </div>
     </div>
     <script>
-    function openCity(evt, cityName) {
+    function openJob(evt, companyName) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
@@ -101,7 +86,7 @@
       for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" tabactive", "");
       }
-      document.getElementById(cityName).style.display = "block";
+      document.getElementById(companyName).style.display = "block";
       evt.currentTarget.className += " tabactive";
     }
 
@@ -110,6 +95,57 @@
     </script>
 </div>
 <!-- Experience End -->
+<!-- Volunteer Begin -->
+<div class="resume-section">
+  <div class="resume-title">Volunteer Experience</div>
+    <div class="tabbox2">
+      <div class="voltab bs-tab sm-tab">
+        <button class="voltablinks" onclick="openVol(event, 'NCCS')" id="defaultOpenVol">Code For America</button>
+        <button class="voltablinks" onclick="openVol(event, 'NHCP')">Northwest Health Career Path</button>
+      </div>
+      <div id="NCCS" class="voltabcontent">
+        <div class="position">UX Designer @ Code For America</div>
+        <div class="work-dates">May. 2020 - Present | San Francisco, CA</div>
+        <div class="work-duties-section">
+          <ul>
+            <li></li>
+            <li>Collaborated with 1 UX designers and 2 project managers</li>
+            <li>Responsible for conducting user research, delivering wireframes</li>
+          </ul>
+        </div>
+      </div>
+      <div id="NHCP" class="voltabcontent">
+        <div class="position">UX Designer @ Northwest Health Career Path</div>
+        <div class="work-dates">Mar. 2020 - Present | Seattle, WA</div>
+        <div class="work-duties-section">
+          <ul>
+            <li>Created a responsive website to help underrepresented students look for opportunities in the medical field</li>
+            <li>Collaborated with 3 UX designers and 4 project managers</li>
+            <li>Responsible for creating wireframes and visual design guideline</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script>
+    function openVol(evt, Vol) {
+      var i, voltabcontent, voltablinks;
+      voltabcontent = document.getElementsByClassName("voltabcontent");
+      for (i = 0; i < voltabcontent.length; i++) {
+        voltabcontent[i].style.display = "none";
+      }
+      voltablinks = document.getElementsByClassName("voltablinks");
+      for (i = 0; i < voltablinks.length; i++) {
+        voltablinks[i].className = voltablinks[i].className.replace(" tabactive", "");
+      }
+      document.getElementById(Vol).style.display = "block";
+      evt.currentTarget.className += " tabactive";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpenVol").click();
+    </script>
+</div>
+<!-- Volunteer End -->
 <!-- Skills Begin -->
 <div class="resume-section">
   <div class="resume-title">My Skillset</div>

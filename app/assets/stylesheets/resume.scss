@@ -14,7 +14,7 @@
   color: var(--dusk);
 }
 
-.tab, .edutab, .skilltab {
+.tab, .edutab, .skilltab, .voltab {
   float: left;
   border-left: 1px solid #e3e3e3;
   background-color: white;
@@ -23,7 +23,7 @@
 }
 
 /* Style the buttons inside the tab */
-.tab button, .edutab button, .skilltab button {
+.tab button, .edutab button, .skilltab button, .voltab button {
   display: block;
   background-color: inherit;
   color: var(--dusk);
@@ -40,19 +40,19 @@
 
 
 /* Change background color of buttons on hover */
-.tab button:hover, .edutab button:hover, .skilltab button:hover {
+.tab button:hover, .edutab button:hover, .skilltab button:hover, .voltab button:hover {
   background-color: rgba(255, 127, 130, 0.1);
 }
 
 /* Create an active/current "tab button" class */
-.tab button.tabactive, .edutab button.tabactive, .skilltab button.tabactive {
+.tab button.tabactive, .edutab button.tabactive, .skilltab button.tabactive, .voltab button.tabactive {
   font-weight: 700;
   border-left: 3px solid var(--salmon-pink);
   color: var(--salmon-pink);
 }
 
 /* Style the tab content */
-.tabcontent, .edutabcontent, .skilltabcontent {
+.tabcontent, .edutabcontent, .skilltabcontent, .voltabcontent {
   float: left;
   padding: 2% 5%;
   // border: 1px solid #ccc;
@@ -64,6 +64,18 @@
 .tabbox{
   width: 100%;
   height: 300px;
+  display: block;
+}
+
+.tabbox1{
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+
+.tabbox2{
+  width: 100%;
+  height: 200px;
   display: block;
 }
 
@@ -182,13 +194,16 @@
     display: block;
   }
 
-  .tab, .edutab, .skilltab {
+  .tab, .edutab, .skilltab, .voltab {
     border-left: none;
     background-color: white;
     width: 30%;
   }
 
-  .tab button, .edutab button, .skilltab button {
+  .tab button,
+  .edutab button,
+  .skilltab button,
+  .voltab button {
     display: block;
     background-color: inherit;
     color: var(--dusk);
@@ -202,14 +217,20 @@
     font-size: 12px;
   }
 
-  .tab button.tabactive, .edutab button.tabactive, .skilltab button.tabactive {
+  .tab button.tabactive,
+  .edutab button.tabactive,
+  .skilltab button.tabactive,
+  .voltab button.tabactive {
     font-weight: 700;
     border-left: none;
     border-bottom: 3px solid var(--salmon-pink);
     color: var(--salmon-pink);
   }
 
-  .tabcontent, .edutabcontent, .skilltabcontent {
+  .tabcontent,
+  .edutabcontent,
+  .skilltabcontent,
+  .voltabcontent {
     padding: 2%;
     width: 100%;
     border-left: none;
