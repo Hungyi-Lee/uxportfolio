@@ -42,7 +42,7 @@
         <nav>
           <ul class="nav-list">
             <% if current_page?(controller: 'home', action: 'index') || controller.controller_name == 'projects'%>
-              <li class="active"><%= link_to root_path do %>PORTFOLIO<% end %></li>
+              <li class="active"><b></b><%= link_to root_path do %>PORTFOLIO<% end %></li>
             <% else %>
               <li class="nav-list-item"><%= link_to root_path do %>PORTFOLIO<% end %></li>
             <% end %>
@@ -52,12 +52,12 @@
               <!-- <li class="nav-list-item"><%#= link_to all_projects_path do %>PROJECTS<%# end %></li> -->
             <%# end %>
             <% if current_page?(controller: 'resumes', action: 'index') %>
-              <li class="active"><%= link_to resume_path do %>RESUME<% end %></li>
+              <li class="active"><b></b><%= link_to resume_path do %>RESUME<% end %></li>
             <% else %>
               <li class="nav-list-item"><%= link_to resume_path do %>RESUME<% end %></li>
             <% end %>
             <% if current_page?(controller: 'works', action: 'index') %>
-              <li class="active"><%= link_to about_path do %>ABOUT<% end %></li>
+              <li class="active"><b></b><%= link_to about_path do %>ABOUT<% end %></li>
             <% else %>
               <li class="nav-list-item"><%= link_to about_path do %>ABOUT<% end %></li>
             <% end %>

@@ -194,6 +194,20 @@ a, a:hover{
 // 		}
 // }
 
+.nav-list > .active{
+  position: relative;
+}
+
+.nav-list > .active > b{
+  width: 3px;
+  height: 30px;
+  background-color: var(--salmon-pink);
+  position: absolute;
+  display: block;
+  top: -35px;
+  left: 50%;
+}
+
 //Tablet
 @media (min-width: 768px) and (max-width: 1024px) {
   .header{
@@ -311,6 +325,10 @@ a, a:hover{
   .profile-image{
     margin-top: 13rem;
   }
+
+  .nav-list > .active > b{
+    display: none;
+  }
 }
 // Mobile
 @media screen and (max-width: 600px){
@@ -420,5 +438,9 @@ a, a:hover{
     font-weight: 600;
     margin-left: 10px;
     margin-top: 3px;
+  }
+
+  .nav-list > .active > b{
+    display: none;
   }
 }
