@@ -5,13 +5,12 @@
 .projects{
   width: 100%;
   height: 100%;
-  padding: 10% 10%;
+  padding: 5% 10%;
 }
 
 .project{
   width: 100%;
   height: 50%;
-  padding:2%;
   display: flex;
   border-bottom: 2px var(--lightgrey) solid;
 }
@@ -389,7 +388,7 @@ figure > img{
   .projects{
     width: 100%;
     height: 100%;
-    padding: 10% 10%;
+    padding: 20% 10% 15%;
   }
 
   .project{
