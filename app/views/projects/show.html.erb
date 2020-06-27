@@ -1,4 +1,9 @@
-<div class="section m-t-150">
+<div class="section m-t-70">
+  <div class="breadcrumb">
+    <span class="breadcrumb-home"><%= link_to root_path do%>Home<%end%></span>
+    <span>/</span>
+    <span class="breadcrumb-active"><%= @project.title %></span>
+  </div>
   <div class="maincontent">
     <!-- table -->
     <div class="table-content">
@@ -15,7 +20,7 @@
 
 <div class="section">
   <div class="bk-pj-btn">
-    <%= link_to root_path(anchor: "projects-section") do %>GO BACK<% end %>
+    <%= link_to root_path(anchor: "projects-section") do %>BACK TO HOME<% end %>
   </div>
   <hr>
   <div>

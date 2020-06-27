@@ -114,6 +114,7 @@ html {
 
 /** page layout **/
 .maincontent {
+  padding-top: 5%;
 	display: grid;
 	grid-template-columns: 0.5fr 1.1fr;
 	width: 70%;
@@ -252,7 +253,7 @@ figcaption{
 .bk-pj-btn {
   width: 300px;
   height: 50px;
-  margin: 0 auto 3%;
+  margin: 3% auto 3%;
   text-align: center;
 }
 
@@ -346,6 +347,10 @@ figure > img{
 
 // tablet
 @media (min-width: 768px) and (max-width: 1300px) {
+  .maincontent {
+    padding-top: 10%;
+  }
+
   .projects{
     width: 100%;
     height: 100%;
@@ -367,12 +372,15 @@ figure > img{
     margin-right: 5%;
   }
 
-  .image{
+  .image, .project-description{
     width: 100%;
   }
 
-  .project-description{
-    width: 100%;
+  .bk-pj-btn {
+    width: 300px;
+    height: 50px;
+    margin: 5% auto 3%;
+    text-align: center;
   }
 }
 
@@ -469,5 +477,6 @@ figure > img{
     width: 100%;
     display: block;
     margin: 0 auto;
+    padding-top: 20%;
   }
 }
