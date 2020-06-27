@@ -17,6 +17,7 @@
 
 @import "bootstrap/scss/bootstrap";
 .m-t-150{ margin-top: 7rem; }
+.m-t-70{ margin-top: 4.375rem; }
 .m-t-50{ margin-top: 50px; }
 .m-t-20{ margin-top: 20px; }
 .m-b-150{ margin-bottom: 9.375rem; }
@@ -208,6 +209,24 @@ a, a:hover{
   left: 50%;
 }
 
+.breadcrumb{
+  height: 3.5rem;
+  padding: 1.25rem 4.375rem !important;
+  background-color: rgba(238, 238, 238, 0.5) !important;
+  color: var(--dusk);
+}
+.breadcrumb > span{
+  margin: 0 0.625rem;
+}
+
+.breadcrumb-home > a, .breadcrumb-home > a:hover{
+  color: var(--dusk);
+}
+
+.breadcrumb-active{
+  font-weight: 700;
+}
+
 //Tablet
 @media (min-width: 768px) and (max-width: 1024px) {
   .header{
@@ -236,7 +255,6 @@ a, a:hover{
     transition: .5s ease-in-out;
     text-align: center;
   }
-
 
   .header-content ul{
     margin: 0
@@ -328,6 +346,10 @@ a, a:hover{
 
   .nav-list > .active > b{
     display: none;
+  }
+
+  .breadcrumb{
+    padding: 1.25rem 0.625rem !important;
   }
 }
 // Mobile
@@ -442,5 +464,9 @@ a, a:hover{
 
   .nav-list > .active > b{
     display: none;
+  }
+
+  .breadcrumb{
+    padding: 1.25rem 0.625rem !important;
   }
 }
