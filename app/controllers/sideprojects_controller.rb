@@ -22,6 +22,7 @@ class SideprojectsController < ApplicationController
   def show
     # @sideproject = Sideproject.find(params[:id])
     @sideproject = Sideproject.find_by(title: params[:title])
+    @sideprojects = Sideproject.all
   end
 
   def edit

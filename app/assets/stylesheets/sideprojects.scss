@@ -149,6 +149,11 @@
 .al-post > .post1-content >.post-title{
   font-size: 1.25em;
 }
+
+.blog-show-section > ul > li > b > a,
+.blog-show-section > ul > li > b > a:hover{
+  color: var(--dusk);
+}
 // blog-show
 .blog-show-section{
   width: 100%;

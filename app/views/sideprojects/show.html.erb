@@ -50,18 +50,20 @@
   </div>
   <div class="blog-show-section">
     <div class="project-detailed-content">
-        <h3><b>How to get started with UX design?</b></h3>
-        <div class="post-tag">Design・9 min read</div>
-        <%#= @sideproject.title %>
-      <%= raw(@sideproject.description) %>
+        <h3><b><%= @sideproject.title %></b></h3>
+        <div class="post-tag"><%= @sideproject.projectdate %></div>
+        <%= raw(@sideproject.description) %>
       <hr/>
     </div>
     <!-- Related posts -->
     <h4>More Posts</h4><br/>
-    <p><b>How to get started with UX design?</b></p>
-    <p><b>How to get started with UX design?</b></p>
-    <p><b>How to get started with UX design?</b></p>
-    <p><b>How to get started with UX design?</b></p>
+    <ul>
+      <% @sideprojects.take(4).each do |s|%>
+       <li><b>
+         <%= link_to sideproject_path(s.title) do %><%= s.title %><% end %>
+       </b></li>
+      <% end %>
+    </ul>
   </div>
   <div class="bk-pj-btn">
     <%= link_to sideprojects_path do %>BACK TO BLOG<% end %>
