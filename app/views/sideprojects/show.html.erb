@@ -49,9 +49,10 @@
     <span class="breadcrumb-active"><%= @sideproject.title %></span>
   </div>
   <div class="blog-show-section">
-    <h3><b>How to get started with UX design?</b></h3>
-    <div class="post-tag">Design・9 min read</div>
     <div class="project-detailed-content">
+        <h3><b>How to get started with UX design?</b></h3>
+        <div class="post-tag">Design・9 min read</div>
+        <%#= @sideproject.title %>
       <%= raw(@sideproject.description) %>
       <hr/>
     </div>

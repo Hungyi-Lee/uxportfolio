@@ -149,6 +149,11 @@
   color: var(--dusk);
 }
 
+// only show in mobile
+.mbonly-title{
+  display: none;
+}
+
 // Tablet
 @media (min-width: 768px) and (max-width: 1300px) {
   .blog-section{
@@ -168,22 +173,11 @@
     margin-right: 4%;
   }
 
-  // featured posts
-  // .featured-posts{
-    // display: flex;
-    // width: 100%;
-    // margin-bottom: 7%;
-  // }
-
   .post1{
-    // width: 40%;
-    // margin-right: 4%;
-    // position: relative;
     display: none;
   }
 
   .rest-posts{
-    // width: 58%;
     width: 100%;
   }
 
@@ -192,6 +186,113 @@
     width: 100%;
     margin: 60px auto;
     padding: 12% 10% 0;
-    color: var(--dusk);
+  }
+
+  // only show in mobile
+  .mbonly-title{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .blog-section{
+    width: 100%;
+    padding: 18% 5% 0;
+  }
+
+  .blog-top-categories{
+    display: table;
+    box-orient: vertical;
+  }
+
+  .categories{
+    width: 100%;
+    margin-top: 7%;
+    display: block;
+  }
+
+  .h-form{
+    width: 100%;
+    display: table-header-group;
+  }
+
+  .mbonly-title{
+    display: block;
+  }
+
+  .blog-cat-item{
+    padding: 5% 0;
+    border-bottom: 1px solid var(--lightgrey);
+  }
+
+  .blog-cat-item-active{
+    border-bottom: 4px solid var(--dusk);
+  }
+
+  .post1{
+    display: none;
+  }
+
+  .rest-posts{
+    width: 100%;
+  }
+
+  .rest-post{
+    width: 100%;
+    height: 450px;
+    display: block;
+  }
+
+  .rest-post-img{
+    width: 100%;
+    height: 50%;
+  }
+
+  .post-tag{
+    color: grey;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .rest-post-content, .al-post{
+    width: 100%;
+    margin-left: 0;
+    padding: 2%;
+  }
+
+  .rest-post-content > a, .al-post > .post1-content > a{
+    text-decoration: underline;
+  }
+
+  .rest-post-content > .post-title,
+  .al-post > .post1-content > .post-title{
+    font-size: 1.1rem;
+    line-height: 25px;
+  }
+
+  .featured-posts{
+    display: block;
+  }
+
+  .al-post > .post1-content > .foreword{
+    font-size: 0.9rem;
+  }
+
+  .mb-blog-title{
+    margin-top: 10%;
+  }
+
+  // blog-show
+  .blog-show-section{
+    width: 100%;
+    margin: 60px auto;
+    padding: 20% 5% 0;
+  }
+
+  .blog-show-section > .project-detailed-content > h3{
+    font-size: 24px;
+    line-height: 1.4;
   }
 }
