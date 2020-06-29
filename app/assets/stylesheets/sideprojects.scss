@@ -133,9 +133,17 @@
   line-height: 25px;
 }
 
+.al-posts{
+  width: 100%;
+}
+
 .al-post{
   width: 31%;
   margin-right: 2%;
+  margin-bottom: 2%;
+  display: inline-block;
+  position: relative;
+  vertical-align: text-top;
 }
 
 .al-post > .post1-content >.post-title{
@@ -179,6 +187,10 @@
 
   .rest-posts{
     width: 100%;
+  }
+
+  .al-post{
+    width: 30%;
   }
 
   // blog-show
@@ -278,6 +290,11 @@
 
   .al-post > .post1-content > .foreword{
     font-size: 0.9rem;
+  }
+
+  .al-post > .post-lang{
+    margin-top: 2%;
+    margin-right: 2%;
   }
 
   .mb-blog-title{

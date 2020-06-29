@@ -15,6 +15,8 @@ class SideprojectsController < ApplicationController
 
   def index
     @sideprojects = Sideproject.order("created_at desc").all
+    @feature_one = Sideproject.where(overview: "JP").sample
+    @feature_rest = Sideproject.where(overview: "EN")
   end
 
   def show
