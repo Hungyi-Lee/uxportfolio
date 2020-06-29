@@ -148,3 +148,50 @@
   padding: 7% 18% 0;
   color: var(--dusk);
 }
+
+// Tablet
+@media (min-width: 768px) and (max-width: 1300px) {
+  .blog-section{
+    width: 100%;
+    padding: 12% 5% 0;
+  }
+
+  .categories{
+    width: 84%;
+  }
+
+  .h-form{
+    width: 15%;
+  }
+
+  .blog-cat-item{
+    margin-right: 4%;
+  }
+
+  // featured posts
+  // .featured-posts{
+    // display: flex;
+    // width: 100%;
+    // margin-bottom: 7%;
+  // }
+
+  .post1{
+    // width: 40%;
+    // margin-right: 4%;
+    // position: relative;
+    display: none;
+  }
+
+  .rest-posts{
+    // width: 58%;
+    width: 100%;
+  }
+
+  // blog-show
+  .blog-show-section{
+    width: 100%;
+    margin: 60px auto;
+    padding: 12% 10% 0;
+    color: var(--dusk);
+  }
+}
