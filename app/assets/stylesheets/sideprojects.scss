@@ -1,3 +1,143 @@
 // Place all the styles related to the sideprojects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.blog-section{
+  width: 100%;
+  margin: 60px auto;
+  padding: 7% 10% 0;
+  color: var(--dusk);
+}
+
+.blog-top-categories{
+  width: 100%;
+  display: flex;
+  margin-bottom: 7%;
+}
+
+.categories{
+  width: 75%;
+  display: flex;
+}
+
+.h-form{
+  width: 25%;
+  vertical-align: middle;
+}
+
+.blog-cat-item{
+  margin-right: 5%;
+}
+
+.blog-cat-item-active{
+  padding-bottom: 10px;
+  border-bottom: 4px solid var(--dusk);
+  font-weight: 600;
+}
+
+// featured posts
+.featured-posts{
+  display: flex;
+  width: 100%;
+  margin-bottom: 7%;
+}
+
+.post1{
+  width: 40%;
+  margin-right: 4%;
+  position: relative;
+}
+
+.rest-posts{
+  width: 58%;
+}
+
+.post1-content{
+  padding: 2%;
+}
+
+.post-lang, .rest-post-lang{
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  padding: 3%;
+  background-color: black;
+  color: white;
+}
+
+.post-tag{
+  color: grey;
+  margin-bottom: 8px;
+  font-size: 0.9em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.post-title{
+  font-weight: 700;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.post1-content > a, .post1-content > a:hover, .rest-post-content > a, .rest-post-content > a:hover{
+  color: var(--dusk);
+  font-weight: bold;
+}
+
+.foreword{
+  color: grey;
+  text-align: justify;
+}
+
+.rest-post{
+  width: 100%;
+  height: 31%;
+  margin-bottom: 3%;
+  display: flex;
+}
+
+.rest-post-lang{
+  width: 40px;
+  height: 40px;
+  padding: 3%;
+}
+
+.rest-post-img{
+  width: 30%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.rest-post-content{
+  width: 65%;
+  margin-left: 2%;
+}
+
+.rest-post-content >.post-tag, .rest-post-content > .foreword{
+  color: grey;
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+.rest-post-content >.post-tag{
+  letter-spacing: 0.06em;
+}
+
+.rest-post-content > .post-title{
+  font-size: 1.25rem;
+  line-height: 25px;
+}
+
+.al-post{
+  width: 31%;
+  margin-right: 2%;
+}
+
+.al-post > .post1-content >.post-title{
+  font-size: 1.25em;
+}
