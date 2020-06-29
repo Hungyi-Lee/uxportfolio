@@ -42,61 +42,22 @@
       </div>
       <!-- categories -->
       <!-- search bar -->
-      <form class="h-form">
-        <input class="form-control form-control-sm" type="text" placeholder="Search" aria-label="Search">
-      </form>
-      <!-- search bar -->
-    </div>
-    <!-- blogtop categories -->
-    <!-- featured posts -->
-    <h3 class="mb-blog-title"><b>Featured Posts</b></h3><br/>
-    <div class="featured-posts">
-      <div class="post1">
-        <img class="image" src="<%= @feature_one.coverimage %>">
-        <div class="post-lang"><%= @feature_one.overview %></div>
-        <div class="post1-content">
-          <div class="post-tag"><%= @feature_one.projectdate %></div>
-          <h4 class="post-title"><%= @feature_one.title %></h4>
-          <p class="foreword"><%= @feature_one.briefintro %></p>
-          <%= link_to sideproject_path(@feature_one.title) do %>Read More<% end %>
-        </div>
-      </div>
-      <div class="rest-posts">
-        <% @feature_rest.take(3).each do |p| %>
-        <div class="rest-post">
-          <div class="rest-post-img" style="background-image: url('<%= p.coverimage %>')">
-            <div class="rest-post-lang"><%= p.overview %></div>
-          </div>
-          <div class="rest-post-content">
-            <div class="post-tag"><%= p.projectdate %></div>
-            <h4 class="post-title"><%= p.title%></h4>
-            <p class="foreword"><%= p.briefintro.truncate(80) %></p>
-            <%= link_to sideproject_path(p.title) do %>Read More<% end %>
-          </div>
-        </div>
-        <% end %>
-      </div>
-    </div>
-    <!-- featured posts -->
-    <hr/><br/>
-    <!-- all posts -->
-    <h3><b>All Posts</b> (<%=@sideprojects.size%>)</h3><br/>
-    <div class="al-posts">
-      <% @sideprojects.each do |p|%>
-      <div class="al-post">
-        <img class="image" src="<%= p.coverimage %>">
-        <!-- <img class="image" src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"> -->
-        <div class="post-lang"><%= p.overview %></div>
-        <div class="post1-content">
-          <!-- <div class="post-tag">Design・9 min read</div> -->
-          <div class="post-tag"><%= p.projectdate %></div>
-          <h4 class="post-title"><%= p.title %></h4>
-          <p class="foreword"><%= p.briefintro.truncate(80) %></p>
-          <%= link_to sideproject_path(p.title) do %>Read More<% end %>
-        </div>
-      </div>
+      <%= form_tag(@sideproject_path, method: "get", class:"h-form") do %>
+        <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Search posts" %>
+        <%#= submit_tag ("Search") %>
       <% end %>
     </div>
+    <!-- blogtop categories -->
     <!-- all posts -->
+    <% if @sideprojects.present? %>
+      <h3><b>All Posts</b> (<%=@sideprojects.size%>)</h3><br/>
+      <%= render 'sideprojects/allposts'%>
+    <% else %>
+      <%= render 'sideprojects/nomatch'%>
+    <% end %>
+    <!-- all posts -->
+    <!-- featured posts -->
+    <%= render 'sideprojects/featuredposts'%>
+    <!-- featured posts -->
   </div>
 </div>

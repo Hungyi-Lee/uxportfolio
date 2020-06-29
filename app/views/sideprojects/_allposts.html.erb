@@ -1,0 +1,16 @@
+<div class="al-posts">
+  <% @sideprojects.each do |p|%>
+  <div class="al-post">
+    <img class="image" src="<%= p.coverimage %>">
+    <!-- <img class="image" src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"> -->
+    <div class="post-lang"><%= p.overview %></div>
+    <div class="post1-content">
+      <!-- <div class="post-tag">Design・9 min read</div> -->
+      <div class="post-tag"><%= p.projectdate %></div>
+      <h4 class="post-title"><%= p.title %></h4>
+      <p class="foreword"><%= p.briefintro.truncate(80) %></p>
+      <%= link_to sideproject_path(p.title) do %>Read More<% end %>
+    </div>
+  </div>
+  <% end %>
+</div>

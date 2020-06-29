@@ -15,6 +15,9 @@ class SideprojectsController < ApplicationController
 
   def index
     @sideprojects = Sideproject.order("created_at desc").all
+    if params[:search].present?
+      @sideprojects = @sideprojects.get_all params[:search]
+    end
     @feature_one = Sideproject.where(overview: "JP").sample
     @feature_rest = Sideproject.where(overview: "EN")
   end
