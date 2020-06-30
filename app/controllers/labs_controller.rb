@@ -1,6 +1,7 @@
 class LabsController < ApplicationController
   def index
-    @sideprojects = Sideproject.where('projectdate LIKE ?', '%Lab%').all    
+    @sideprojects = Sideproject.where(tag: "Lab").all
+    # @sideprojects = Sideproject.where('tag LIKE ?', '%Lab%').all
     if params[:search].present?
       @sideprojects = @sideprojects.get_all params[:search]
     end

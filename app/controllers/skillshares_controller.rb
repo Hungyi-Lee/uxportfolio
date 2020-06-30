@@ -1,7 +1,7 @@
 class SkillsharesController < ApplicationController
   def index
-    @sideprojects = Sideproject.where('projectdate LIKE ?', '%Skillshare%').all
-
+    @sideprojects = Sideproject.where(tag: "Skillshare").all
+    # @sideprojects = Sideproject.where('tag LIKE ?', '%Skillshare%').all
     if params[:search].present?
       @sideprojects = @sideprojects.get_all params[:search]
     end

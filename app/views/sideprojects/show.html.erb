@@ -46,6 +46,8 @@
     <span>/</span>
     <span class="breadcrumb-home"><%= link_to sideprojects_path do%>Blog<%end%></span>
     <span>/</span>
+    <span class="breadcrumb-home"><%= @sideproject.tag %></span>
+    <span>/</span>
     <span class="breadcrumb-active"><%= @sideproject.title %></span>
   </div>
   <div class="blog-show-section">

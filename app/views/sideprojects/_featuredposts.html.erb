@@ -6,7 +6,7 @@
     <img class="image" src="<%= @feature_one.coverimage %>">
     <div class="post-lang"><%= @feature_one.overview %></div>
     <div class="post1-content">
-      <div class="post-tag"><%= @feature_one.projectdate %></div>
+      <div class="post-tag"><%= @feature_one.tag %>・<%= @feature_one.projectdate %></div>
       <h4 class="post-title"><%= @feature_one.title %></h4>
       <p class="foreword"><%= @feature_one.briefintro %></p>
       <%= link_to sideproject_path(@feature_one.title) do %>Read More<% end %>
@@ -19,7 +19,7 @@
         <div class="rest-post-lang"><%= p.overview %></div>
       </div>
       <div class="rest-post-content">
-        <div class="post-tag"><%= p.projectdate %></div>
+        <div class="post-tag"><%= p.tag %>・<%= p.projectdate %></div>
         <h4 class="post-title"><%= p.title%></h4>
         <p class="foreword"><%= p.briefintro.truncate(80) %></p>
         <%= link_to sideproject_path(p.title) do %>Read More<% end %>
