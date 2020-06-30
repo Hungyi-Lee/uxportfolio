@@ -48,19 +48,19 @@
     <span>/</span>
     <span class="breadcrumb-home"><%= @sideproject.tag %></span>
     <span>/</span>
-    <span class="breadcrumb-active"><%= @sideproject.title %></span>
+    <span class="breadcrumb-active breadcrumb-title"><%= @sideproject.title %></span>
   </div>
   <div class="blog-show-section">
     <div class="project-detailed-content">
         <h3><b><%= @sideproject.title %></b></h3>
-        <div class="post-tag"><%= @sideproject.projectdate %></div>
+        <div class="post-tag"><%=@sideproject.tag%>・<%= @sideproject.projectdate %></div>
         <%= raw(@sideproject.description) %>
       <hr/>
     </div>
     <!-- Related posts -->
     <h4>More Posts</h4><br/>
     <ul>
-      <% @sideprojects.take(4).each do |s|%>
+      <% @sideprojects.sample(4).each do |s|%>
        <li><b>
          <%= link_to sideproject_path(s.title) do %><%= s.title %><% end %>
        </b></li>

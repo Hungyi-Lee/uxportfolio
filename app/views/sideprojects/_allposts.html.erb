@@ -8,7 +8,7 @@
       <!-- <div class="post-tag">Design・9 min read</div> -->
       <div class="post-tag"><%= p.tag %>・<%= p.projectdate %></div>
       <h4 class="post-title"><%= p.title %></h4>
-      <p class="foreword"><%= p.briefintro.truncate(80) %></p>
+      <p class="foreword"><%= p.briefintro.truncate(100) %></p>
       <%= link_to sideproject_path(p.title) do %>Read More<% end %>
     </div>
   </div>

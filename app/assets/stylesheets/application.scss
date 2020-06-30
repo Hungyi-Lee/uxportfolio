@@ -472,5 +472,12 @@ a, a:hover{
 
   .breadcrumb{
     padding: 1.25rem 0.625rem !important;
+    height: auto;
+  }
+
+  .breadcrumb-title{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
   }
 }
