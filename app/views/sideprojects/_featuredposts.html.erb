@@ -13,7 +13,7 @@
     </div>
   </div>
   <div class="rest-posts">
-    <% @feature_rest.take(3).each do |p| %>
+    <% @feature_rest.each do |p| %>
     <div class="rest-post">
       <div class="rest-post-img" style="background-image: url('<%= p.coverimage %>')">
         <div class="rest-post-lang"><%= p.overview %></div>

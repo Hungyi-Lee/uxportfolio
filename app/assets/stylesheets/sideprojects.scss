@@ -28,6 +28,10 @@
   margin-right: 5%;
 }
 
+.categories > .blog-cat-item > a{
+  color: var(--dusk);
+}
+
 .blog-cat-item-active{
   padding-bottom: 10px;
   border-bottom: 4px solid var(--dusk);

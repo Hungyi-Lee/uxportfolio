@@ -9,10 +9,16 @@ Rails.application.routes.draw do
   resources :sideprojects, only: [:new, :edit, :update, :create, :index]
   get '/sideprojects/:title', to: "sideprojects#show"
 
+  # resources :worknotes, only: [:index]
+  get '/blog/worknotes', to: 'worknotes#index'
+  get '/blog/skillshares', to: 'skillshares#index'
+  get '/blog/labs', to: 'labs#index'
+  get '/blog/recommendations', to: 'books#index'
+
 
   get 'about' => 'works#index', :as => :about
   get 'resume' => 'resumes#index', :as => :resume
-  get 'allprojects' => 'projects#index', :as => :all_projects
+  # get 'allprojects' => 'projects#index', :as => :all_projects
   get 'graphicdesign' => 'graphic#index', :as => :graphicdesign
   # resources :projects, only:[:show], param: :title
   get '/projects/:title', to: "projects#show"

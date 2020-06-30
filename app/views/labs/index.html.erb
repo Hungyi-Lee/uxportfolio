@@ -1,31 +1,11 @@
-<!-- <div class="section projects">
-  <%# @sideprojects.each do |p|%>
-    <div class="project">
-      <div class="project-image">
-        <img class="image" src="<%#= p.coverimage%>">
-      </div>
-      <div class="project-description">
-          <div class="project-title"><%#= p.title %></div>
-          <div class="project-category">
-            <%#= raw(p.projectdate) %>
-          </div>
-          <div class="brief-description">
-            <%#= p.briefintro %>
-          </div>
-          <div class="project-link">
-            <%#= link_to sideproject_path(p.title), class:"view-more-btn center" do %>Read More<%# end %>
-          </div>
-      </div>
-    </div>
-  <%# end %>
-</div> -->
-
 <div class="section m-t-70">
   <!-- Breadcrumb -->
   <div class="breadcrumb">
     <span class="breadcrumb-home"><%= link_to root_path do%>Home<%end%></span>
     <span>/</span>
-    <span class="breadcrumb-active">Blog</span>
+    <span class="breadcrumb-home"><%= link_to sideprojects_path do%>Blog<%end%></span>
+    <span>/</span>
+    <span class="breadcrumb-active">Lab</span>
   </div>
   <!-- Breadcrumb -->
   <div class="blog-section">
@@ -34,17 +14,16 @@
       <!-- categories -->
       <div class="categories">
         <h3 class="mbonly-title"><b>Categories</b></h3>
-        <div class="blog-cat-item blog-cat-item-active">All</div>
-        <div class="blog-cat-item"><%=link_to blog_worknotes_path do %>Work Notes<% end %></div>
+        <div class="blog-cat-item"><%= link_to sideprojects_path do%>All<% end %></div>
+        <div class="blog-cat-item"><%= link_to blog_worknotes_path do%>Work Notes<% end %></div>
         <div class="blog-cat-item"><%= link_to blog_skillshares_path do%>Skillshare<% end %></div>
-        <div class="blog-cat-item"><%= link_to blog_labs_path do%>Lab<% end %></div>
+        <div class="blog-cat-item blog-cat-item-active">Lab</div>
         <div class="blog-cat-item"><%= link_to blog_recommendations_path do%>Recommendations<% end %></div>
       </div>
       <!-- categories -->
       <!-- search bar -->
       <%= form_tag(@sideproject_path, method: "get", class:"h-form") do %>
         <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Search posts" %>
-        <%#= submit_tag ("Search") %>
       <% end %>
     </div>
     <!-- blogtop categories -->
@@ -53,11 +32,11 @@
       <h3><b>All Posts</b> (<%=@sideprojects.size%>)</h3><br/>
       <%= render 'sideprojects/allposts'%>
     <% else %>
-      <%= render 'sideprojects/nomatch'%>
+      <h3><b>All Posts</b> (<%=@sideprojects.size%>)</h3><br/>
     <% end %>
     <!-- all posts -->
     <!-- featured posts -->
-    <%= render 'sideprojects/featuredposts'%>
+    <%#= render 'sideprojects/featuredposts'%>
     <!-- featured posts -->
   </div>
 </div>
