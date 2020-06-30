@@ -15,11 +15,18 @@ class SideprojectsController < ApplicationController
 
   def index
     @sideprojects = Sideproject.order("created_at desc").all
+    if params[:search].present?
+      @sideprojects = @sideprojects.get_all params[:search]
+    end
+    @feature_one = Sideproject.where(tag: "Work Notes").sample
+    # @feature_one = Sideproject.where('tag LIKE ?', '%Work Notes%').first
+    @feature_rest = Sideproject.take(3)
   end
 
   def show
     # @sideproject = Sideproject.find(params[:id])
     @sideproject = Sideproject.find_by(title: params[:title])
+    @sideprojects = Sideproject.all
   end
 
   def edit
@@ -46,7 +53,8 @@ class SideprojectsController < ApplicationController
                                         :briefintro,
                                         :overview,
                                         :coverimage,
-                                        :description
+                                        :description,
+                                        :tag
                                        )
   end
 end

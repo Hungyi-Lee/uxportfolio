@@ -1,0 +1,31 @@
+<!-- featured posts -->
+<hr/><br/>
+<h3><b>Featured Posts</b></h3><br/>
+<div class="featured-posts">
+  <div class="post1">
+    <img class="image" src="<%= @feature_one.coverimage %>">
+    <div class="post-lang"><%= @feature_one.overview %></div>
+    <div class="post1-content">
+      <div class="post-tag"><%= @feature_one.tag %>・<%= @feature_one.projectdate %></div>
+      <h4 class="post-title"><%= @feature_one.title %></h4>
+      <p class="foreword"><%= @feature_one.briefintro %></p>
+      <%= link_to sideproject_path(@feature_one.title) do %>Read More<% end %>
+    </div>
+  </div>
+  <div class="rest-posts">
+    <% @feature_rest.each do |p| %>
+    <div class="rest-post">
+      <div class="rest-post-img" style="background-image: url('<%= p.coverimage %>')">
+        <div class="rest-post-lang"><%= p.overview %></div>
+      </div>
+      <div class="rest-post-content">
+        <div class="post-tag"><%= p.tag %>・<%= p.projectdate %></div>
+        <h4 class="post-title"><%= p.title%></h4>
+        <p class="foreword"><%= p.briefintro.truncate(80) %></p>
+        <%= link_to sideproject_path(p.title) do %>Read More<% end %>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+<!-- featured posts -->
