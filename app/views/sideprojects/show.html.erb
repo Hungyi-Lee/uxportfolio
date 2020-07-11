@@ -46,7 +46,15 @@
     <span>/</span>
     <span class="breadcrumb-home"><%= link_to sideprojects_path do%>Blog<%end%></span>
     <span>/</span>
-    <span class="breadcrumb-home"><%= @sideproject.tag %></span>
+    <% if @sideproject.tag == 'Lab'%>
+    <span class="breadcrumb-home"><%= link_to blog_labs_path do%>Lab<%end%></span>
+    <% elsif @sideproject.tag == 'Work Notes' %>
+    <span class="breadcrumb-home"><%=link_to blog_worknotes_path do %>Work Notes<% end %></span>
+    <% elsif @sideproject.tag == 'Skillshare' %>
+    <span class="breadcrumb-home"><%=link_to blog_skillshares_path do %>Skillshare<% end %></span>
+    <% elsif @sideproject.tag == 'Recommendations' %>
+    <div class="breadcrumb-home"><%= link_to blog_recommendations_path do%>Recommendations<% end %></div>
+    <% end %>
     <span>/</span>
     <span class="breadcrumb-active breadcrumb-title"><%= @sideproject.title %></span>
   </div>
