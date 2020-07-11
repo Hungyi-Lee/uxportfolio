@@ -20,7 +20,7 @@ class SideprojectsController < ApplicationController
     end
     @feature_one = Sideproject.where(tag: "Work Notes").sample
     # @feature_one = Sideproject.where('tag LIKE ?', '%Work Notes%').first
-    @feature_rest = Sideproject.take(3)
+    @feature_rest = Sideproject.where(tag: "Skillshare").take(3)
   end
 
   def show
