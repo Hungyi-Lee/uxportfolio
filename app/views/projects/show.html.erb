@@ -4,17 +4,23 @@
     <span>/</span>
     <span class="breadcrumb-active"><%= @project.title %></span>
   </div>
+  <div class="blog-show-section">
+    <div class="project-detailed-content">
+      <div class="project-content-title"><%= @project.title %></div>
+      <div class="project-content-category"><%= raw(@project.projectdate) %></div>
+    </div>
+  </div>
+  <div class="blog-show-section2">
   <div class="maincontent">
     <!-- table -->
     <div class="table-content">
       <%= raw(@project.category) %>
     </div>
+    <!-- Content -->
   	<div class="project-detailed-content">
-      <div class="project-content-title"><%= @project.title %></div>
-      <div class="project-content-category"><%= raw(@project.projectdate) %></div>
-      <!-- Content -->
       <%= raw(@project.description) %>
   	</div>
+  </div>
   </div>
 </div>
 

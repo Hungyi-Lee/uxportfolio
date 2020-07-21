@@ -87,12 +87,12 @@ html {
   letter-spacing: 2px;
 }
 
-.project-content-category{
-  margin-bottom: 4%;
-}
+// .project-content-category{
+//   margin-bottom: 4%;
+// }
 
 .content-section{
-  padding: 12% 0;
+  padding-bottom: 10%;
 }
 
 .project-category > span,
@@ -113,21 +113,22 @@ html {
 
 /** page layout **/
 .maincontent {
-  padding-top: 5%;
+  // padding-top: 5%;
 	display: grid;
 	grid-template-columns: 0.5fr 1.1fr;
 	width: 70%;
 	margin: 0 auto;
 }
 
-.blog-maincontent{
-  width: 100%;
-}
+// .blog-maincontent{
+//   width: 100%;
+  // padding-top: 5%;
+// }
 
 /* 2. Make nav sticky */
 // main > .section-nav {
 .table-content {
-  width: 50%;
+  width: 100%;
 	position: sticky;
 	top: 25%;
   left: 5%;
@@ -261,11 +262,11 @@ figcaption{
 }
 
 .more-studies{
-  padding: 40px;
+  padding: 20px 40px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 3.03px;
+  letter-spacing: 1px;
   color: var(--dusk);
 }
 
@@ -351,7 +352,7 @@ figure > img{
 // tablet
 @media (min-width: 768px) and (max-width: 1300px) {
   .maincontent {
-    padding-top: 10%;
+    // padding-top: 10%;
     width: 100%;
   }
 
@@ -457,7 +458,7 @@ figure > img{
   .project-detailed-content{
     width: 95%;
     margin: 0 auto;
-    padding: 0 5%;
+    // padding: 0 5%;
   }
 
   // figure.prototype-screens{
@@ -481,6 +482,6 @@ figure > img{
     width: 100%;
     display: block;
     margin: 0 auto;
-    padding-top: 20%;
+    padding-top: 0;
   }
 }
