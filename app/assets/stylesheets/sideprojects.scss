@@ -163,7 +163,7 @@
 .blog-show-section{
   width: 100%;
   margin: 60px auto;
-  padding: 7% 18% 0;
+  padding: 7% 15% 0;
   color: var(--dusk);
 }
 
@@ -176,7 +176,7 @@
 @media (min-width: 768px) and (max-width: 1300px) {
   .blog-section{
     width: 100%;
-    padding: 12% 5% 0;
+    padding: 10% 5% 0;
   }
 
   .categories{
@@ -204,10 +204,14 @@
   }
 
   // blog-show
-  .blog-show-section{
+  .blog-show-section, .blog-show-section2{
     width: 100%;
     margin: 60px auto;
     padding: 12% 10% 0;
+  }
+
+  .blog-show-section2{
+    padding-top: 0;
   }
 
   // only show in mobile
@@ -308,11 +312,16 @@
   }
 
   // blog-show
-  .blog-show-section{
+  .blog-show-section, .blog-show-section2{
     width: 100%;
     margin: 60px auto;
     padding: 30% 5% 0;
   }
+
+  .blog-show-section2{
+    padding-top: 0;
+  }
+
 
   .blog-show-section > .project-detailed-content > h3{
     font-size: 24px;

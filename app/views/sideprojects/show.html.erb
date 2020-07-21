@@ -60,11 +60,17 @@
   </div>
   <div class="blog-show-section">
     <div class="project-detailed-content">
-        <h3><b><%= @sideproject.title %></b></h3>
-        <div class="post-tag"><%=@sideproject.tag%>・<%= @sideproject.projectdate %></div>
-        <%= raw(@sideproject.description) %>
-      <hr/>
+      <div class="project-content-title"><%= @sideproject.title %></div>
+      <div class="post-tag"><%=@sideproject.tag%>・<%= @sideproject.projectdate %></div>
     </div>
+  </div>
+  <div class="blog-show-section2">
+    <div class="project-detailed-content">
+        <%= raw(@sideproject.description) %>
+        <hr/>
+    </div>
+  </div>
+  <div class="blog-show-section">
     <!-- Related posts -->
     <br/><h4>More Posts</h4><br/>
     <ul>
