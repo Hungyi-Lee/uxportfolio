@@ -61,21 +61,27 @@
   // height: 300px;
 }
 
-.tabbox{
+.tabbox2{
   width: 100%;
-  height: 300px;
+  height: 450px;
   display: block;
 }
 
 .tabbox1{
   width: 100%;
-  height: 400px;
+  height: 330px;
   display: block;
 }
 
 .tabbox2{
   width: 100%;
-  height: 200px;
+  height: 460px;
+  display: block;
+}
+
+.tabbox3{
+  width: 100%;
+  height: 210px;
   display: block;
 }
 
@@ -152,19 +158,37 @@
   left: 0;
 }
 
+.work-duties-section > img{
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+  padding: 5px;
+}
+
 // Tablet
 @media (min-width: 768px) and (max-width: 1300px) {
   .resume-section{
     padding-top: 10%;
   }
+
+  .tabbox{
+    width: 100%;
+    height: 450px;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 767px){
-  .resume-section{
+  .mb-resume-section{
     width: 100%;
     padding: 15% 5% 0;
     // margin: 60px auto;
-    height: 480px;
+    height: 720px;
+  }
+
+  .mb-resume-section2{
+    width: 100%;
+    padding: 5% 0;
+    height: 400px;
   }
 
   .resume-title{
@@ -194,11 +218,6 @@
 
   .bs-tab{
     display: none;
-  }
-
-  .tabbox{
-    height: 380px;
-    display: block;
   }
 
   .tab, .edutab, .skilltab, .voltab {
@@ -247,7 +266,6 @@
   .work-position-section,
   .work-duties-section,
   .resume-title,
-  .tabbox,
   .sm-tab {
     width: 100%;
     display: block;
@@ -259,4 +277,5 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+
 }

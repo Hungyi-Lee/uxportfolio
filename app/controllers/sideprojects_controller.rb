@@ -18,7 +18,7 @@ class SideprojectsController < ApplicationController
     if params[:search].present?
       @sideprojects = @sideprojects.get_all params[:search]
     end
-    @feature_one = Sideproject.where(tag: "Work Notes").sample
+    @feature_one = Sideproject.where(tag: "Career").sample
     # @feature_one = Sideproject.where('tag LIKE ?', '%Work Notes%').first
     @feature_rest = Sideproject.where(tag: "Skillshare").take(3)
   end
