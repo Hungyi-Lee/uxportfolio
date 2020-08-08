@@ -1,45 +1,3 @@
-<!-- <div class="section m-t-150">
-  <div class="maincontent">
-    <div class="table-content">
-      <%#= raw(@sideproject.overview) %>
-    </div>
-  	<div class="project-detailed-content">
-      <div class="project-content-title"><%#= @sideproject.title %></div>
-      <div class="project-content-category"><%#= raw(@sideproject.projectdate) %></div>
-      <%#= raw(@sideproject.description) %>
-  	</div>
-  </div>
-</div>
---!>
-
-
-
-<!-- <div class="section">
-  <div class="bk-pj-btn">
-    <%#= link_to sideprojects_path do %>BACK<%# end %>
-  </div>
-  <hr>
-  <div>
-    <h3 class="more-studies">MORE CASE STUDIES</h3>
-  </div>
-  <div class="content-bottom-section">
-    <%# if @sideproject.previous.present? %>
-        <div class="previous-pj">
-          <div class="previous-pj-img" style="background-image: url('<%#= @sideproject.previous.coverimage %>');"></div>
-          <div class="previous-pj-title"><%#= @sideproject.previous.title%></div>
-          <%#= link_to @sideproject.previous.title do %>Read More<%# end %>
-        </div>
-    <%# end %>
-    <%# if @sideproject.next.present? %>
-        <div class="next-pj">
-          <div class="next-pj-img" style="background-image: url('<%#= @sideproject.next.coverimage %>');"></div>
-          <div class="next-pj-title"><%#= @sideproject.next.title%></div>
-          <%#= link_to @sideproject.next.title do %>Read More<%# end %>
-        </div>
-    <%# end %>
-  </div>
-</div> -->
-
 <div class="section m-t-70">
   <div class="breadcrumb">
     <span class="breadcrumb-home"><%= link_to root_path do%>Home<%end%></span>
@@ -70,18 +28,40 @@
         <hr/>
     </div>
   </div>
-  <div class="blog-show-section blog-show-section2">
+  <!-- <div class="blog-show-section blog-show-section2"> -->
     <!-- Related posts -->
-    <h3 class="more-studies">More Posts</h3>
-    <ul>
-      <% @sideprojects.sample(4).each do |s|%>
-       <li><b>
-         <%= link_to sideproject_path(s.title) do %><%= s.title %><% end %>
-       </b></li>
-      <% end %>
-    </ul>
-  </div>
+    <!-- <h3 class="more-studies">More Posts</h3> -->
+    <!-- <ul> -->
+      <%# @sideprojects.sample(4).each do |s|%>
+       <!-- <li><b> -->
+         <%#= link_to sideproject_path(s.title) do %><%#= s.title %><%# end %>
+       <!-- </b></li> -->
+      <%# end %>
+    <!-- </ul> -->
+  <!-- </div> -->
+  <!-- <div class="bk-pj-btn"> -->
+    <!-- <%#= link_to sideprojects_path do %>BACK TO BLOG<%# end %> -->
+  <!-- </div> -->
+</div>
+
+
+
+
+<div class="section">
   <div class="bk-pj-btn">
     <%= link_to sideprojects_path do %>BACK TO BLOG<% end %>
+  </div>
+  <!-- <hr> -->
+  <div>
+    <h3 class="more-studies">MORE ARTICLES</h3>
+  </div>
+  <div class="content-bottom-section">
+        <% @sideprojects.sample(2).each do |s|%>
+          <div class="previous-pj">
+            <div class="previous-pj-img" style="background-image: url('<%= s.coverimage %>');"></div>
+            <div class="previous-pj-title"><%= s.title%></div>
+            <%= link_to sideproject_path(s.title) do %>Read More<% end %>
+          </div>
+        <% end %>
   </div>
 </div>
