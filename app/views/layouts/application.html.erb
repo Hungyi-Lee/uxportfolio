@@ -61,7 +61,7 @@
             <% else %>
               <li class="nav-list-item"><%= link_to about_path do %>ABOUT<% end %></li>
             <% end %>
-            <% if current_page?(controller: 'sideprojects', action: 'index') || controller.controller_name == 'sideprojects' || controller.controller_name == 'books' || controller.controller_name == 'labs' || controller.controller_name == 'skillshares' || controller.controller_name == 'worknotes'%>
+            <% if current_page?(controller: 'sideprojects', action: 'index') || controller.controller_name == 'sideprojects' || controller.controller_name == 'books' || controller.controller_name == 'labs' || controller.controller_name == 'skillshares' || controller.controller_name == 'careers'%>
               <li class="active"><b></b><%= link_to sideprojects_path do %>BLOG<% end %></li>
             <% else %>
               <li class="nav-list-item"><%= link_to sideprojects_path do %>BLOG<% end %></li>

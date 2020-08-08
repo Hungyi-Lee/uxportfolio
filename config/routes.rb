@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get '/sideprojects/:title', to: "sideprojects#show"
 
   # resources :worknotes, only: [:index]
-  get '/blog/worknotes', to: 'worknotes#index'
+  get '/blog/careers', to: 'careers#index'
   get '/blog/skillshares', to: 'skillshares#index'
   get '/blog/labs', to: 'labs#index'
   get '/blog/recommendations', to: 'books#index'

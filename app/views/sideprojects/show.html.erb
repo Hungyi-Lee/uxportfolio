@@ -48,8 +48,8 @@
     <span>/</span>
     <% if @sideproject.tag == 'Lab'%>
     <span class="breadcrumb-home"><%= link_to blog_labs_path do%>Lab<%end%></span>
-    <% elsif @sideproject.tag == 'Work Notes' %>
-    <span class="breadcrumb-home"><%=link_to blog_worknotes_path do %>Work Notes<% end %></span>
+    <% elsif @sideproject.tag == 'Career' %>
+    <span class="breadcrumb-home"><%=link_to blog_careers_path do %>Career<% end %></span>
     <% elsif @sideproject.tag == 'Skillshare' %>
     <span class="breadcrumb-home"><%=link_to blog_skillshares_path do %>Skillshare<% end %></span>
     <% elsif @sideproject.tag == 'Recommendations' %>
