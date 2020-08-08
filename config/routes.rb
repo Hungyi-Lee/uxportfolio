@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   get '/blog/careers', to: 'careers#index'
   get '/blog/skillshares', to: 'skillshares#index'
   get '/blog/labs', to: 'labs#index'
-  get '/blog/recommendations', to: 'books#index'
+  get '/blog/books', to: 'books#index'
 
 
   get 'about' => 'works#index', :as => :about

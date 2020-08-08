@@ -52,8 +52,8 @@
     <span class="breadcrumb-home"><%=link_to blog_careers_path do %>Career<% end %></span>
     <% elsif @sideproject.tag == 'Skillshare' %>
     <span class="breadcrumb-home"><%=link_to blog_skillshares_path do %>Skillshare<% end %></span>
-    <% elsif @sideproject.tag == 'Recommendations' %>
-    <div class="breadcrumb-home"><%= link_to blog_recommendations_path do%>Recommendations<% end %></div>
+    <% elsif @sideproject.tag == 'Books' %>
+    <div class="breadcrumb-home"><%= link_to blog_books_path do%>Books<% end %></div>
     <% end %>
     <span>/</span>
     <span class="breadcrumb-active breadcrumb-title"><%= @sideproject.title %></span>

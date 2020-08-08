@@ -1,6 +1,6 @@
 class CareersController < ApplicationController
   def index
-    @sideprojects = Sideproject.where(tag: "career").order("created_at desc").all
+    @sideprojects = Sideproject.where(tag: "Career").order("created_at desc").all
     # @sideprojects = Sideproject.where('tag LIKE ?', '%Work Notes%').all
 
     if params[:search].present?
