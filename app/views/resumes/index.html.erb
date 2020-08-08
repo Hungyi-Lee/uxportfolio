@@ -4,21 +4,15 @@
     <span>/</span>
     <span class="breadcrumb-active">Resume</span>
   </div>
-  <!-- <div class="work-experiences-section"> -->
-    <!-- <div class="work-position-section center font-center"> -->
-      <!-- <div class="page-name">RESUME</div> -->
-
-    <!-- </div> -->
-  <!-- </div> -->
 </div>
-<div class="resume-section">
+<div class="resume-section mb-resume-section">
   <div class="resume-pdfbtn">
     <%= link_to "https://drive.google.com/file/d/1pBwq-j8eqokrglA9dDrnE4Jfr9BK10Ya/view", target: "_blank" do %>
     Download PDF Resume
     <% end %>
   </div>
   <div class="resume-title">Where I've Worked</div>
-    <div class="tabbox2">
+    <div class="tabbox1">
       <div class="tab bs-tab sm-tab">
         <button class="tablinks" onclick="openJob(event, 'HelpArt')" id="defaultOpen">HelpArt</button>
         <button class="tablinks" onclick="openJob(event, 'HCI')">Human Capable Inc.</button>
@@ -37,14 +31,14 @@
         </div>
       </div>
       <div id="P5" class="tabcontent">
-        <div class="position">Creative Director @ Project5</div>
-        <div class="work-dates">Jul. 2020 - Present | Shanghai, China</div>
-        <div class="work-duties-section">
-          <ul>
-            <li>Understood product specifications, desgined new features, optimized the UX, and conducted testing for the web platform</li>
-          </ul>
-        </div>
-        <br/>
+        <!-- <div class="position">Creative Director @ Project5</div> -->
+        <!-- <div class="work-dates">Jul. 2020 - Present | Shanghai, China</div> -->
+        <!-- <div class="work-duties-section"> -->
+          <!-- <ul> -->
+            <!-- <li>Understood product specifications, desgined new features, optimized the UX, and conducted testing for the web platform</li> -->
+          <!-- </ul> -->
+        <!-- </div> -->
+        <!-- <br/> -->
         <div class="position">UX Designer @ Project5</div>
         <div class="work-dates">Dec. 2019 - Jan. 2020 | Shanghai, China</div>
         <div class="work-duties-section">
@@ -53,6 +47,8 @@
             <li>Completed user research, competitor analysis, prototyping, and usability testing</li>
             <li><a href="https://www.hungyilee.com/projects/Project5%20Musician%20Platform" target="_blank">See case study here</a></li>
           </ul>
+          <p><b>Feedback from my supervisor</b></p>
+          <img src="https://live.staticflickr.com/65535/50200797596_49337a7c5e_o.png" width="85%">
         </div>
       </div>
       <div id="HCI" class="tabcontent">
@@ -109,23 +105,12 @@
 </div>
 <!-- Experience End -->
 <!-- Volunteer Begin -->
-<div class="resume-section">
+<div class="resume-section mb-resume-section">
   <div class="resume-title">Volunteer Experience</div>
-    <div class="tabbox">
+    <div class="tabbox2">
       <div class="voltab bs-tab sm-tab">
-        <button class="voltablinks" onclick="openVol(event, 'NCCS')" id="defaultOpenVol">Code For America</button>
-        <button class="voltablinks" onclick="openVol(event, 'NHCP')">Northwest Health Career Path</button>
-      </div>
-      <div id="NCCS" class="voltabcontent">
-        <div class="position">UX Designer @ Code For America</div>
-        <div class="work-dates">May. 2020 - Present | San Francisco, CA</div>
-        <div class="work-duties-section">
-          <ul>
-            <li></li>
-            <li>Collaborated with 1 UX designers and 2 project managers</li>
-            <li>Responsible for conducting user research, delivering wireframes</li>
-          </ul>
-        </div>
+        <button class="voltablinks" onclick="openVol(event, 'NHCP')" id="defaultOpenVol">Northwest Health Career Path</button>
+        <button class="voltablinks" onclick="openVol(event, 'NCCS')" >Code For America</button>
       </div>
       <div id="NHCP" class="voltabcontent">
         <div class="position">UX Designer @ Northwest Health Career Path</div>
@@ -138,6 +123,17 @@
           </ul>
           <p><b>Feedback from my co-workers</b></p>
           <img src="https://live.staticflickr.com/65535/50200834577_5b7f237f67_o.png" width="100%">
+        </div>
+      </div>
+      <div id="NCCS" class="voltabcontent">
+        <div class="position">UX Designer @ Code For America</div>
+        <div class="work-dates">May. 2020 - Present | San Francisco, CA</div>
+        <div class="work-duties-section">
+          <ul>
+            <li></li>
+            <li>Collaborated with 1 UX designers and 2 project managers</li>
+            <li>Responsible for conducting user research, delivering wireframes</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -162,9 +158,9 @@
 </div>
 <!-- Volunteer End -->
 <!-- Skills Begin -->
-<div class="resume-section">
+<div class="resume-section mb-resume-section2">
   <div class="resume-title">Skillset</div>
-  <div class="tabbox2">
+  <div class="tabbox3">
     <div class="skilltab bs-tab sm-tab">
       <button class="skilltablinks" onclick="openSkill(event, 'design')" id="defaultOpenSkill">Design Skills</button>
       <button class="skilltablinks" onclick="openSkill(event, 'DT')">Design Tools</button>
@@ -244,9 +240,9 @@
 </div>
 <!-- Skills End -->
 <!-- Education Begin -->
-<div class="resume-section">
+<div class="resume-section mb-resume-section">
   <div class="resume-title">Education</div>
-  <div class="tabbox">
+  <div class="tabbox2">
     <div class="edutab bs-tab sm-tab">
       <button class="edutablinks" onclick="openEdu(event, 'certificate')" id="defaultOpenEdu">UX Certification</button>
       <button class="edutablinks" onclick="openEdu(event, 'ma')">Master</button>
@@ -314,204 +310,4 @@
 </div>
 <!--Education End-->
 
-
-<!-- <div class="section resume-section">
-  <div class="resume-title">Where I've worked</div>
-  <hr/>
-  <%# @works.each do |w|%>
-  <div class="work-experiences-section m-t-20">
-    <div class="work-position-section">
-      <div class="position"><%#= w.company %> / <%#= w.position%></div>
-      <div class="work-dates">
-        <%#= w.timeline %>
-      </div>
-      <div class="work-dates">
-        <%#= w.location%>
-      </div>
-    </div>
-    <div class="work-duties-section">
-      <%#= raw(w.description) %>
-    </div>
-  </div>
-  <%#end%>
-</div> -->
-<!-- Experiences End -->
-<!-- Projects Begin -->
-<!-- <div class="section resume-section m-t-20">
-  <div class="resume-title">UX design projects</div>
-  <hr/>
-  <div class="work-experiences-section">
-    <div class="work-position-section">
-      <div class="position">
-          HomeBody Mobile App (Android)
-      </div>
-      <div class="work-dates">Apr. 2020</div>
-    </div>
-    <div class="work-duties-section">
-      <ul>
-        <li>Designed a seamless onboarding experience for new users to help them set up workout at home successfully</li>
-        <li>Created wireframes and a high-fidelity prototype based on users’ needs</li>
-        <li>Validated the solutions by conducting usability test</li>
-        <p><%#=link_to project_path(@projects.second.title) do%>See case study here<%#end%></p>
-      </ul>
-    </div>
-  </div>
-  <div class="work-experiences-section">
-    <div class="work-position-section">
-      <div class="position">
-          LEGO eCommerce (Website)
-      </div>
-      <div class="work-dates">Mar. 2020</div>
-    </div>
-    <div class="work-duties-section">
-      <ul>
-        <li>Redesigned the website to provide users a better shopping experience</li>
-        <li>Performed UX audit, user research, competitor analysis and information design</li>
-        <li>Created a high-fidelity prototype with HTML, CSS and jQuery </li>
-        <p><%#=link_to project_path(@projects.offset(4).first.title) do%>See case study here<%#end%></p>
-      </ul>
-    </div>
-  </div>
-  <div class="work-experiences-section">
-    <div class="work-position-section">
-      <div class="position">
-          Savr Mobile App (iOS)
-      </div>
-      <div class="work-dates">Feb. 2020</div>
-    </div>
-    <div class="work-duties-section">
-      <ul>
-        <li>Designed an app to help people easily follow new recipes and cook great meals with Google Venture design sprint</li>
-        <li>Completed a high-fidelity prototype and conducted the usability testing</li>
-        <p><%#=link_to project_path(@projects.fourth.title) do%> See case study here<%#end%></p>
-      </ul>
-    </div>
-  </div>
-</div> -->
-<!-- Projects End -->
-
-<!-- Education Begin -->
-
-<!-- Education End -->
-<!-- Design Skills begin -->
-<!-- <div class="section resume-section">
-  <div class="resume-title">UX Design skills</div>
-  <hr/>
-  <div class="work-experiences-section skills">
-      <div class="skills-section">
-        <ul>
-          <li>Illustration</li>
-          <li>Information Architecture</li>
-          <li>Interface Design</li>
-        </ul>
-      </div>
-      <div class="skills-section">
-        <ul>
-          <li>Prototyping</li>
-          <li>User Research</li>
-        </ul>
-      </div>
-      <div class="skills-section">
-        <ul>
-          <li>Usability Testing</li>
-          <li>Visual Design</li>
-        </ul>
-      </div>
-      <div class="skills-section">
-        <ul>
-          <li>Web Design</li>
-          <li>Wireframing</li>
-        </ul>
-      </div>
-  </div>
-</div> -->
-<!-- Skills End -->
-<!-- Tools Begin -->
-<!-- <div class="section resume-section">
-  <div class="resume-title">Design tools</div>
-  <hr/>
-  <div class="work-experiences-section skills">
-      <div class="skills-section">
-        <ul>
-          <li>Adobe Illustrator</li>
-          <li>Adobe Photoshop</li>
-          <li>Adobe XD</li>
-        </ul>
-      </div>
-      <div class="skills-section">
-        <ul>
-          <li>Balsamiq</li>
-          <li>Figma</li>
-        </ul>
-      </div>
-      <div class="skills-section">
-        <ul>
-          <li>Framer X</li>
-          <li>Invision</li>
-        </ul>
-      </div>
-      <div class="skills-section">
-        <ul>
-          <li>Sketch</li>
-          <li>Zeplin</li>
-        </ul>
-      </div>
-  </div>
-</div> -->
-<!-- Tools End -->
-<!-- Development Skills begin -->
-<!-- <div class="section resume-section">
-  <div class="resume-title">Development skills</div>
-  <hr/>
-  <div class="work-experiences-section skills">
-    <div class="skills-section">
-      <ul>
-        <li>Bootstrap</li>
-        <li>CSS</li>
-      </ul>
-    </div>
-    <div class="skills-section">
-      <ul>
-        <li>Git</li>
-        <li>HTML</li>
-      </ul>
-    </div>
-    <div class="skills-section">
-      <ul>
-        <li>Javascript</li>
-        <li>JQuery</li>
-      </ul>
-    </div>
-    <div class="skills-section">
-      <ul>
-        <li>React JS</li>
-        <li>Ruby on Rails</li>
-      </ul>
-    </div>
-  </div>
-</div> -->
-<!-- Development Skills end -->
-<!-- Language Begin -->
-<!-- <div class="section resume-section">
-  <div class="resume-title">Languages</div>
-  <hr/>
-  <div class="work-experiences-section skills">
-    <div class="skills-section">
-      <ul>
-        <li>Mandarin (Native)</li>
-      </ul>
-    </div>
-    <div class="skills-section">
-      <ul>
-        <li>Japanese (Advanced)</li>
-      </ul>
-    </div>
-    <div class="skills-section">
-      <ul>
-        <li>English (Advanced)</li>
-      </ul>
-    </div>
-  </div>
-</div> -->
-<!-- Language End -->
 <%= render 'home/back_home' %>
