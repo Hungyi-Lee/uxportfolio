@@ -1,13 +1,23 @@
 <div class="section m-t-70">
-  <div class="breadcrumb">
+  <!-- <div class="breadcrumb">
     <span class="breadcrumb-home"><%= link_to root_path do%>Home<%end%></span>
     <span>/</span>
     <span class="breadcrumb-active">About</span>
+  </div> -->
+  <div class="heroimage about-hero">
+    <span class="pagename">About</span>
+    <p>Let me tell you about something not on my resume.</p>
   </div>
   <div class="about-box center">
-    <div class="about-myphoto"><%= render 'works/profile_image' %></div>
+    <div class="mb-about-myphoto"><%= render 'works/profile_image' %></div>
     <div class="about-bio">
-      <!-- <div class="page-name">ABOUT</div> -->
+      <div class="about-title">Who are you?</div>
+      <p>
+        I am a Taiwanese UX designer.
+        Currently I’m living in Seattle, WA.
+        In groups, I’m a reliable and energetic team asset who strives for the success of each project and loves challenges.
+        As a designer, I always bring to the table refined skills and a positive attitude.
+      </p>
       <div class="about-title">Why are you a designer ?</div>
       <p>
          The turning point was in Tokyo.
@@ -41,6 +51,7 @@
           <!-- <li>Understand accessibility - designer’s responsibility is to make sure that his design is usable for as many people as possible. </li> -->
         <!-- </ul> -->
     </div>
+    <div class="about-myphoto"><%= render 'works/profile_image' %></div>
   </div>
 </div>
 <%= render 'home/back_home' %>
