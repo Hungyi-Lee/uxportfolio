@@ -1,33 +1,15 @@
-<!-- <div class="section projects">
-  <%# @sideprojects.each do |p|%>
-    <div class="project">
-      <div class="project-image">
-        <img class="image" src="<%#= p.coverimage%>">
-      </div>
-      <div class="project-description">
-          <div class="project-title"><%#= p.title %></div>
-          <div class="project-category">
-            <%#= raw(p.projectdate) %>
-          </div>
-          <div class="brief-description">
-            <%#= p.briefintro %>
-          </div>
-          <div class="project-link">
-            <%#= link_to sideproject_path(p.title), class:"view-more-btn center" do %>Read More<%# end %>
-          </div>
-      </div>
-    </div>
-  <%# end %>
-</div> -->
-
 <div class="section m-t-70">
   <!-- Breadcrumb -->
-  <div class="breadcrumb">
-    <span class="breadcrumb-home"><%= link_to root_path do%>Home<%end%></span>
+  <!-- <div class="breadcrumb">
+    <span class="breadcrumb-home"><%#= link_to root_path do%>Home<%#end%></span>
     <span>/</span>
     <span class="breadcrumb-active">Blog</span>
-  </div>
+  </div> -->
   <!-- Breadcrumb -->
+  <div class="heroimage blog-hero">
+    <span class="pagename">Blog</span>
+    <p>Often times, I write my thoughts on the various topics of design.</p>
+  </div>
   <div class="blog-section">
     <!-- blogtop categories -->
     <div class="blog-top-categories">
