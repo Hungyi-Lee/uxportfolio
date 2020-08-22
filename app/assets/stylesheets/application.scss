@@ -209,6 +209,56 @@ a, a:hover{
   left: 50%;
 }
 
+.heroimage{
+  width: 100%;
+  height: 15rem;
+  padding: 4.3rem 4.375rem !important;
+  background-color: rgb(248,248,248) !important;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+.heroimage > p {
+  margin-top: 2%;
+}
+
+.resume-hero{
+  background-image: url("https://live.staticflickr.com/65535/50256605182_7e4fdc0a93_o.png");
+}
+
+.about-hero{
+  background-image: url("https://live.staticflickr.com/65535/50255762983_a250594093_o.png");
+}
+
+.blog-hero{
+  background-image: url("https://live.staticflickr.com/65535/50256605547_1824dcb467_o.png");
+}
+
+.lab-hero{
+  background-image: url("https://live.staticflickr.com/65535/50256605287_0058d41d61_o.png");
+}
+
+.skillshare-hero{
+  background-image: url("https://live.staticflickr.com/65535/50255762783_7181373179_o.png");
+}
+
+.books-hero{
+  background-image: url("https://live.staticflickr.com/65535/50255762513_96d0181230_o.png");
+}
+
+.career-hero{
+  background-image: url("https://live.staticflickr.com/65535/50256423076_3f00f85dd0_o.png");
+}
+
+.pagename{
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
 .breadcrumb{
   width: 100%;
   height: 3.5rem;

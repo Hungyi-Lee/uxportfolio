@@ -3,8 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .blog-section{
   width: 100%;
-  margin: 60px auto;
-  padding: 7% 10% 0;
+  margin: 0 auto;
+  padding: 5% 10% 0;
   color: var(--dusk);
 }
 
@@ -176,7 +176,7 @@
 @media (min-width: 768px) and (max-width: 1300px) {
   .blog-section{
     width: 100%;
-    padding: 10% 5% 0;
+    padding: 6% 5% 0;
   }
 
   .categories{
@@ -224,7 +224,7 @@
 @media screen and (max-width: 767px){
   .blog-section{
     width: 100%;
-    padding: 23% 5% 0;
+    padding: 7% 5% 0;
   }
 
   .blog-top-categories{

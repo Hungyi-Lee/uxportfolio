@@ -1,13 +1,17 @@
 <div class="section m-t-70">
   <!-- Breadcrumb -->
-  <div class="breadcrumb">
-    <span class="breadcrumb-home"><%= link_to root_path do%>Home<%end%></span>
+  <!-- <div class="breadcrumb">
+    <span class="breadcrumb-home"><%#= link_to root_path do%>Home<%#end%></span>
     <span>/</span>
-    <span class="breadcrumb-home"><%= link_to sideprojects_path do%>Blog<%end%></span>
+    <span class="breadcrumb-home"><%#= link_to sideprojects_path do%>Blog<%#end%></span>
     <span>/</span>
     <span class="breadcrumb-active">Career</span>
-  </div>
+  </div> -->
   <!-- Breadcrumb -->
+  <div class="heroimage career-hero">
+    <span class="pagename">Blog / Career</span>
+    <p>Some thoughts about working as a designer, culture difference, and job searching.</p>
+  </div>
   <div class="blog-section">
     <!-- blogtop categories -->
     <div class="blog-top-categories">
@@ -29,10 +33,10 @@
     <!-- blogtop categories -->
     <!-- all posts -->
     <% if @sideprojects.present? %>
-      <h3><b>All Posts</b> (<%=@sideprojects.size%>)</h3><br/>
+      <h3><b>Career Posts</b> (<%=@sideprojects.size%>)</h3><br/>
       <%= render 'sideprojects/allposts'%>
     <% else %>
-      <h3><b>All Posts</b> (<%=@sideprojects.size%>)</h3><br/>
+      <h3><b>Career Posts</b> (<%=@sideprojects.size%>)</h3><br/>
     <% end %>
     <!-- all posts -->
     <!-- featured posts -->
