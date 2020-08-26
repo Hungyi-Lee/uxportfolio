@@ -4,7 +4,7 @@
 .blog-section{
   width: 100%;
   margin: 0 auto;
-  padding: 5% 10% 0;
+  padding: 5% 13% 0;
   color: var(--dusk);
 }
 
@@ -73,8 +73,9 @@
 
 .post-tag{
   color: grey;
-  margin-bottom: 8px;
-  font-size: 0.9em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -82,7 +83,8 @@
 .post-title{
   font-weight: 700;
   line-height: 30px;
-  text-align: justify;
+  // text-align: justify;
+  font-size: 1.3rem;
 }
 
 .post1-content > a, .post1-content > a:hover, .rest-post-content > a, .rest-post-content > a:hover{
@@ -93,6 +95,7 @@
 .foreword{
   color: grey;
   text-align: justify;
+  margin-top: 7px;
 }
 
 .rest-post{
@@ -122,43 +125,51 @@
   margin-left: 2%;
 }
 
-.rest-post-content >.post-tag, .rest-post-content > .foreword{
-  color: grey;
-  font-size: 0.9rem;
-  text-align: justify;
-}
+// .rest-post-content >.post-tag, .rest-post-content > .foreword{
+//   color: grey;
+//   font-size: 0.9rem;
+//   text-align: justify;
+// }
+//
+// .rest-post-content >.post-tag{
+//   letter-spacing: 0.06em;
+// }
 
-.rest-post-content >.post-tag{
-  letter-spacing: 0.06em;
-}
-
-.rest-post-content > .post-title{
-  font-size: 1.25rem;
-  line-height: 25px;
-}
+// .rest-post-content > .post-title{
+//   font-size: 1rem;
+//   line-height: 25px;
+// }
 
 .al-posts{
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .al-post{
   width: 31%;
-  margin-right: 2%;
+  margin-right: 2.1%;
   margin-bottom: 2%;
   display: inline-block;
   position: relative;
   vertical-align: text-top;
+  display: none;
 }
 
-.al-post > .post1-content >.post-title{
-  font-size: 1.25em;
-}
+// .al-post > .post1-content >.post-title{
+//   font-size: 1em;
+// }
 
 .blog-show-section > ul > li > b > a,
 .blog-show-section > ul > li > b > a:hover{
   color: var(--dusk);
   line-height: 2;
 }
+
+.noshowbtn {
+  display: none;
+}
+
 // blog-show
 .blog-show-section{
   width: 100%;
@@ -202,6 +213,10 @@
 
   .al-post{
     width: 30%;
+  }
+
+  .post-title{
+    font-size: 1rem;
   }
 
   // blog-show
@@ -293,11 +308,11 @@
     text-decoration: underline;
   }
 
-  .rest-post-content > .post-title,
-  .al-post > .post1-content > .post-title{
-    font-size: 1.1rem;
-    line-height: 25px;
-  }
+  // .rest-post-content > .post-title,
+  // .al-post > .post1-content > .post-title{
+  //   font-size: 1rem;
+  //   line-height: 25px;
+  // }
 
   .featured-posts{
     display: block;

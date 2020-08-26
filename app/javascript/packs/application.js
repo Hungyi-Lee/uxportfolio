@@ -74,3 +74,14 @@ window.addEventListener('scroll', () => {
 		observer.observe(section);
 	});
 });
+
+$(document).on('turbolinks:load', function(){
+  $(".al-post").slice(0, 6).show();
+  $("#loadMore").on("click", function(e){
+    e.preventDefault();
+    $(".al-post:hidden").slice(0, 3).slideDown();
+    if($(".al-post:hidden").length == 0) {
+      $("#loadMore").text(" ").addClass("noshowbtn");
+    }
+  });
+});

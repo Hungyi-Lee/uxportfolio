@@ -5,23 +5,15 @@
 .about-box{
   display: flex;
   width: 100%;
-  padding: 6% 12% 4%;
+  padding: 6% 12% 0;
   margin: 0 auto;
 }
 
 .about-myphoto{
-  width: 37%;
-  height: 100%;
+  width: 40%;
+  height: auto;
   margin-left: 3%;
-  margin-top: 7%;
-}
-
-.about-title{
-  font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: 0.75px;
-  color: var(--dusk);
-  margin-bottom: 5px;
+  padding: 5% 0 0 0;
 }
 
 .about-bio{
@@ -35,30 +27,36 @@
   margin-left: 4%;
 }
 
+.about-title{
+  font-size: 1rem;
+  font-weight: bold;
+  // letter-spacing: 0.5px;
+  color: var(--dusk);
+  margin-bottom: 5px;
+}
+
 // Tablet
 @media (min-width: 768px) and (max-width: 1300px) {
   .about-box{
     width: 100%;
-    display: block;
+    display: table;
     padding: 0 15% 0;
     margin: 0 auto;
   }
 
-  .mb-about-myphoto{
+  .about-myphoto{
     width: 70%;
     margin: 0 auto;
     // height: 50%;
     // margin-bottom: 50px;
+    display: table-header-group;
   }
 
   .about-bio{
     width: 70%;
     margin: 0 auto;
     text-align: justify;
-  }
-
-  .about-myphoto{
-    display: none;
+    display: table-footer-group;
   }
 }
 
@@ -67,16 +65,14 @@
  .about-box{
    width: 100%;
    display: block;
-   padding: 0 5% 0;
- }
-
- .mb-about-myphoto{
-   width: 90%;
-   margin: 0 auto;
+   padding: 0 7% 5%;
+   display: table;
  }
 
  .about-myphoto{
-   display: none;
+   width: 90%;
+   margin: 0 auto;
+   display: table-header-group;
  }
 
  .about-bio{
@@ -84,6 +80,7 @@
    padding: 5%;
    margin-left:0;
    text-align: justify;
+   display: table-footer-group;
  }
 
  .about-title{
