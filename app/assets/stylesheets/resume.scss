@@ -63,19 +63,13 @@
 
 .tabbox2{
   width: 100%;
-  height: 450px;
+  height: 500px;
   display: block;
 }
 
 .tabbox1{
   width: 100%;
   height: 330px;
-  display: block;
-}
-
-.tabbox2{
-  width: 100%;
-  height: 460px;
   display: block;
 }
 
@@ -175,20 +169,27 @@
     height: 450px;
     display: block;
   }
+  .tabbox2{
+    height: 280px;
+  }
 }
 
 @media screen and (max-width: 767px){
-  .mb-resume-section{
+  .mb-resume-section,  .mb-resume-section3{
     width: 100%;
     padding: 15% 5% 0;
-    // margin: 60px auto;
-    height: 720px;
+    height: 650px;
   }
 
   .mb-resume-section2{
     width: 100%;
     padding: 5% 0;
     height: 400px;
+  }
+
+  .mb-resume-section3{
+    margin-bottom: 5%;
+    height: 720px;
   }
 
   .resume-title{
@@ -225,7 +226,6 @@
     background-color: white;
     width: 30%;
   }
-
   .tab button,
   .edutab button,
   .skilltab button,
@@ -242,7 +242,6 @@
     transition: 0.3s;
     font-size: 12px;
   }
-
   .tab button.tabactive,
   .edutab button.tabactive,
   .skilltab button.tabactive,
@@ -252,7 +251,6 @@
     border-bottom: 3px solid var(--salmon-pink);
     color: var(--salmon-pink);
   }
-
   .tabcontent,
   .edutabcontent,
   .skilltabcontent,
@@ -261,7 +259,6 @@
     width: 100%;
     border-left: none;
   }
-
   .work-experiences-section,
   .work-position-section,
   .work-duties-section,
@@ -270,7 +267,6 @@
     width: 100%;
     display: block;
   }
-
   .sm-tab{
     display:flex;
     border-bottom: 1px solid #e3e3e3;
