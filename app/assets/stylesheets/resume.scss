@@ -163,16 +163,14 @@
     padding-top: 10%;
   }
 
-  .tabbox1{
+  .tabbox, .tabbox1, .tabbox2{
     width: 100%;
     height: 420px;
     display: block;
   }
 
   .tabbox{
-    width: 100%;
     height: 500px;
-    display: block;
   }
 
   .tabbox2{
@@ -181,20 +179,17 @@
 }
 
 @media screen and (max-width: 767px){
-  .mb-resume-section, .mb-resume-section4{
+  .mb-resume-section, .mb-resume-section2, .mb-resume-section3, .mb-resume-section4{
     width: 100%;
     padding: 15% 5% 0;
     height: 650px;
   }
 
   .mb-resume-section2{
-    width: 100%;
-    padding: 5% 0;
     height: 400px;
   }
 
   .mb-resume-section3{
-    margin-bottom: 5%;
     height: 720px;
   }
 
