@@ -1,8 +1,12 @@
-.resume-section{
+.resume-section, .work-exp-section{
   width: 100%;
   margin: 20px auto;
   font-size: 16px;
-  padding: 5% 15% 0;
+  padding: 5% 10% 0;
+}
+
+.work-exp-section{
+  padding: 0 10%;
 }
 
 .resume-title{
@@ -54,7 +58,7 @@
 /* Style the tab content */
 .tabcontent, .edutabcontent, .skilltabcontent, .voltabcontent {
   float: left;
-  padding: 2% 5%;
+  padding: 2% 3%;
   // border: 1px solid #ccc;
   width: 70%;
   border-left: none;
@@ -63,13 +67,13 @@
 
 .tabbox, .tabbox2{
   width: 100%;
-  height: 500px;
+  height: 520px;
   display: block;
 }
 
 .tabbox1{
   width: 100%;
-  height: 370px;
+  height: 700px;
   display: block;
 }
 
@@ -169,6 +173,10 @@
     display: block;
   }
 
+  .tabbox1{
+    height: 830px;
+  }
+
   .tabbox{
     height: 500px;
   }
@@ -194,7 +202,7 @@
   }
 
   .mb-resume-section4{
-    height: 800px;
+    height: 1200px;
   }
 
   .resume-title{
