@@ -9,12 +9,14 @@
     <p>This is where I present my accomplishments, background, and  skills.</p>
   </div>
 </div>
-<div class="resume-section mb-resume-section4">
+<div class="resume-section">
   <div class="resume-pdfbtn">
     <%= link_to "https://drive.google.com/file/d/1pBwq-j8eqokrglA9dDrnE4Jfr9BK10Ya/view", target: "_blank" do %>
     Download PDF Resume
     <% end %>
   </div>
+</div>
+<div class="work-exp-section mb-resume-section4">
   <div class="resume-title">Working Experience</div>
     <div class="tabbox1">
       <div class="tab bs-tab sm-tab">
@@ -26,37 +28,18 @@
       </div>
       <div id="HelpArt" class="tabcontent">
         <div class="position">UX Designer @ Knack</div>
-        <div class="work-dates">Jun. 2020 - Present | Seattle, WA</div>
+        <div class="work-dates">Jun. 2020 - Jan. 2021 | Seattle, WA</div>
         <div class="work-duties-section">
           <ul>
-            <li>Created responsive designs for the HelpArt web app which helps artists sell their artwork easily and efficiently</li>
-            <li>Mentored and advised to the front-end developer</li>
-            <li>Conducted user research and analyzed user data</li>
-            <li>Defined product features, created design system and designed interface </li>
+            <li>Designed workflow for artwork eCommerce platform, including Listing (for artists to upload their artwork), Dashboard (for artists to have a one-stop dashboard about his/her performance), Artwork Gallery (for customers to search/filter/browse artworks), and Checkout (for customers to place an order on an artwork)</li>
+            <li>Created Responsive Design to support both mobile and web users</li>
+            <li>Defined Design System to lay down the fundamentals (fonts, colors, button style, etc) for consistent user experience; also, the design system helped to shorten development cycle due to components re-usability</li>
+            <li>Conducted user research on artists to understand their behavior about selling artwork, including which platform they are using currently, what their pain points are, what info should be included in Listing, to support design decisions</li>
+            <li>Demonstrated leadership by mentoring 1 front-end developer, including helping the developer to debug Ruby-on-Rails/CSS, reviewing the developer’s code changes, introducing the best practices (like not use inline styles, etc) to the developer</li>
+            <li><a href="https://www.hungyilee.com/projects/Knack%20Artwork%20Listing%20Tool" target="_blank">See case study here</a></li>
           </ul>
           <p><b>Feedback from my mentee</b></p>
           <img src="https://live.staticflickr.com/65535/50659777202_429c49afc1_c.jpg" width="85%">
-        </div>
-      </div>
-      <div id="P5" class="tabcontent">
-        <!-- <div class="position">Creative Director @ Project5</div> -->
-        <!-- <div class="work-dates">Jul. 2020 - Present | Shanghai, China</div> -->
-        <!-- <div class="work-duties-section"> -->
-          <!-- <ul> -->
-            <!-- <li>Understood product specifications, desgined new features, optimized the UX, and conducted testing for the web platform</li> -->
-          <!-- </ul> -->
-        <!-- </div> -->
-        <!-- <br/> -->
-        <div class="position">UX Designer @ Project5</div>
-        <div class="work-dates">Dec. 2019 - Jan. 2020 | Shanghai, China</div>
-        <div class="work-duties-section">
-          <ul>
-            <li>Proposed a new design of the music platform to help musicians to be discovered</li>
-            <li>Completed user research, competitor analysis, prototyping, and usability testing</li>
-            <li><a href="https://www.hungyilee.com/projects/Project5%20Musician%20Platform" target="_blank">See case study here</a></li>
-          </ul>
-          <p><b>Feedback from my supervisor</b></p>
-          <img src="https://live.staticflickr.com/65535/50200797596_49337a7c5e_o.png" width="85%">
         </div>
       </div>
       <div id="HCI" class="tabcontent">
@@ -64,11 +47,26 @@
         <div class="work-dates">Apr. 2020 - Jun. 2020 | Plantation, FL</div>
         <div class="work-duties-section">
           <ul>
-            <li>Executed responsive design for Norm Glasses E-Commerce</li>
-            <li>Worked as a full stack UX designer and collaborated with business team</li>
-            <li>Created a seamless ordering flow for people to order the smart glasses which aims to increase the sales</li>
+            <li>Design Checkout workflow for Norm Glasses E-Commerce for customers to customize their smart-glasses, including choice of frame size, frame color, lens type, lens color, prescription</li>
+            <li>Used step-by-step checkout workflow instead of single-page-checkout to help customers focus on each customization step to avoid overwhelming on a single page</li>
+            <li>Created Responsive Design to support both mobile and web users</li>
+            <li>Conducted user research to understand users’ behavior about smart glasses, include their understanding of smart glasses, use cases of smart glasses, shopping decisions when buying the smart glasses, to support design decisions</li>
             <li><a href="https://www.hungyilee.com/projects/Norm%20Glasses" target="_blank">See case study here</a></li>
           </ul>
+        </div>
+      </div>
+      <div id="P5" class="tabcontent">
+        <div class="position">UX Designer @ Project5</div>
+        <div class="work-dates">Dec. 2019 - Jan. 2020 | Shanghai, China</div>
+        <div class="work-duties-section">
+          <ul>
+            <li>Conducted user research on 6 unsigned musicians to collect data, including how they began their music career, what are the main pain points in the music career, how they produce music, how they promote their work, etc. This helped to define the bold direction on what service to provide to help musicians in their career</li>
+            <li>Proposed a business plan to Project5 about the Products and Services Section</li>
+            <li>Completed Wireframe and Prototype as part for the business plan</li>
+            <li><a href="https://www.hungyilee.com/projects/Project5%20Musician%20Platform" target="_blank">See case study here</a></li>
+          </ul>
+          <p><b>Feedback from my supervisor</b></p>
+          <img src="https://live.staticflickr.com/65535/50200797596_49337a7c5e_o.png" width="85%">
         </div>
       </div>
       <div id="ME" class="tabcontent">
@@ -111,6 +109,8 @@
     document.getElementById("defaultOpen").click();
     </script>
 </div>
+
+
 <!-- Experience End -->
 <!-- Volunteer Begin -->
 <div class="resume-section mb-resume-section">
@@ -122,11 +122,11 @@
       </div>
       <div id="NCCS" class="voltabcontent">
         <div class="position">UX Designer @ Code For America</div>
-        <div class="work-dates">May. 2020 - Nov. 2020 | San Francisco, CA</div>
+        <div class="work-dates">May. 2020 - Nov. 2020 | Chapel Hill, NC</div>
         <div class="work-duties-section">
           <ul>
             <li></li>
-            <li>Collaborated with 1 UX designers and 2 project managers</li>
+            <li>Worked on NC COVID Support project which helped people look for resources during COVID-19</li>
             <li>Responsible for conducting user research, delivering wireframes</li>
           </ul>
           <p><b>Feedback from my co-worker</b></p>
