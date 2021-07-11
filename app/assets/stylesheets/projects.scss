@@ -393,6 +393,39 @@ figure > img{
   }
 }
 
+// small-screen
+@media (max-width: 768px) and (min-width:600px){
+  // show page
+  .project-content-title{
+    padding: 0 2%;
+    font-size: 1.5rem;
+  }
+
+  .project-detailed-content{
+    width: 95%;
+    margin: 0 auto;
+    // padding: 0 5%;
+  }
+
+  .content-bottom-section{
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+
+
+  .table-content{
+    display: none;
+  }
+
+  .maincontent{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+}
+
 // mobile
 @media screen and (max-width: 600px){
   .projects{
