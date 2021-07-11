@@ -24,6 +24,7 @@
 .m-b-50{ margin-bottom: 50px; }
 // .w-900 { width: 900px; }
 
+
 :root{
   --lightgrey: #F5f5f5;
   --dusk: #3B3B3B;
@@ -406,6 +407,127 @@ a, a:hover{
     padding: 1.25rem 0.625rem !important;
   }
 }
+//small screen
+@media (min-width: 600px) and (max-width: 768px) {
+  .header{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+  }
+
+  .header-content{
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    position: absolute;
+  }
+
+  nav{
+      position: absolute;
+      right: 0;
+      top: -400px;
+      background-color: white;
+      width: 100%;
+      padding: 0 18px;
+      -webkit-transition:.5s ease-in-out; /*transitionで動きを*/
+      -moz-transition:.5s ease-in-out;
+      transition:.5s ease-in-out;
+      text-align: center;
+  }
+
+  .header-content ul{
+    margin:0
+  }
+
+  .header-content ul li{
+      display: block;
+      margin: 0;
+      border-bottom: dotted 2px var(--lightgrey);
+      line-height: 3;
+  }
+
+  .header-content ul li a{
+    display:block;
+  }
+
+  .header-content ul li::after{
+    content:'';
+  }
+  .header-content ul li:last-child{
+    border-bottom:none;
+  }
+
+  #navToggle{
+    display: block
+  }
+
+  .active, .nav-list-item{
+    height: 5rem;
+    padding: 1.6rem;
+  }
+
+  .openNav #navToggle span:nth-child(1){
+      top: 11px;
+      -webkit-transform:rotate(-45deg);
+      -moz-transform:rotate(-45deg);
+      transform:rotate(-45deg)}
+
+  .openNav #navToggle span:nth-child(2),
+  .openNav #navToggle span:nth-child(3){
+      top: 11px;
+      -webkit-transform:rotate(45deg);
+      -moz-transform:rotate(45deg);
+      transform:rotate(45deg)
+  }
+
+  .openNav nav{
+      -moz-transform: translateY(351px);
+      -webkit-transform: translateY(351px);
+      transform: translateY(470px);
+      width: 100%;
+      height: 900px;
+      text-align: center;
+      padding-top: 10px;
+  }
+
+  .nav-list{
+    width: 100%;
+    position:relative;
+    right: 0;
+    text-align: center;
+  }
+
+  #logo{
+    width: 200px;
+    height: 40px;
+    margin-left: 10px;
+    position:relative;
+    float: left;
+    padding-left: 8px;
+  }
+
+  .logo{
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top: 3px;
+  }
+
+  .nav-list > .active > b{
+    display: none;
+  }
+  .breadcrumb{
+    padding: 1.25rem 0.7rem !important;
+    height: auto;
+  }
+
+  .breadcrumb-title{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+  }
+}
+
 // Mobile
 @media screen and (max-width: 600px){
   // .w-900{
