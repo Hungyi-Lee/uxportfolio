@@ -52,16 +52,21 @@
 
 .top-icons {
   display: flex;
-  width: 300px;
+  justify-content: center;
+  width: 60px;
   height: 20px;
-  margin: 30px auto 0 auto;
+  margin: 0 auto;
+}
+
+.top-icons a{
+  margin: 0 15px;
+  width:20px;
 }
 
 .icon{
   height: 17px;
   text-align: center;
   fill: var(--dusk);
-  margin-right: 75px;
 }
 
 .icon:hover{
@@ -302,10 +307,10 @@ footer {
     margin: 30px auto 0 auto;
   }
 
-  .top-icons{
-    width: 50%;
-    margin: 0 auto;
-  }
+  // .top-icons{
+  //   width: 50%;
+  //   margin: 0 auto;
+  // }
 
   .icon{
     margin-right: 40px;
