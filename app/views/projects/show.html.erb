@@ -10,18 +10,38 @@
       <div class="project-content-category"><%= raw(@project.projectdate) %></div>
     </div>
   </div>
-  <div class="blog-show-section2">
-  <div class="maincontent">
-    <!-- table -->
-    <div class="table-content">
-      <%= raw(@project.category) %>
-    </div>
-    <!-- Content -->
-  	<div class="project-detailed-content">
-      <%= raw(@project.description) %>
-  	</div>
-  </div>
-  </div>
+    <!-- <input type="password" id="pass" placeholder="PASSWORD">
+    <input id="open" value="Submit" onclick="onSubmit()"> -->
+    <!-- <script>
+      function onSubmit() {
+         if (document.getElementById('pass').value == '1234')
+          {
+            // window.inputfield.style.display="none";
+            // window.lockcontent.style.display="block";
+            // location.href="https://www.hungyilee.com/"
+            location.reload();
+
+
+          }
+         else{ alert('The password is not correct, please try again');
+         }
+     }
+    </script> -->
+
+
+      <div class="blog-show-section2">
+        <div class="maincontent">
+            <!-- table -->
+            <div class="table-content">
+              <%= raw(@project.category) %>
+            </div>
+            <!-- Content -->
+          	<div class="project-detailed-content">
+              <%= raw(@project.description) %>
+          	</div>
+        </div>
+      </div>
+
 </div>
 
 <div class="section">
