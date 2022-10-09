@@ -85,19 +85,3 @@ $(document).on('turbolinks:load', function(){
     }
   });
 });
-
-
-
-function onSubmit<%=p.id%>() {
-   if (document.getElementById('pass-<%=p.id%>').value == '<%=p.password%>')
-    {
-//       // window.inputfield.style.display="none";
-//       // window.lockcontent.style.display="block";
-//       // location.href="https://www.hungyilee.com/"
-        window.location.href="/projects/<%= p.title %>"
-//
-    }
-   else{
-     alert('The password is not correct, please try again');
-   }
- }
