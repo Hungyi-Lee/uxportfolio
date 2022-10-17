@@ -1,8 +1,10 @@
 <div class="section m-t-70">
   <div class="breadcrumb">
-    <span class="breadcrumb-home"><%= link_to root_path do%>Home<%end%></span>
-    <span>/</span>
-    <span class="breadcrumb-active"><%= @project.title %></span>
+    <div class="breadcrumb-content">
+      <span class="breadcrumb-home"><%= link_to root_path do%>Portfolio<%end%></span>
+      <span>/</span>
+      <span class="breadcrumb-active"><%= @project.title %></span>
+    </div>
   </div>
   <div class="heroimage project-show-hero" style="background-image:url('<%= @project.coverimage%>')">
     <span class="pagename"><%= @project.title %><span>
