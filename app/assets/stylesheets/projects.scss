@@ -5,36 +5,38 @@
 .projects{
   width: 100%;
   height: 100%;
-  padding: 5% 10%;
+  padding: 5%;
 }
 
 .project{
   width: 100%;
-  height: 50%;
-  display: flex;
+  max-width: 1040px;
+  margin: 0 auto;
   border-bottom: 2px var(--lightgrey) solid;
+  padding: 2rem 0;
 }
 
 .project-image{
-  width: 40%;
-  height: 40%;
-  padding: 3%;
+  width: 100%;
   margin-right: 5%;
 }
 
 .image{
   width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
 }
 
 .project-description{
-  width: 60%;
-  padding: 3% 3% 0 0;
+  width: 100%;
 }
 
 .project-title{
   font-weight: 700;
   font-size: 1.6rem;
   color: var(--dusk);
+  margin: 1.5rem 0 0;
 }
 
 .project-category{
@@ -44,7 +46,7 @@
 .brief-description{
   width: 100%;
   padding: 3% 0;
-  color: var(--dusk);
+  color: var(--grey);
   text-align: justify;
   font-size: 0.9rem;
   line-height: 1.9;
@@ -54,42 +56,70 @@
   border-bottom: none;
 }
 
-.project-link{
-  width: 100%;
-  margin: 2% 0 5% 0;
-}
 
 // show page
 html {
 	scroll-behavior: smooth;
 }
 
-.content-table{
-  display: inline-block;
-  float:left;
-  width: auto;
-  height: auto;
-  z-index: 99;
-  position: sticky;
-  top: 2rem;
-  align-self: start;
-}
-
-.project-content-title{
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  padding: 2% 0 0;
-  color: var(--dusk);
-  // text-align: center;
-  font-size: 2.25rem;
-  font-weight: 800;
-  letter-spacing: 2px;
-}
-
-// .project-content-category{
-//   margin-bottom: 4%;
+// .blog-show-heroimg, .blog-show-section{
+//   background-repeat: no-repeat;
+//   width: 100%;
+//   height: 50vh;
+//   background-position: center;
+//   background-size: cover;
 // }
+
+// .blog-show-section{
+//   background-color: rgba(0, 0, 0, 0.4);
+//   position: absolute;
+//   top: 0;
+// }
+
+.project-title-section{
+  line-height: 2;
+  width: 70%;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+// .project-content-title{
+//   width: 100%;
+//   // height: 100%;
+//   // margin: 0 auto;
+//   // padding: 2% 0 0;
+//   color: white;
+//   font-size: 2.25rem;
+//   font-weight: 800;
+// }
+
+.project-detailed-content{
+  width: 100%;
+  margin: 3rem auto 0;
+}
+
+#password{
+  width: 70%;
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 1rem 0.5rem;
+}
+
+.content-open-btn{
+  text-align: center;
+  color: white;
+  background-color: var(--grey);
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  width: 10%;
+  display: inline;
+  margin-left: 2%;
+}
+.content-open-btn:hover{
+  opacity: 70%;
+}
 
 .content-section{
   padding-bottom: 10%;
@@ -109,34 +139,24 @@ html {
   letter-spacing: 0;
 }
 
-
-
 /** page layout **/
 .maincontent {
-  // padding-top: 5%;
-	display: grid;
-	grid-template-columns: 0.5fr 1.1fr;
-	width: 80%;
+	width: 70%;
 	margin: 0 auto;
 }
 
-// .blog-maincontent{
-//   width: 100%;
-  // padding-top: 5%;
-// }
-
-/* 2. Make nav sticky */
-// main > .section-nav {
+/* Sticky Table of content */
 .table-content {
   width: 100%;
-	position: sticky;
-	top: 25%;
-  left: 5%;
-	align-self: start;
+  max-width: 130px;
+  position: fixed;
+  bottom: 8%;
+  left: 0;
+  z-index: -1;
 }
 
 .table-content ol li::before{
-  content: "▹";
+  content: "▷";
   color: var(--dusk);
   position: absolute;
   left: 0;
@@ -160,11 +180,6 @@ html {
 .table-content ol li.activecontent::before{
   content: "▶";
 }
-/* Sidebar Navigation */
-// .section-nav {
-// 	padding-left: 0;
-// 	border-left: 1px solid #efefef;
-// }
 
 .table-content a {
 	text-decoration: none;
@@ -179,31 +194,12 @@ html {
 	color: var(--dusk);
 }
 
-/** Poor man's reset **/
-// * {
-// 	box-sizing: border-box;
-// }
+.unlock  {
+	display: none;
+}
 
 
-
-// li {
-// 	margin-left: 1rem;
-// }
-//
-// h1 {
-// 	font-weight: 300;
-// }
-
-
-
-// /** enlarge the sections for this demo, so that we have a long scrollable page **/
-// section {
-// 	padding-bottom: 20rem;
-// }
-
-
-
-//
+//Project contents
 figcaption{
   font-size: 0.8rem;
   margin: 2% 0 5%;
@@ -219,9 +215,7 @@ figcaption{
   margin: 1rem 0;
 }
 
-.project-detailed-content{
-  line-height: 2;
-}
+
 
 .iframe-container{
   margin: 5% 0;
@@ -241,11 +235,11 @@ figcaption{
 
 .content-section > h4{
   font-weight: 700;
-  // letter-spacing: 1.2px;
-  // text-align: center;
   color: var(--dusk);
-  // text-transform: uppercase;
-  // margin: 8% 0;
+}
+
+figure > img {
+    width: 95%;
 }
 
 .content-bottom-section{
@@ -361,12 +355,12 @@ figure > img{
   .projects{
     width: 100%;
     height: 100%;
-    padding: 10% 10%;
+    // padding: 10% 10%;
   }
 
   .project{
-    text-align: center;
-    width: 80%;
+    // text-align: center;
+    width: 100%;
     height: 80%;
     margin: 2% auto;
     display: block;
@@ -375,8 +369,8 @@ figure > img{
   .project-image{
     width: 100%;
     height: 100%;
-    padding: 3%;
-    margin-right: 5%;
+    // padding: 3%;
+    // margin-right: 5%;
   }
 
   .image, .project-description{
@@ -432,14 +426,15 @@ figure > img{
   .projects{
     width: 100%;
     height: 100%;
-    padding: 20% 10% 15%;
+    padding: 0;
+    // padding: 20% 10% 15%;
   }
 
   .project{
-    text-align: center;
-    width: 80%;
-    height: 80%;
-    margin: 2% auto;
+    // text-align: center;
+    width: 96%;
+    // height: 80%;
+    margin: 0 auto;
     display: block;
   }
 
@@ -447,7 +442,7 @@ figure > img{
     width: 100%;
     height: 100%;
     padding: 3%;
-    margin-right: 5%;
+    // margin-right: 5%;
   }
 
   .image{
@@ -456,12 +451,14 @@ figure > img{
 
   .project-description{
     width: 100%;
+    padding: 0 5%;
   }
 
   .project-title{
     font-weight: 700;
     font-size: 1.5rem;
     color: var(--dusk);
+    margin: 0.5rem 0 1rem;
   }
 
   .project-category{
@@ -475,11 +472,12 @@ figure > img{
   .project-content-category > span{
     letter-spacing: 0;
     padding: 2% 3%;
-    margin-left: 5px;
+    margin-right: 5px;
   }
 
   .brief-description{
     font-size: 0.75rem;
+    padding: 5% 0;
   }
 
   .project-link{

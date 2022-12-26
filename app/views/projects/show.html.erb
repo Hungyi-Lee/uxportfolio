@@ -1,28 +1,60 @@
 <div class="section m-t-70">
   <div class="breadcrumb">
-    <span class="breadcrumb-home"><%= link_to root_path do%>Home<%end%></span>
-    <span>/</span>
-    <span class="breadcrumb-active"><%= @project.title %></span>
-  </div>
-  <div class="blog-show-section">
-    <div class="project-detailed-content">
-      <div class="project-content-title"><%= @project.title %></div>
-      <div class="project-content-category"><%= raw(@project.projectdate) %></div>
+    <div class="breadcrumb-content">
+      <span class="breadcrumb-home"><%= link_to root_path do%>Portfolio<%end%></span>
+      <span>/</span>
+      <span class="breadcrumb-active"><%= @project.title %></span>
     </div>
   </div>
-  <div class="blog-show-section2">
-  <div class="maincontent">
-    <!-- table -->
-    <div class="table-content">
-      <%= raw(@project.category) %>
-    </div>
-    <!-- Content -->
-  	<div class="project-detailed-content">
-      <%= raw(@project.description) %>
-  	</div>
+  <div class="heroimage project-show-hero" style="background-image:url('<%= @project.coverimage%>')">
+    <span class="pagename"><%= @project.title %><span>
+    <p class="project-content-category"><%= raw(@project.projectdate) %></p>
   </div>
-  </div>
+
+  <!--Details-->
+  <% if @project.password.present? %>
+    <section class="content-section">
+          <div class="blog-show-section2">
+            <div class="maincontent">
+                  <div class="project-detailed-content">
+                      <div class="lock-password-field" id="lockpasswordfield">
+                        <input type="password" name="password" class="inputField1" id="password" placeholder="Please enter password here" required/>
+                        <div class="content-open-btn" id="button1" onclick="onSubmit()">Submit</div>
+                      </div>
+                      <div class="unlock" id="unlock">
+                        <div class="table-content">
+                          <%= raw(@project.category) %>
+                        </div>
+                        <%= raw(@project.description) %>
+                      </div>
+                  </div>
+            </div>
+          </div>
+    </section>
+
+  <% elsif %>
+      <section class="content-section">
+            <div class="blog-show-section2">
+              <div class="maincontent">
+                    <div class="project-detailed-content">
+                        <div class="lock-password-field">
+                          <input type="password" name="password" class="inputField1" id="password" placeholder="Please Enter Password Here" required/>
+                          <div class="content-open-btn" id="button1" onclick="onSubmit()">Submit</div>
+                        </div>
+                          <div class="table-content">
+                            <%= raw(@project.category) %>
+                          </div>
+                          <%= raw(@project.description) %>
+                    </div>
+              </div>
+            </div>
+      </section>
+  <% end %>
+  <!--Details-->
+
 </div>
+
+
 
 <div class="section">
   <div class="bk-pj-btn">
@@ -49,3 +81,22 @@
     <% end %>
   </div>
 </div>
+
+<script>
+
+function onSubmit() {
+  if (document.getElementById('password').value == '65!a02TSn0sc')
+      {
+        window.unlock.style.display="block";
+        window.lockpasswordfield.style.display="none";
+
+      }
+  else{
+      alert('Invalid password. Please try again.');
+  }
+}
+
+
+
+
+</script>
