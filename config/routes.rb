@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   # get '/blog/books', to: 'books#index'
 
 
-  # get 'about' => 'works#index', :as => :about
+  get 'about' => 'works#index', :as => :about
   get 'resume' => 'resumes#index', :as => :resume
   # get 'allprojects' => 'projects#index', :as => :all_projects
   # get 'graphicdesign' => 'graphic#index', :as => :graphicdesign

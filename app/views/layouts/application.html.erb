@@ -56,7 +56,12 @@
               <!-- <li class="active"><b></b><#%= link_to sideprojects_path do %>BLOG<#% end %></li> -->
             <%# else %>
               <!-- <li class="nav-list-item"><#%= link_to sideprojects_path do %>BLOG<#% end %></li> -->
-            <%# end %> %>
+            <%# end %>
+            <% if current_page?(controller: 'works', action: 'index') %>
+              <li class="active"><b></b><%= link_to about_path do %>ABOUT<% end %></li>
+            <% else %>
+              <li class="nav-list-item"><%= link_to about_path do %>ABOUT<% end %></li>
+            <% end %>
             <li class="nav-list-item"><%= mail_to "horngyi6527@gmail.com", body:"Hi Hungyi,", target: "_blank" do %>CONTACT<% end %></li>
           </ul>
         </nav>
