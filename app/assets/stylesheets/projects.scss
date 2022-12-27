@@ -154,7 +154,7 @@ html {
   width: 100%;
   max-width: 200px;
   position: fixed;
-  bottom: 8%;
+  // bottom: 8%;
   left: 0;
   z-index: -1;
 }
@@ -240,6 +240,15 @@ figcaption{
 .content-section > h4{
   font-weight: 700;
   color: var(--dusk);
+}
+
+.content-section table thead{
+  background-color: var(--lightgrey);
+}
+
+.content-section table td{
+  border: 1px solid grey;
+  padding: 8px;
 }
 
 figure > img {
