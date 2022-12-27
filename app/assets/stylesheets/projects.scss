@@ -123,6 +123,10 @@ html {
 
 .content-section{
   padding-bottom: 10%;
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  line-height: 1.8;
 }
 
 .project-category > span,
@@ -148,7 +152,7 @@ html {
 /* Sticky Table of content */
 .table-content {
   width: 100%;
-  max-width: 130px;
+  max-width: 200px;
   position: fixed;
   bottom: 8%;
   left: 0;
