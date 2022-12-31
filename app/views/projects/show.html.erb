@@ -1,3 +1,24 @@
+<script>
+
+function onSubmit() {
+  if (document.getElementById('password').value == '65!a02TSn0sc')
+      {
+        sessionStorage.setItem("password_passed", true);
+        window.unlock.style.display="block";
+        window.lockpasswordfield.style.display="none";
+
+      }
+  else{
+      alert('Invalid password. Please try again.');
+  }
+}
+
+
+
+
+</script>
+
+
 <div class="section m-t-70">
   <div class="breadcrumb">
     <div class="breadcrumb-content">
@@ -37,10 +58,10 @@
             <div class="blog-show-section2">
               <div class="maincontent">
                     <div class="project-detailed-content">
-                        <div class="lock-password-field">
-                          <input type="password" name="password" class="inputField1" id="password" placeholder="Please Enter Password Here" required/>
-                          <div class="content-open-btn" id="button1" onclick="onSubmit()">Submit</div>
-                        </div>
+                        <!-- <div class="lock-password-field"> -->
+                          <!-- <input type="password" name="password" class="inputField1" id="password" placeholder="Please Enter Password Here" required/> -->
+                          <!-- <div class="content-open-btn" id="button1" onclick="onSubmit()">Submit</div> -->
+                        <!-- </div> -->
                           <div class="table-content">
                             <%= raw(@project.category) %>
                           </div>
@@ -81,22 +102,3 @@
     <% end %>
   </div>
 </div>
-
-<script>
-
-function onSubmit() {
-  if (document.getElementById('password').value == '65!a02TSn0sc')
-      {
-        window.unlock.style.display="block";
-        window.lockpasswordfield.style.display="none";
-
-      }
-  else{
-      alert('Invalid password. Please try again.');
-  }
-}
-
-
-
-
-</script>
