@@ -1,21 +1,7 @@
 <script>
-
-function onSubmit() {
-  if (document.getElementById('password').value == '65!a02TSn0sc')
-      {
-        sessionStorage.setItem("password_passed", true);
-        window.unlock.style.display="block";
-        window.lockpasswordfield.style.display="none";
-
-      }
-  else{
-      alert('Invalid password. Please try again.');
-  }
-}
-
-
-
-
+if (sessionStorage.length == 0){
+      location.href = "/";
+};
 </script>
 
 
@@ -33,27 +19,6 @@ function onSubmit() {
   </div>
 
   <!--Details-->
-  <% if @project.password.present? %>
-    <section class="content-section">
-          <div class="blog-show-section2">
-            <div class="maincontent">
-                  <div class="project-detailed-content">
-                      <div class="lock-password-field" id="lockpasswordfield">
-                        <input type="password" name="password" class="inputField1" id="password" placeholder="Please enter password here" required/>
-                        <div class="content-open-btn" id="button1" onclick="onSubmit()">Submit</div>
-                      </div>
-                      <div class="unlock" id="unlock">
-                        <div class="table-content">
-                          <%= raw(@project.category) %>
-                        </div>
-                        <%= raw(@project.description) %>
-                      </div>
-                  </div>
-            </div>
-          </div>
-    </section>
-
-  <% elsif %>
       <section class="content-section">
             <div class="blog-show-section2">
               <div class="maincontent">
@@ -70,7 +35,7 @@ function onSubmit() {
               </div>
             </div>
       </section>
-  <% end %>
+
   <!--Details-->
 
 </div>

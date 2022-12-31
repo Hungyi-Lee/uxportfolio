@@ -1,3 +1,20 @@
+<script>
+
+function onSubmit(title) {
+  console.log(title);
+
+  if (document.getElementById('password').value == '65!a02TSn0sc')
+      {
+        sessionStorage.setItem("password_passed", true);
+        location.href = "/projects/" + title;
+      }
+  else{
+      alert('Invalid password. Please try again.');
+      location.href = "/";
+  }
+}
+
+</script>
 <div class="section m-t-150">
   <!-- <div class="profile-image"></div> -->
   <!-- <div class="top-greeting"> -->
@@ -28,9 +45,16 @@
             <div class="brief-description">
               <%= p.role %>
             </div>
-            <div class="project-link">
-                <%= link_to project_path(p.title), class:"view-more-btn center" do %>Read Details<% end %>
-            </div>
+            <% if p.password.present? %>
+              <div class="lock-password-field" id="lockpasswordfield">
+                <input type="password" name="password" class="inputField1" id="password" placeholder="Please enter password here" required/>
+                <div class="content-open-btn" id="button1" onclick="onSubmit('<%= p.title %>')">Read Details</div>
+              </div>
+            <% elsif %>
+              <div class="project-link">
+                  <%= link_to project_path(p.title), class:"view-more-btn center" do %>Read Details<% end %>
+              </div>
+            <% end%>
         </div>
       </div>
   <% end %>
