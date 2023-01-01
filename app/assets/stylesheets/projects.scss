@@ -156,7 +156,7 @@ html {
   position: fixed;
   // bottom: 8%;
   left: 0;
-  z-index: -1;
+  z-index: 999;
 }
 
 .table-content ol li::before{
@@ -532,5 +532,12 @@ figure > img{
     display: block;
     margin: 0 auto;
     padding-top: 0;
+  }
+
+  .content-open-btn{
+    display: block;
+    width: 40%;
+    margin-top: 3%;
+    margin-left: 0;
   }
 }

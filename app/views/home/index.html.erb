@@ -1,3 +1,20 @@
+<script>
+
+function onSubmit(title) {
+  console.log(title);
+
+  if (document.getElementById('password').value == '65!a02TSn0sc')
+      {
+        sessionStorage.setItem("password_passed", true);
+        location.href = "/projects/" + title;
+      }
+  else{
+      alert('Invalid password. Please try again.');
+      location.href = "/";
+  }
+}
+
+</script>
 <div class="section m-t-150">
   <!-- <div class="profile-image"></div> -->
   <!-- <div class="top-greeting"> -->
@@ -12,63 +29,38 @@
 
   <div class="top-introduction">
     Hungyi Lee is a Seattle-based user experience (UX) designer currently working at Samsung.
-    <!-- <span class="talk-btn">
-      <#%= mail_to "horngyi6527@gmail.com", body:"Hi Hungyi," do %>
-        Let's talk.
-      <%# end %>
-    </span> -->
   </div>
-  <!-- <div class="top-icons"> -->
-    <%#= render 'home/social_media_icon' %>
-  <!-- </div> -->
-  <!-- <div class="arrow"> -->
-    <!-- <a href="#projects-section"> -->
-      <!-- <div> -->
-        <!-- <span>View Projects</span><br/> -->
-        <!-- <i class="down"></i> -->
-      <!-- </div> -->
-    <!-- </a> -->
-  <!-- </div> -->
 </div>
 <div class="section projects" id="projects-section">
   <% @projects.each do |p|%>
-    <div class="project">
-      <div class="project-image">
-        <img class="image" src="<%= p.coverimage%>">
+      <div class="project">
+        <div class="project-image">
+          <img class="image" src="<%= p.coverimage%>">
+        </div>
+        <div class="project-description">
+            <div class="project-title"><%= p.title %></div>
+            <div class="project-category">
+              <%= raw(p.projectdate) %>
+            </div>
+            <div class="brief-description">
+              <%= p.role %>
+            </div>
+            <% if p.password.present? %>
+              <div class="lock-password-field" id="lockpasswordfield">
+                <input type="password" name="password" class="inputField1" id="password" placeholder="Please enter password here" required/>
+                <div class="content-open-btn" id="button1" onclick="onSubmit('<%= p.title %>')">Read Details</div>
+              </div>
+            <% elsif %>
+              <div class="project-link">
+                  <%= link_to project_path(p.title), class:"view-more-btn center" do %>Read Details<% end %>
+              </div>
+            <% end%>
+        </div>
       </div>
-      <div class="project-description">
-          <div class="project-title"><%= p.title %></div>
-          <div class="project-category">
-            <%= raw(p.projectdate) %>
-          </div>
-          <div class="brief-description">
-            <%= p.role %>
-          </div>
-          <div class="project-link">
-              <%= link_to project_path(p.title), class:"view-more-btn center" do %>Read Details<% end %>
-          </div>
-      </div>
-    </div>
   <% end %>
 </div>
 
-<!-- <div class="section m-t-150 m-b-150 font-center" id="projects-section">
-  <hr/>
-  <div class="top-greeting m-b-50">Projects</div>
-  <div class="w-900 center">
-    <%# @projects.each do |p| %>
-      <%#= link_to project_path(p.title) do %>
-        <div class="w-300">
-            <div class="box-image" style="background-image: url('<%#= p.coverimage %>')"></div>
-            <p class="project-title-top"><%#= p.title %></p>
-            <p class="project-cat-top"><%#= p.projectdate %></p>
-        </div>
-      <%# end %>
-    <%# end %>
-  </div>
-  <br/><br/>
-  <%#= link_to all_projects_path, class:"view-more-btn center" do %>View More Projects<%# end %>
-</div> -->
+
 
 <!-- <script>
   function playSound(myname) {
