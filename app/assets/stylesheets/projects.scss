@@ -145,14 +145,14 @@ html {
 
 /** page layout **/
 .maincontent {
-	width: 70%;
+	width: 90%;
 	margin: 0 auto;
 }
 
 /* Sticky Table of content */
 .table-content {
   width: 100%;
-  max-width: 200px;
+  max-width: 250px;
   position: fixed;
   // bottom: 8%;
   left: 0;
@@ -166,8 +166,8 @@ html {
   left: 0;
 }
 .table-content ol li{
-  padding: 5%;
-  margin-left: 30px;
+  padding: 2%;
+  margin-left: 20px;
 }
 
 .table-content ol {
@@ -319,8 +319,7 @@ figure > img {
   font-size: 14px;
   font-weight: 700;
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 3.03px;
+  // text-transform: uppercase;
   margin-bottom: 10px;
   color: var(--dusk);
 }
@@ -334,9 +333,9 @@ figure > img {
   border: 1px solid var(--dusk);
   margin: 10px auto;
   border-radius: 5px;
-  position: absolute;
-  bottom: 3%;
-  left: 35%;
+  // position: absolute;
+  // bottom: 3%;
+  // left: 35%;
 }
 
 .previous-pj > a:hover, .next-pj > a:hover{
