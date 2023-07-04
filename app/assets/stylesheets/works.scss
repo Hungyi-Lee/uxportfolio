@@ -13,12 +13,13 @@
 .about-myphoto{
   width: 40%;
   height: auto;
+  max-height: 400px;
   margin-left: 5%;
   // padding: 5% 0 0 0;
-  background-image: url("https://live.staticflickr.com/65535/52668837432_c7b3a58cba_o.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  // background-image: url("https://live.staticflickr.com/65535/52668837432_c7b3a58cba_o.png");
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: contain;
 }
 
 .about-bio{
@@ -51,15 +52,15 @@
   }
 
   .about-myphoto{
-    width: 100%;
-    margin: 30px auto;
-    height: 350px;
+    width: 70%;
+    margin: 0 auto;
+    // height: 350px;
     // margin-bottom: 50px;
-    // display: table-header-group;
+    display: table-header-group;
   }
 
   .about-bio{
-    width: 70%;
+    width: 95%;
     margin: 0 auto;
     text-align: justify;
     display: table-footer-group;
@@ -76,16 +77,17 @@
  }
 
  .about-myphoto{
-   width: 100%;
-   height: 300px;
-   margin: 30px auto;
-   // display: table-header-group;
+   width: 95%;
+   // height: 300px;
+   margin: 0 auto;
+   display: table-header-group;
  }
 
  .about-bio{
-   width: 100%;
-   padding: 5%;
-   margin-left:0;
+   width: 95%;
+   // padding: 5%;
+   // margin-left:0;
+   margin: 0 auto;
    text-align: justify;
    display: table-footer-group;
  }
