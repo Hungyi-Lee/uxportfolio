@@ -3,7 +3,7 @@
 function onSubmit(title) {
   console.log(title);
 
-  if (document.getElementById('password').value == '65!a02TSn0sc')
+  if (document.getElementById('password').value == 'Ineedpassword!')
       {
         sessionStorage.setItem("password_passed", true);
         location.href = "/projects/" + title;
@@ -28,7 +28,11 @@ function onSubmit(title) {
   <!-- </div> -->
 
   <div class="top-introduction">
-    Hungyi Lee is a Seattle-based user experience (UX) designer currently working at Samsung.
+    Hungyi Lee,
+    <div class="sub-top-intro">
+        a user experience designer,
+        embraces ambiguity and challenges, strongly believes diversity drives creativity and connections.
+    </div>
   </div>
 </div>
 <div class="section projects" id="projects-section">
