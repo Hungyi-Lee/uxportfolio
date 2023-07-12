@@ -156,7 +156,8 @@ html {
   position: fixed;
   // bottom: 8%;
   left: 0;
-  z-index: 999;
+  z-index: -1;
+  top: 10rem;
 }
 
 .table-content ol li::before{
