@@ -398,6 +398,10 @@ figure > img{
   .table-content {
     display: none;
   }
+  .content-section{
+    width: 100%;
+    line-height: 1.5;
+  }
 }
 
 // small-screen
@@ -406,6 +410,11 @@ figure > img{
   .project-content-title{
     padding: 0 2%;
     font-size: 1.5rem;
+  }
+
+  .content-section{
+    width: 100%;
+    line-height: 1.5;
   }
 
   .project-detailed-content{
@@ -538,5 +547,9 @@ figure > img{
     width: 40%;
     margin-top: 3%;
     margin-left: 0;
+  }
+  .content-section{
+    width: 100%;
+    line-height: 1.5;
   }
 }
