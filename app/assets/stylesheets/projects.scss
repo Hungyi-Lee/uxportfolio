@@ -156,8 +156,9 @@ html {
   position: fixed;
   // bottom: 8%;
   left: 0;
-  z-index: -1;
-  top: 10rem;
+  z-index: 999;
+  bottom: 3rem;
+  height: fit-content;
 }
 
 .table-content ol li::before{
@@ -189,7 +190,7 @@ html {
 .table-content a {
 	text-decoration: none;
 	display: block;
-	// padding: .125rem 0;
+  font-size: 0.85rem;
 	color: grey;
 	transition: all 50ms ease-in-out; /* This small transition makes setting of the active state smooth */
 }
