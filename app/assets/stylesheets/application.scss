@@ -221,7 +221,7 @@ a, a:hover{
   left: 50%;
 }
 
-.heroimage{
+.heroimage, .project-show-hero{
   width: 100%;
   min-height: 15rem;
   // padding: 5rem 14% !important;
@@ -234,8 +234,15 @@ a, a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30rem;
+  flex-direction: column;
 }
+
+.project-show-hero{
+  height: 30rem;
+  flex-direction: row; 
+}
+
+
 
 // .project-show-hero{
 //   padding-top: 6.3rem !important;
