@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 
 function onSubmit(title) {
   console.log(title);
@@ -12,15 +12,18 @@ function onSubmit(title) {
       alert('Invalid password. Please try again.');
       location.href = "/";
   }
-}
+} -->
 
 </script>
 <div class="section m-t-150">
   <div class="top-introduction">
     Hungyi Lee,
     <div class="sub-top-intro">
-        a UX designer with developing background,
-        embraces ambiguity and challenges, strongly believes diversity drives creativity and connections.
+        a UX Designer with developing background and experience in filing patents, and doing interaction design for mobile applications.
+        Proficient in cross-functional collaboration, design system development, and user research.
+        Strong mentorship capabilities and fluency in multiple languages enhance their effectiveness in global project environments.
+        <!-- a UX designer with developing background,
+        embraces ambiguity and challenges, strongly believes diversity drives creativity and connections. -->
     </div>
   </div>
 </div>
@@ -39,9 +42,11 @@ function onSubmit(title) {
               <%= p.role %>
             </div>
             <% if p.password.present? %>
-              <div class="lock-password-field" id="lockpasswordfield">
-                <input type="password" name="password" class="inputField1" id="password" placeholder="Please enter password here" required/>
-                <div class="content-open-btn" id="button1" onclick="onSubmit('<%= p.title %>')">Read Details</div>
+              <!-- <div class="lock-password-field" id="lockpasswordfield"> -->
+                <!-- <input type="password" name="password" class="inputField1" id="password" placeholder="Please enter password here" required/> -->
+                <!-- <div class="content-open-btn" id="button1" onclick="onSubmit('<%#= p.title %>')">Read Details</div> -->
+              <div class="project-link">
+                <%= mail_to "contact@hungyilee.com", class:"view-more-btn center", body:"Hi Hungyi," do %>Request permission<% end %>
               </div>
             <% elsif %>
               <div class="project-link">
