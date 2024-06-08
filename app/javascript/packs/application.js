@@ -20,71 +20,60 @@ require("bootstrap/dist/js/bootstrap")
 import 'bootstrap'
 import './src/application.scss'
 
-window.onscroll = function() {scrollFunction()};
+// window.onscroll = function() {scrollFunction()};
 // window.onclick = function() {topFunction()};
 
-function scrollFunction() {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
+// function scrollFunction() {
+//     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+//         document.getElementById("myBtn").style.display = "block";
+//     } else {
+//         document.getElementById("myBtn").style.display = "none";
+//     }
+// }
 
 // function topFunction() {
 //   document.body.scrollTop = 0;
 //   document.documentElement.scrollTop = 0;
 // }
 
-$(document).on('turbolinks:load', function() {
-    $('#navToggle').click(function(){
-        $('.header-content').toggleClass('openNav');
-    });
-});
+// $(document).on('turbolinks:load', function() {
+//     $('#navToggle').click(function(){
+//         $('.header-content').toggleClass('openNav');
+//     });
+// });
 
-$(document).ready(function(){
-  $("li a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-
-        window.location.hash = hash;
-      });
-    }
-  });
-});
-
-window.addEventListener('scroll', () => {
-	const observer = new IntersectionObserver(entries => {
-		entries.forEach(entry => {
-			const link = entry.target.getAttribute('id');
-			if (entry.intersectionRatio > 0) {
-				// document.querySelector(`div ol li a[href="#${id}"]`).parentElement.classList.add('activecontent');
-        document.querySelector(`div ol li a[href="#${link}"]`).parentElement.classList.add('activecontent');
-
-			} else {
-				// document.querySelector(`div ol li a[href="#${id}"]`).parentElement.classList.remove('activecontent');
-        document.querySelector(`div ol li a[href="#${link}"]`).parentElement.classList.remove('activecontent');
-      }
-		});
-	});
-
-	// Track all sections that have an `id` applied
-	document.querySelectorAll('section[id]').forEach((section) => {
-		observer.observe(section);
-	});
-});
-
-// $(document).on('turbolinks:load', function(){
-//   $(".al-post").slice(0, 6).show();
-//   $("#loadMore").on("click", function(e){
-//     e.preventDefault();
-//     $(".al-post:hidden").slice(0, 3).slideDown();
-//     if($(".al-post:hidden").length == 0) {
-//       $("#loadMore").text(" ").addClass("noshowbtn");
+// $(document).ready(function(){
+//   $("li a").on('click', function(event) {
+//     if (this.hash !== "") {
+//       event.preventDefault();
+//       var hash = this.hash;
+//       $('html, body').animate({
+//         scrollTop: $(hash).offset().top
+//       }, 900, function(){
+//
+//         window.location.hash = hash;
+//       });
 //     }
 //   });
+// });
+//
+// window.addEventListener('scroll', () => {
+// 	const observer = new IntersectionObserver(entries => {
+// 		entries.forEach(entry => {
+// 			const link = entry.target.getAttribute('id');
+// 			if (entry.intersectionRatio > 0) {
+// 				// document.querySelector(`div ol li a[href="#${id}"]`).parentElement.classList.add('activecontent');
+//         document.querySelector(`div ol li a[href="#${link}"]`).parentElement.classList.add('activecontent');
+//
+// 			} else {
+// 				// document.querySelector(`div ol li a[href="#${id}"]`).parentElement.classList.remove('activecontent');
+//         document.querySelector(`div ol li a[href="#${link}"]`).parentElement.classList.remove('activecontent');
+//       }
+// 		});
+// 	});
+//
+// 	// Track all sections that have an `id` applied
+// 	document.querySelectorAll('section[id]').forEach((section) => {
+// 		observer.observe(section);
+// 	});
 // });
