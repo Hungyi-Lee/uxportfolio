@@ -67,3 +67,58 @@ if (sessionStorage.length == 0){
     <% end %>
   </div>
 </div>
+
+<script>
+
+  window.addEventListener('scroll', () => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const link = entry.target.getAttribute('id');
+        if (entry.intersectionRatio > 0) {
+          // document.querySelector(`div ol li a[href="#${id}"]`).parentElement.classList.add('activecontent');
+          document.querySelector(`div ol li a[href="#${link}"]`).parentElement.classList.add('activecontent');
+
+        } else {
+          // document.querySelector(`div ol li a[href="#${id}"]`).parentElement.classList.remove('activecontent');
+          document.querySelector(`div ol li a[href="#${link}"]`).parentElement.classList.remove('activecontent');
+        }
+      });
+    });
+
+    // Track all sections that have an `id` applied
+    document.querySelectorAll('section[id]').forEach((section) => {
+      observer.observe(section);
+    });
+  });
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+      // Select all <a> elements inside <li> elements
+      var links = document.querySelectorAll('li a');
+
+      // Iterate through each link and add an event listener
+      links.forEach(function(link) {
+          link.addEventListener('click', function(event) {
+              if (this.hash !== "") {
+                  event.preventDefault();
+                  var hash = this.hash;
+
+                  // Scroll to the target element smoothly
+                  var target = document.querySelector(hash);
+                  if (target) {
+                      window.scrollTo({
+                          top: target.offsetTop,
+                          behavior: 'smooth'
+                      });
+
+                      // Update the URL hash after scrolling
+                      setTimeout(function() {
+                          window.location.hash = hash;
+                      }, 900); // Match the 900ms animation duration
+                  }
+              }
+          });
+      });
+  });
+
+</script>
