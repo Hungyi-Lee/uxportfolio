@@ -1,6 +1,9 @@
 {
   "name": "uxportfolio",
   "private": true,
+   "engines": {
+      "node": "20.*"
+    },
   "dependencies": {
     "@rails/actioncable": "^6.0.0-alpha",
     "@rails/activestorage": "^6.0.0-alpha",
@@ -14,8 +17,5 @@
   "version": "0.1.0",
   "devDependencies": {
     "webpack-dev-server": "^5.0.4"
-  },
-  "engines": {
-    "node": "20.14.0"
   }
 }
