@@ -1,12 +1,9 @@
 {
   "name": "uxportfolio",
   "private": true,
-  "start": "react-scripts --openssl-legacy-provider start",
-  "build": "react-scripts --openssl-legacy-provider build",
-  "scripts": {
-   "start": "echo \"This is executed 1\" && set NODE_OPTIONS=--openssl-legacy-provider && echo $NODE_OPTIONS",
-   "build": "echo \"This is executed 2\" && set NODE_OPTIONS=--openssl-legacy-provider &&  vue-cli-service build"
-   },
+   "engines": {
+      "node": "20.*"
+    },
   "dependencies": {
     "@rails/actioncable": "^6.0.0-alpha",
     "@rails/activestorage": "^6.0.0-alpha",
@@ -20,8 +17,5 @@
   "version": "0.1.0",
   "devDependencies": {
     "webpack-dev-server": "^5.0.4"
-  },
-  "engines": {
-     "node": "20.9.0"
-   }
+  }
 }
