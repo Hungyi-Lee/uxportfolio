@@ -1,7 +1,6 @@
 // Place all the styles related to the projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
 .projects{
   width: 100%;
   height: 100%;
@@ -123,7 +122,7 @@ html {
 
 .content-section{
   padding-bottom: 10%;
-  width: 78%;
+  width: 90%;
   max-width: 1040px;
   margin: 0 auto;
   line-height: 1.8;
@@ -357,6 +356,15 @@ figure > img{
 //   display: inline-block;
 //   vertical-align: top;
 // }
+#edit_project_1{
+    width: 90%;
+    height: 100%;
+    min-height: 500px;
+}
+
+#project_description{
+  height: 600px;
+}
 
 // tablet
 @media (min-width: 768px) and (max-width: 1300px) {

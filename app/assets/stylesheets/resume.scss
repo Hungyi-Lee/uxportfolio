@@ -25,7 +25,8 @@
   float: left;
   border-left: 1px solid #e3e3e3;
   background-color: white;
-  width: 30%;
+  // width: 30%;
+  width: 25%;
   // height: 300px;
 }
 
@@ -63,7 +64,8 @@
   float: left;
   padding: 2% 3%;
   // border: 1px solid #ccc;
-  width: 70%;
+  // width: 70%;
+  width: 75%;
   border-left: none;
   // height: 300px;
 }
@@ -229,7 +231,7 @@
   .tab, .edutab, .skilltab, .voltab {
     border-left: none;
     background-color: white;
-    width: 30%;
+    width: 25%;
   }
   .tab button,
   .edutab button,
