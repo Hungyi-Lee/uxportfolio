@@ -17,10 +17,14 @@ function onSubmit(title) {
 </script>
 <div class="section m-t-150">
   <div class="top-introduction">
-    Hungyi Lee,
+    Hi, I'm Hungyi Lee!
     <div class="sub-top-intro">
-      A UX Designer with experience delivering solutions in the <b>public safety communication</b>, <b>digital payment</b>, <b>accessibility</b>, <b>identity & access management</b>, and <b>eCommerce</b> industries with a web development background. 
+      I'm a UX Designer at Samsung, have desgined B2B and B2C digital products since 2020.
+      I have delivered solutions in communication, payment, accessibility, identity & access management, and eCommerce industries.
     </div>
+    <%= mail_to "horngyi6527@gmail.com", class:"black-btn center", body:"Hi Hungyi,", target: "_blank" do %>Email me<% end %>
+    <%= link_to "https://www.linkedin.com/in/hungyi-lee/", class:"view-more-btn center", target: "_blank" do %>Connect on LinkedIn<% end %>
+
   </div>
 </div>
 <div class="section projects" id="projects-section">
@@ -38,9 +42,6 @@ function onSubmit(title) {
               <%= p.role %>
             </div>
             <% if p.password.present? %>
-              <!-- <div class="lock-password-field" id="lockpasswordfield"> -->
-                <!-- <input type="password" name="password" class="inputField1" id="password" placeholder="Please enter password here" required/> -->
-                <!-- <div class="content-open-btn" id="button1" onclick="onSubmit('<%#= p.title %>')">Read Details</div> -->
               <div class="project-link">
                 <%= mail_to "contact@hungyilee.com", class:"view-more-btn center", body:"Hi Hungyi," do %>Request permission<% end %>
               </div>
