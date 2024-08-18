@@ -14,8 +14,8 @@ if (sessionStorage.length == 0){
     </div>
   </div>
   <div class="heroimage project-show-hero" style="background-image:url('<%= @project.coverimage%>')">
-    <span class="pagename"><%= @project.title %><span>
-    <p class="project-content-category"><%= raw(@project.projectdate) %></p>
+    <div class="pagename"><%= @project.title %></div>
+    <div class="project-content-category"><%= raw(@project.projectdate) %></div>
   </div>
 
   <!--Details-->
