@@ -127,14 +127,18 @@ html {
   margin: 0 auto;
   line-height: 1.8;
 }
-
+.project-content-category{
+  width:100%;
+  margin-top: 0.3%;
+}
 .project-category > span,
 .project-content-category > span{
-  width: auto;
-  height: auto;
+  // width: auto;
+  // height: auto;
   background-color: var(--lightgrey);
   color: var(--dusk);
-  padding: 0.6% 1%;
+  // padding: 0.6% 1%;
+  padding: 0.3rem 0.5rem;
   border-radius: 5px;
   font-weight: 300;
   font-size: 0.8rem;
@@ -241,6 +245,7 @@ figcaption{
 .content-section > h4{
   font-weight: 700;
   color: var(--dusk);
+  text-transform: uppercase;
 }
 
 .content-section table thead{
@@ -502,8 +507,9 @@ figure > img{
   .project-category > span,
   .project-content-category > span{
     letter-spacing: 0;
-    padding: 2% 3%;
+    // padding: 1% 2%;
     margin-right: 5px;
+    display: inline-block;
   }
 
   .brief-description{
