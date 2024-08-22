@@ -13,9 +13,8 @@ if (sessionStorage.length == 0){
       <span class="breadcrumb-active"><%= @project.title %></span>
     </div>
   </div>
-  <div class="heroimage project-show-hero" style="background-image:url('<%= @project.coverimage%>')">
-    <div class="pagename"><%= @project.title %></div>
-    <div class="project-content-category"><%= raw(@project.projectdate) %></div>
+  <div class="project-show-hero">
+
   </div>
 
   <!--Details-->
@@ -30,6 +29,10 @@ if (sessionStorage.length == 0){
                           <div class="table-content">
                             <%= raw(@project.category) %>
                           </div>
+                          <section class="content-section">
+                            <div class="pagename"><%= @project.title %></div>
+                            <div class="project-content-category"><%= raw(@project.projectdate) %></div>
+                          </section>
                           <%= raw(@project.description) %>
                     </div>
               </div>
