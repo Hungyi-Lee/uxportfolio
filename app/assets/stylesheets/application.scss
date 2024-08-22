@@ -283,9 +283,10 @@ a, a:hover{
 // }
 
 .pagename{
-  text-transform: uppercase;
-  font-size: 1.5em;
-  letter-spacing: 1.5px;
+  // text-transform: uppercase;
+  // color: var(--dusk);
+  font-size: 2em;
+  // letter-spacing: 1.2px;
   font-weight: bold;
   display: block;
 }
@@ -321,6 +322,9 @@ a, a:hover{
 
 //Tablet
 @media (min-width: 768px) and (max-width: 1024px) {
+  .pagename{
+    font-size: 1.75em;
+  }
   .header{
     width: 100%;
     // height: 70px;
@@ -449,6 +453,10 @@ a, a:hover{
     width: 100%;
     // height: 80px;
     background-color: white;
+  }
+
+  .pagename{
+    font-size: 1.5em;
   }
 
   .header-content{
@@ -697,5 +705,9 @@ a, a:hover{
   .heroimage{
     padding: 5rem 4% 2rem !important;
     height: auto;
+  }
+  .pagename{
+    font-size: 1.5em;
+    line-height: 1.2;
   }
 }
